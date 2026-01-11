@@ -1,5 +1,6 @@
 :root {
-    --yellow-brand: #FFEE00; /* Giallo estratto dal PDF  */
+    --yellow-brand: #FFEE00;
+    --green-brand: #00B156;/* Giallo estratto dal PDF  */
     --dark: #000000;
 }
 
@@ -11,6 +12,10 @@ body {
 
 .bg-yellow-brand {
     background-color: var(--yellow-brand);
+}
+
+.bg-green-brand {
+    background-color: var(--green-brand);
 }
 
 /* Navigazione */
