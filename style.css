@@ -1,1 +1,66 @@
+:root {
+    --yellow-brand: #FFEE00; /* Giallo estratto dal PDF  */
+    --dark: #000000;
+}
 
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: var(--dark);
+}
+
+.bg-yellow-brand {
+    background-color: var(--yellow-brand);
+}
+
+/* Navigazione */
+.nav-brutal {
+    border-bottom: 4px solid var(--dark);
+}
+
+/* Pulsanti Neobrutalist */
+.brutal-btn {
+    border: 3px solid var(--dark);
+    box-shadow: 6px 6px 0px var(--dark);
+    transition: all 0.1s;
+}
+
+.brutal-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px var(--dark);
+}
+
+.brutal-btn-sm {
+    border: 2px solid var(--dark);
+    box-shadow: 3px 3px 0px var(--dark);
+}
+
+/* Card e Contenitori */
+.brutal-shadow {
+    box-shadow: 8px 8px 0px var(--dark);
+}
+
+/* Form */
+.brutal-input {
+    border: 3px solid var(--dark);
+    padding: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.brutal-input:focus {
+    background-color: #f0f0f0;
+    box-shadow: 4px 4px 0px var(--dark);
+}
+
+/* Testo Outline Style */
+.outline-text {
+    -webkit-text-stroke: 1.5px var(--dark);
+    color: transparent;
+}
+
+@media (max-width: 768px) {
+    .brutal-shadow {
+        box-shadow: 4px 4px 0px var(--dark);
+    }
+}
