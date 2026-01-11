@@ -1,52 +1,164 @@
 <!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-
-    <!--====== Title ======-->
-    <title>Associazione Giovanile Marimeo</title>
-
-    <meta name="description" content="Associazione Giovanile Marimeo" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marimeo - Associazione Giovanile</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!--====== Favicon Icon ======-->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon-marimeo2.png"
-      type="image/png"
-    />
-
-    <!--====== Style CSS ======-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  </head>
-  <body>
-    <nav>
-      
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav-brutal sticky top-0 z-50 bg-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="logo font-black uppercase italic text-2xl">Marimeo</div>
+            <div class="hidden md:flex gap-6 font-bold uppercase text-sm">
+                <a href="#chi-siamo" class="hover:underline">Associazione</a> 
+                <a href="#bivi" class="hover:underline">BIVI</a> 
+                <a href="#contatti" class="hover:underline">Diventa Socia</a>
+                <a href="#donazioni" class="bg-black text-white px-4 py-2 brutal-btn-sm">Dona</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden flex-col p-4 bg-white border-t-4 border-black md:hidden">
+            <a href="#chi-siamo" class="py-2 font-bold uppercase">Associazione</a>
+            <a href="#bivi" class="py-2 font-bold uppercase">BIVI</a>
+            <a href="#contatti" class="py-2 font-bold uppercase">Diventa Socio</a>
+        </div>
     </nav>
-    
-    <header>
-      <h1>Ciao a tutti siamo l'associazione giovanile Marimeo</h1>
+
+    <header class="bg-yellow-brand border-b-4 border-black py-20 px-4 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-7xl font-black uppercase italic leading-tight mb-6">
+                Benvenuto sul sito dell'associazione giovanile marimeo
+            </h1>
+            <!-- <p class="text-xl font-bold bg-white inline-block p-2 border-2 border-black mb-8">
+                Tutela dell'ambiente e promozione di comportamenti sostenibili [cite: 15]
+            </p>
+            <div class="block">
+                <a href="#donazioni" class="bg-black text-white text-xl font-bold px-8 py-4 brutal-btn uppercase">
+                    Metti in moto il cambiamento oggi stesso! [cite: 65]
+                </a>
+            </div> -->
+        </div>
     </header>
+
     <main>
-      
-    </main>
-    
-    
-    <footer>
-      <div class="footer-bottom text-center md:text-left border-t-2 border-white/20 pt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="legal-info text-xs opacity-60 leading-relaxed">
-                    <p>2025 Associazione Giovanile Marimeo</p>
-                    <p>Via dei Frassini 11, 04023 Formia (LT)</p>
-                    <p>C.F. 90079590593 - P. IVA</p>
+        <section id="chi-siamo" class="py-20 container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-black uppercase mb-6 underline decoration-green-500">Chi siamo</h2>
+                    <p class="text-lg font-medium mb-4">
+                        Da un'idea iniziale di Filippo Fresilli nasce un'associazione formata da amici che vogliono partecipare attivamente al cambiamento del proprio territorio. 
+                        Lavoriamo in sinergia per fornire servizi accessibili e lottare contro il cambiamento climatico.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8 italic font-bold">
+                        <div class="p-4 border-2 border-black brutal-shadow">Salvatore Pirolazzi </div>
+                        <div class="p-4 border-2 border-black brutal-shadow">Filippo Fresilli </div>
+                        <div class="p-4 border-2 border-black brutal-shadow">Stefania Falso </div>
+                        <div class="p-4 border-2 border-black brutal-shadow">Daniele Perrone</div>
+                    </div>
                 </div>
+                <div class="bg-green-100 p-8 border-4 border-black brutal-shadow">
+                    <h3 class="text-3xl font-black italic mb-4 uppercase">"Non abbiamo un pianeta B" </h3>
+                    <p class="font-bold leading-relaxed">Abbiamo solo un mondo che dobbiamo tutelare. Marimeo è un esempio di come i giovani possano fare la differenza nella salvaguardia del nostro pianeta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black text-white py-16">
+            <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 text-center uppercase font-black">
+                <div class="border-2 border-white p-6">
+                    <div class="text-5xl mb-2">1</div>
+                    <div class="text-xs">Progetti lanciati </div>
+                </div>
+                <div class="border-2 border-white p-6 bg-yellow-brand text-black">
+                    <div class="text-5xl mb-2">25k €</div>
+                    <div class="text-xs">Fondi raccolti </div>
+                </div>
+                <div class="border-2 border-white p-6">
+                    <div class="text-5xl mb-2">25k</div>
+                    <div class="text-xs">CO2 risparmiata </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bivi" class="py-20 bg-blue-50 border-y-4 border-black px-4">
+            <div class="container mx-auto flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-6xl font-black italic mb-6">BIVI [cite: 38]</h2>
+                    <p class="font-bold mb-4 italic">Finanziato dalla Regione Lazio nell'ambito di GENERAZIONI GIOVANI.IT.</p>
+                    <div class="p-6 bg-white border-4 border-black brutal-shadow mb-6">
+                        <p>Il progetto mira a diminuire il consumo di CO2 nel Comune di Minturno eliminando le bottiglie di plastica usa e getta.</p>
+                    </div>
+                    <p class="font-black uppercase">Partner: Comune di Minturno [cite: 47, 48]</p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-1 gap-4">
+                    <div class="p-8 bg-blue-600 text-white border-4 border-black brutal-shadow">
+                        <span class="block text-4xl font-black">25k</span>
+                        <span class="uppercase font-bold text-xs">Bottiglie non comprate </span>
+                    </div>
+                    <div class="p-8 bg-white border-4 border-black brutal-shadow">
+                        <span class="block text-4xl font-black">25k</span>
+                        <span class="uppercase font-bold text-xs">CO2 evitata</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti" class="py-20 container mx-auto px-4 max-w-2xl">
+            <h2 class="text-4xl font-black uppercase mb-8 text-center">Diventa socio [cite: 54]</h2>
+            <form class="flex flex-col gap-4">
+                <input type="text" placeholder="Nome e Cognome [cite: 58]" class="brutal-input">
+                <input type="email" placeholder="Indirizzo Email [cite: 59]" class="brutal-input">
+                <textarea placeholder="Commento [cite: 60]" rows="4" class="brutal-input"></textarea>
+                <button type="submit" class="bg-green-500 font-black uppercase py-4 brutal-btn">Invia</button>
+            </form>
+        </section>
+
+        <section id="donazioni" class="py-20 bg-yellow-brand border-t-4 border-black text-center px-4">
+            <h2 class="text-3xl font-black uppercase mb-6 italic">Basta solo una donazione! </h2>
+            <button class="bg-black text-white text-2xl font-black px-12 py-6 brutal-btn uppercase">
+                Fai una donazione
+            </button>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12 border-b border-white/20 pb-12">
+                <div>
+                    <div class="text-3xl font-black italic uppercase mb-2">Marimeo </div>
+                    <p class="text-xs uppercase opacity-70">Associazione Giovanile </p>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-xs mb-4 text-gray-400">Partner</h4>
+                    <p class="font-bold">Comune di Minturno</p>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-xs mb-4 text-gray-400">Sito</h4>
+                    <ul class="text-sm space-y-2 uppercase font-bold">
+                        <li><a href="#">Associazione</a> </li>
+                        <li><a href="#">Progetti</a> </li>
+                        <li><a href="#">Statuto / FAQ</a> </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-xs mb-4 text-gray-400">Seguici </h4>
+                    <div class="flex gap-4 text-xl">
+                        <i class="fab fa-facebook"></i> 
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between text-xs opacity-60 font-bold uppercase gap-4">
+                <p>2025 Associazione Giovanile Marimeo | Via dei Frassini 11, 04023 Formia (LT) | C.F. 90079590593 </p>
+                <!--<p> Sito realizzato da Filippo Fresilli </p>-->
             </div>
         </div>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
