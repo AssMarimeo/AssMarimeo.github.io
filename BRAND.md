@@ -24,9 +24,8 @@ variabili CSS in `css/style.css` (`:root`). Aggiorna prima qui, poi nel CSS.
 Palette ispirata ad acqua, natura e sostenibilità (azzurro, verde, bianco).
 
 ## Tipografia
-- Titoli: **Poppins** (600–800).
-- Testo: **Inter** (400–600).
-- Caricati da Google Fonts in `index.html`.
+- Font unico: **Nunito** — titoli 600–800, testo 400–600.
+- Caricato da Google Fonts in `index.html`.
 
 ## Tono di voce
 Positivo, giovane, concreto, accessibile. Niente burocratese.
