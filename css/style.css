@@ -146,6 +146,43 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
+/* ---------- Header right (lingua + nav) ---------- */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* ---------- Selettore lingua ---------- */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 3px;
+}
+.lang-btn {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-soft);
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 0.32rem 0.7rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.lang-btn:hover { color: var(--color-primary); }
+.lang-btn.is-active {
+  background: var(--color-primary);
+  color: #fff;
+}
+.lang-btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
 /* ---------- Nav ---------- */
 .nav-menu {
   display: flex;
