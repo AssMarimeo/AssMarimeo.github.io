@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marimeo — Associazione Giovanile</title>
-  <meta name="description" data-i18n="meta_desc" content="Associazione Giovanile Marimeo: attività, eventi, la casetta dell'acqua di Scauri e occasioni per crescere insieme. Scopri chi siamo e diventa socio." />
+  <title>Marimeo — Bevi meglio, risparmia plastica, riduci CO₂</title>
+  <meta name="description" data-i18n="meta_desc" content="Marimeo è un'associazione giovanile che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri. Associati da 10 €." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Marimeo — Associazione Giovanile" />
-  <meta property="og:description" content="Attività, eventi e la casetta dell'acqua di Scauri." />
+  <meta property="og:title" content="Marimeo — Bevi meglio, risparmia plastica, riduci CO₂" />
+  <meta property="og:description" content="Associazione giovanile per un territorio con meno plastica. La casetta dell'acqua di Scauri, aperta a tutti 24/7." />
   <meta property="og:type" content="website" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/favicon.png" />
-  <meta name="theme-color" content="#1b4dd8" />
+  <meta name="theme-color" content="#1466C7" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,12 +27,11 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Marimeo — home">
-        <span class="brand-mark" aria-hidden="true">M</span>
+        <img class="brand-logo" src="assets/img/favicon.png" alt="" width="38" height="38" />
         <span class="brand-name">Marimeo</span>
       </a>
 
       <div class="header-right">
-        <!-- Selettore lingua -->
         <div class="lang-switch" role="group" aria-label="Seleziona lingua / Select language">
           <button type="button" class="lang-btn is-active" data-lang="it" lang="it" aria-pressed="true">IT</button>
           <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">EN</button>
@@ -45,10 +44,11 @@
           </button>
           <ul class="nav-menu" id="nav-menu">
             <li><a href="#chi-siamo" data-i18n="nav_about">Chi siamo</a></li>
-            <li><a href="#attivita" data-i18n="nav_activities">Attività</a></li>
-            <li><a href="#casetta" data-i18n="nav_water">Casetta dell'acqua</a></li>
-            <li><a href="#contatti" data-i18n="nav_contact">Contatti</a></li>
-            <li><a href="#diventa-socio" class="btn btn-sm" data-i18n="nav_join">Diventa socio</a></li>
+            <li><a href="#impatto" data-i18n="nav_impact">Impatto</a></li>
+            <li><a href="#casetta" data-i18n="nav_water">Casetta</a></li>
+            <li><a href="#associarsi" data-i18n="nav_join_us">Associarsi</a></li>
+            <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+            <li><a href="#diventa-associato" class="btn btn-sm" data-i18n="nav_join">Diventa associato</a></li>
           </ul>
         </nav>
       </div>
@@ -56,188 +56,301 @@
   </header>
 
   <main>
-    <!-- ===== Hero ===== -->
+    <!-- ===== 1. Hero ===== -->
     <section class="hero">
       <div class="container hero-inner">
-        <p class="eyebrow" data-i18n="hero_eyebrow">Associazione giovanile</p>
-        <h1 data-i18n="hero_title" data-i18n-html>Crescere insieme,<br />un'attività alla volta.</h1>
+        <p class="eyebrow" data-i18n="hero_eyebrow">Associazione giovanile · Ambiente</p>
+        <h1 data-i18n="hero_title" data-i18n-html>Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.</h1>
         <p class="hero-lead" data-i18n="hero_lead">
-          Marimeo è il punto di ritrovo dei giovani del territorio: organizziamo
-          attività, eventi e progetti per stare insieme, imparare e lasciare il segno.
+          Marimeo è un'associazione giovanile che aiuta il territorio a consumare
+          meno plastica grazie alla casetta dell'acqua.
         </p>
         <div class="hero-actions">
-          <a href="#diventa-socio" class="btn btn-lg" data-i18n="hero_cta1">Diventa socio</a>
-          <a href="#attivita" class="btn btn-ghost btn-lg" data-i18n="hero_cta2">Scopri le attività</a>
+          <a href="#diventa-associato" class="btn btn-lg" data-i18n="hero_cta1">Diventa associato</a>
+          <a href="#casetta" class="btn btn-ghost btn-lg" data-i18n="hero_cta2">Scopri il progetto</a>
         </div>
+        <ul class="hero-badges">
+          <li><span aria-hidden="true">💧</span> <span data-i18n="hero_badge1">Acqua da 5 cent/L</span></li>
+          <li><span aria-hidden="true">🕒</span> <span data-i18n="hero_badge2">Aperta 24/7</span></li>
+          <li><span aria-hidden="true">🌱</span> <span data-i18n="hero_badge3">Meno plastica, meno CO₂</span></li>
+        </ul>
       </div>
     </section>
 
-    <!-- ===== Chi siamo ===== -->
+    <!-- ===== 2. Cos'è Marimeo ===== -->
     <section id="chi-siamo" class="section">
-      <div class="container">
+      <div class="container narrow">
         <p class="section-eyebrow" data-i18n="about_eyebrow">Chi siamo</p>
-        <h2 class="section-title" data-i18n="about_title">Una comunità di giovani con tante idee</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p data-i18n="about_p1">
-              Marimeo nasce dalla voglia di un gruppo di ragazzi e ragazze di
-              creare uno spazio aperto, inclusivo e pieno di energia. Crediamo
-              che i giovani possano essere protagonisti del cambiamento nella
-              propria comunità.
-            </p>
-            <p data-i18n="about_p2">
-              Attraverso attività culturali, sociali e ricreative offriamo
-              occasioni per conoscersi, mettersi in gioco e trasformare le idee
-              in progetti concreti.
-            </p>
-          </div>
-          <ul class="values">
-            <li>
-              <span class="value-icon" aria-hidden="true">✦</span>
-              <h3 data-i18n="value1_title">Inclusione</h3>
-              <p data-i18n="value1_text">Uno spazio per tutti, dove ognuno può sentirsi a casa.</p>
-            </li>
-            <li>
-              <span class="value-icon" aria-hidden="true">◈</span>
-              <h3 data-i18n="value2_title">Partecipazione</h3>
-              <p data-i18n="value2_text">Le idee di ognuno contano e diventano azione.</p>
-            </li>
-            <li>
-              <span class="value-icon" aria-hidden="true">❤</span>
-              <h3 data-i18n="value3_title">Comunità</h3>
-              <p data-i18n="value3_text">Insieme si cresce, si impara e ci si diverte.</p>
-            </li>
-          </ul>
+        <h2 class="section-title" data-i18n="about_title">Un'associazione di giovani per un territorio con meno plastica</h2>
+        <div class="about-text">
+          <p data-i18n="about_p1">
+            Marimeo è un'associazione giovanile senza scopo di lucro. Crediamo che i
+            piccoli gesti di ogni giorno, messi insieme, possano ridurre davvero
+            l'inquinamento del nostro territorio.
+          </p>
+          <p data-i18n="about_p2">
+            Per questo gestiamo la casetta dell'acqua di Scauri: un modo semplice per
+            bere acqua buona, spendere meno e tagliare migliaia di bottiglie di
+            plastica ogni anno. Meno plastica monouso, meno camion che trasportano
+            acqua, meno CO₂.
+          </p>
+          <p data-i18n="about_p3">
+            Non serve essere ambientalisti esperti: basta riempire la propria
+            borraccia. Il resto lo facciamo insieme.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ===== Attività / Eventi ===== -->
-    <section id="attivita" class="section section-alt">
+    <!-- ===== 3. Il nostro impatto ===== -->
+    <section id="impatto" class="section section-tint">
       <div class="container">
-        <p class="section-eyebrow" data-i18n="act_eyebrow">Attività &amp; Eventi</p>
-        <h2 class="section-title" data-i18n="act_title">Cosa facciamo</h2>
-        <p class="section-intro" data-i18n="act_intro">
-          Alcune delle attività e degli eventi che organizziamo durante l'anno.
+        <p class="section-eyebrow" data-i18n="impact_eyebrow">Il nostro impatto</p>
+        <h2 class="section-title" data-i18n="impact_title">Numeri che fanno la differenza</h2>
+        <p class="section-intro" data-i18n="impact_intro">
+          Ogni borraccia riempita alla casetta è plastica in meno e CO₂ risparmiata.
+          Ecco cosa abbiamo ottenuto insieme nel 2025.
         </p>
 
-        <div class="cards">
-          <article class="card">
-            <div class="card-tag" data-i18n="card1_tag">Evento</div>
-            <h3 data-i18n="card1_title">Serate a tema</h3>
-            <p class="card-meta" data-i18n="card1_meta">📅 Ogni mese · 📍 Sede Marimeo</p>
-            <p data-i18n="card1_text">Musica, giochi e momenti di condivisione aperti a tutti i giovani.</p>
+        <div class="stats">
+          <article class="stat">
+            <div class="stat-num" data-target="50000" data-suffix="+">0</div>
+            <p class="stat-label" data-i18n="impact_water_label">litri d'acqua erogati</p>
           </article>
-
-          <article class="card">
-            <div class="card-tag" data-i18n="card2_tag">Progetto</div>
-            <h3 data-i18n="card2_title">Laboratori creativi</h3>
-            <p class="card-meta" data-i18n="card2_meta">📅 Autunno · 📍 Da definire</p>
-            <p data-i18n="card2_text">Percorsi di arte, musica e volontariato per esprimere i propri talenti.</p>
+          <article class="stat">
+            <div class="stat-num" data-target="32600" data-suffix="+">0</div>
+            <p class="stat-label" data-i18n="impact_bottles_label">bottiglie di plastica evitate</p>
           </article>
-
-          <article class="card">
-            <div class="card-tag" data-i18n="card3_tag">Community</div>
-            <h3 data-i18n="card3_title">Volontariato locale</h3>
-            <p class="card-meta" data-i18n="card3_meta">📅 Tutto l'anno · 📍 Territorio</p>
-            <p data-i18n="card3_text">Iniziative sul territorio per dare una mano a chi ne ha bisogno.</p>
+          <article class="stat">
+            <div class="stat-num" data-target="1800" data-suffix=" kg">0</div>
+            <p class="stat-label" data-i18n="impact_co2_label">di CO₂ risparmiata</p>
           </article>
         </div>
+        <p class="stat-note" data-i18n="impact_note">Dati stimati relativi al 2025.</p>
       </div>
     </section>
 
-    <!-- ===== Casetta dell'acqua ===== -->
+    <!-- ===== 4. La casetta dell'acqua ===== -->
     <section id="casetta" class="section">
       <div class="container">
         <p class="section-eyebrow" data-i18n="water_eyebrow">Il nostro progetto</p>
         <h2 class="section-title" data-i18n="water_title">La casetta dell'acqua di Scauri</h2>
-        <div class="water-grid">
-          <div class="water-info">
-            <p data-i18n="water_desc">
-              Gestiamo la casetta dell'acqua di Scauri: acqua buona, controllata e a
-              chilometro zero per tutta la comunità. Le analisi vengono aggiornate
-              periodicamente e sono liberamente consultabili.
-            </p>
-            <ul class="water-list">
-              <li>
-                <span class="water-ico" aria-hidden="true">📍</span>
-                <div>
-                  <span class="water-label" data-i18n="water_address_label">Dove si trova</span>
-                  <span data-i18n="water_address">Casetta dell'acqua di Scauri — Minturno (LT)</span>
-                </div>
-              </li>
-              <li>
-                <span class="water-ico" aria-hidden="true">🧪</span>
-                <div>
-                  <span class="water-label" data-i18n="water_analysis_label">Analisi dell'acqua</span>
-                  <span data-i18n="water_analysis_period">Aggiornate — I semestre 2026</span>
-                </div>
-              </li>
-            </ul>
-            <div class="water-actions">
-              <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" class="btn" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivare</a>
-              <a href="assets/docs/analisi-acqua-2026-06.pdf" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="water_analysis_link">Scarica le analisi (PDF)</a>
+        <p class="section-intro" data-i18n="water_desc">
+          Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o
+          frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.
+        </p>
+
+        <div class="water-layout">
+          <!-- Mappa -->
+          <div class="map-card">
+            <iframe
+              class="map-embed"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=13.6949%2C41.2566%2C13.7029%2C41.2606&layer=mapnik&marker=41.2585642%2C13.6988841"
+              title="Mappa della casetta dell'acqua di Scauri"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+            <div class="map-foot">
+              <div>
+                <span class="water-label" data-i18n="water_where_label">Dove si trova</span>
+                <span data-i18n="water_where_value">Scauri — Minturno (LT) · Aperta 24 ore su 24, 7 giorni su 7</span>
+              </div>
+              <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" class="btn btn-sm" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivare</a>
             </div>
+          </div>
+
+          <!-- Prezzi -->
+          <div class="price-card">
+            <h3 data-i18n="price_title">Quanto costa l'acqua</h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="price_type_head">Tipo</th>
+                  <th data-i18n="price_non_head">Non associati</th>
+                  <th class="price-hl" data-i18n="price_mem_head">Associati</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="price_row1">Naturale (ambiente o fredda)</td>
+                  <td>8 cent/L</td>
+                  <td class="price-hl">5 cent/L</td>
+                </tr>
+                <tr>
+                  <td data-i18n="price_row2">Frizzante fredda</td>
+                  <td>10 cent/L</td>
+                  <td class="price-hl">7 cent/L</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="price-note" data-i18n="price_note">
+              Con la tessera da socio l'acqua ti costa meno ogni giorno.
+            </p>
+            <a href="assets/docs/analisi-acqua-2026-06.pdf" class="link-arrow" target="_blank" rel="noopener" data-i18n="water_analysis_link">Analisi dell'acqua aggiornate (PDF) →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Contatti / Diventa socio ===== -->
-    <section id="contatti" class="section section-alt">
+    <!-- ===== 5. Perché associarsi ===== -->
+    <section id="associarsi" class="section section-tint">
       <div class="container">
-        <div class="contact-grid">
-          <div>
-            <p class="section-eyebrow" data-i18n="contact_eyebrow">Contatti</p>
-            <h2 class="section-title" data-i18n="contact_title">Parla con noi</h2>
-            <ul class="contact-list">
-              <li><span aria-hidden="true">✉️</span> <a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a></li>
-              <li><span aria-hidden="true">📧</span> <a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a> <span class="tag-pec">PEC</span></li>
-            </ul>
-            <div class="socials">
-              <a href="https://instagram.com/marimeo_org" target="_blank" rel="noopener" aria-label="Instagram" class="social">Instagram</a>
-              <a href="https://www.facebook.com/marimeo.org" target="_blank" rel="noopener" aria-label="Facebook" class="social">Facebook</a>
-            </div>
-            <p class="legal-info">
-              <span data-i18n="legal_name">Associazione Giovanile Marimeo</span><br />
-              P. IVA 03318080599 · C.F. 90079590593
-            </p>
-          </div>
-
-          <!-- ===== Diventa socio ===== -->
-          <div id="diventa-socio" class="signup-card">
-            <h3 data-i18n="join_title">Diventa socio</h3>
-            <p data-i18n="join_intro">
-              Unisciti a Marimeo! Compila il modulo della campagna associativa 2026:
-              ti ricontatteremo per darti il benvenuto.
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form"
-               class="btn btn-lg btn-full" target="_blank" rel="noopener" data-i18n="join_button">
-              Compila il modulo
-            </a>
-            <p class="join-note" data-i18n="join_note">Campagna associativa 2026</p>
-          </div>
+        <p class="section-eyebrow" data-i18n="why_eyebrow">Perché associarsi</p>
+        <h2 class="section-title" data-i18n="why_title">Bene per te, bene per il territorio</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-ico" aria-hidden="true">💧</span>
+            <h3 data-i18n="why1_title">Acqua a prezzo scontato</h3>
+            <p data-i18n="why1_text">Con la tessera paghi 5 cent/L invece di 8: risparmi ad ogni ricarica.</p>
+          </article>
+          <article class="card">
+            <span class="card-ico" aria-hidden="true">🌍</span>
+            <h3 data-i18n="why2_title">Sostieni un progetto locale</h3>
+            <p data-i18n="why2_text">La tua quota aiuta a ridurre plastica e CO₂ nel nostro territorio.</p>
+          </article>
+          <article class="card">
+            <span class="card-ico" aria-hidden="true">🤝</span>
+            <h3 data-i18n="why3_title">Partecipi alla vita associativa</h3>
+            <p data-i18n="why3_text">Entri in una comunità di giovani attivi e puoi dire la tua.</p>
+          </article>
+          <article class="card">
+            <span class="card-ico" aria-hidden="true">🚀</span>
+            <h3 data-i18n="why4_title">Fai crescere nuove idee</h3>
+            <p data-i18n="why4_text">Contribuisci a nuove iniziative per l'ambiente e per la comunità.</p>
+          </article>
         </div>
+        <div class="center-cta">
+          <a href="#diventa-associato" class="btn btn-lg" data-i18n="why_cta">Assòciati ora — 10 €</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Come funziona ===== -->
+    <section id="come-funziona" class="section">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="how_eyebrow">Come funziona</p>
+        <h2 class="section-title" data-i18n="how_title">Associarsi è semplice</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3 data-i18n="step1_title">Compila il modulo</h3>
+            <p data-i18n="step1_text">Invia la richiesta di iscrizione online in pochi minuti.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3 data-i18n="step2_title">Versa la quota</h3>
+            <p data-i18n="step2_text">La quota associativa 2026 è di 10 € l'anno.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3 data-i18n="step3_title">Ricevi la tessera</h3>
+            <p data-i18n="step3_text">Ottieni la tessera ricaricabile, da ricaricare direttamente alla casetta.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">4</span>
+            <h3 data-i18n="step4_title">Usa la casetta</h3>
+            <p data-i18n="step4_text">Riempi la borraccia quando vuoi e risparmia acqua e plastica ogni giorno.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 7. Progetti futuri ===== -->
+    <section id="futuro" class="section section-tint">
+      <div class="container narrow">
+        <p class="section-eyebrow" data-i18n="future_eyebrow">Progetti futuri</p>
+        <h2 class="section-title" data-i18n="future_title">Un'associazione viva e in crescita</h2>
+        <p class="section-intro" data-i18n="future_text">
+          La casetta dell'acqua è solo l'inizio. Vogliamo far crescere nuove iniziative
+          per l'ambiente, i giovani e la comunità: educazione ambientale, qualità
+          dell'aria, spazi di incontro e molto altro.
+        </p>
+        <ul class="tag-list">
+          <li data-i18n="future_tag1">🌿 Ambiente</li>
+          <li data-i18n="future_tag2">🧑‍🤝‍🧑 Giovani</li>
+          <li data-i18n="future_tag3">🏘️ Territorio</li>
+          <li data-i18n="future_tag4">🌬️ Qualità dell'aria</li>
+          <li data-i18n="future_tag5">📚 Educazione ambientale</li>
+          <li data-i18n="future_tag6">✨ Comunità</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 8. FAQ ===== -->
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <p class="section-eyebrow" data-i18n="faq_eyebrow">Domande frequenti</p>
+        <h2 class="section-title" data-i18n="faq_title">Le risposte alle domande più comuni</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary data-i18n="faq_q1">Quanto costa associarsi?</summary>
+            <div class="faq-a"><p data-i18n="faq_a1">Per il 2026 la quota associativa è di 10 € l'anno. Include la tessera ricaricabile che ti dà l'acqua a prezzo scontato.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq_q2">Dove si trova la casetta dell'acqua?</summary>
+            <div class="faq-a"><p data-i18n="faq_a2">A Scauri, nel comune di Minturno (LT). È aperta a tutti 24 ore su 24, 7 giorni su 7. Trovi la posizione esatta nella mappa qui sopra.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq_q3">Posso usare la casetta anche se non sono associato?</summary>
+            <div class="faq-a"><p data-i18n="faq_a3">Sì, la casetta è aperta a tutti. Gli associati, però, pagano meno: 5 cent/L invece di 8 per l'acqua naturale e 7 invece di 10 per la frizzante.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq_q4">Come posso ricaricare la tessera?</summary>
+            <div class="faq-a"><p data-i18n="faq_a4">La tessera si ricarica direttamente alla casetta dell'acqua, in modo semplice e veloce.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq_q5">Come posso aiutare Marimeo?</summary>
+            <div class="faq-a"><p data-i18n="faq_a5">Associandoti, usando la casetta con la tua borraccia, partecipando alle iniziative e seguendoci sui social. Ogni gesto conta!</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA finale ===== -->
+    <section id="diventa-associato" class="cta-band">
+      <div class="container cta-inner">
+        <h2 data-i18n="final_cta_title">Entra anche tu in Marimeo</h2>
+        <p data-i18n="final_cta_text">Associati per il 2026 con soli 10 €: acqua scontata e un territorio con meno plastica.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form"
+           class="btn btn-lg btn-on-dark" target="_blank" rel="noopener" data-i18n="final_cta_btn">Compila il modulo di iscrizione</a>
+        <p class="cta-note" data-i18n="final_cta_note">Campagna associativa 2026</p>
       </div>
     </section>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
+    <div class="container footer-grid">
+      <div class="footer-col">
         <div class="brand">
-          <span class="brand-mark" aria-hidden="true">M</span>
+          <img class="brand-logo" src="assets/img/favicon.png" alt="" width="38" height="38" />
           <span class="brand-name">Marimeo</span>
         </div>
-        <p class="footer-copy">© <span id="year"></span> <span data-i18n="footer_copy">Associazione Giovanile Marimeo. Tutti i diritti riservati.</span></p>
+        <p class="footer-tagline" data-i18n="footer_tagline">Associazione giovanile per un territorio con meno plastica.</p>
       </div>
-      <div class="footer-links">
-        <a href="assets/docs/statuto-marimeo.pdf" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a>
-        <a href="https://instagram.com/marimeo_org" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/marimeo.org" target="_blank" rel="noopener">Facebook</a>
-        <a href="#top" class="back-top" data-i18n="back_top">Torna su ↑</a>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact_title">Contatti</h4>
+        <ul class="footer-list">
+          <li><a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a></li>
+          <li><a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a> · PEC</li>
+          <li><a href="https://instagram.com/marimeo_org" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/marimeo.org" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
       </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_links_title">Documenti</h4>
+        <ul class="footer-list">
+          <li><a href="assets/docs/statuto-marimeo.pdf" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a></li>
+          <li><a href="assets/docs/analisi-acqua-2026-06.pdf" target="_blank" rel="noopener" data-i18n="footer_analysis">Analisi dell'acqua (PDF)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-copy">© <span id="year"></span> <span data-i18n="footer_copy">Associazione Giovanile Marimeo</span> · P. IVA 03318080599 · C.F. 90079590593</p>
+      <a href="#top" class="back-top" data-i18n="back_top">Torna su ↑</a>
     </div>
   </footer>
 

@@ -12,199 +12,331 @@
   const translations = {
     /* ---------------- ITALIANO (default) ---------------- */
     it: {
-      meta_desc: "Associazione Giovanile Marimeo: attività, eventi, la casetta dell'acqua di Scauri e occasioni per crescere insieme. Scopri chi siamo e diventa socio.",
-      nav_about: "Chi siamo",
-      nav_activities: "Attività",
-      nav_water: "Casetta dell'acqua",
-      nav_contact: "Contatti",
-      nav_join: "Diventa socio",
+      meta_desc: "Marimeo è un'associazione giovanile che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri. Associati da 10 €.",
 
-      hero_eyebrow: "Associazione giovanile",
-      hero_title: "Crescere insieme,<br />un'attività alla volta.",
-      hero_lead: "Marimeo è il punto di ritrovo dei giovani del territorio: organizziamo attività, eventi e progetti per stare insieme, imparare e lasciare il segno.",
-      hero_cta1: "Diventa socio",
-      hero_cta2: "Scopri le attività",
+      nav_about: "Chi siamo",
+      nav_impact: "Impatto",
+      nav_water: "Casetta",
+      nav_join_us: "Associarsi",
+      nav_faq: "FAQ",
+      nav_join: "Diventa associato",
+
+      hero_eyebrow: "Associazione giovanile · Ambiente",
+      hero_title: "Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.",
+      hero_lead: "Marimeo è un'associazione giovanile che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua.",
+      hero_cta1: "Diventa associato",
+      hero_cta2: "Scopri il progetto",
+      hero_badge1: "Acqua da 5 cent/L",
+      hero_badge2: "Aperta 24/7",
+      hero_badge3: "Meno plastica, meno CO₂",
 
       about_eyebrow: "Chi siamo",
-      about_title: "Una comunità di giovani con tante idee",
-      about_p1: "Marimeo nasce dalla voglia di un gruppo di ragazzi e ragazze di creare uno spazio aperto, inclusivo e pieno di energia. Crediamo che i giovani possano essere protagonisti del cambiamento nella propria comunità.",
-      about_p2: "Attraverso attività culturali, sociali e ricreative offriamo occasioni per conoscersi, mettersi in gioco e trasformare le idee in progetti concreti.",
-      value1_title: "Inclusione",
-      value1_text: "Uno spazio per tutti, dove ognuno può sentirsi a casa.",
-      value2_title: "Partecipazione",
-      value2_text: "Le idee di ognuno contano e diventano azione.",
-      value3_title: "Comunità",
-      value3_text: "Insieme si cresce, si impara e ci si diverte.",
+      about_title: "Un'associazione di giovani per un territorio con meno plastica",
+      about_p1: "Marimeo è un'associazione giovanile senza scopo di lucro. Crediamo che i piccoli gesti di ogni giorno, messi insieme, possano ridurre davvero l'inquinamento del nostro territorio.",
+      about_p2: "Per questo gestiamo la casetta dell'acqua di Scauri: un modo semplice per bere acqua buona, spendere meno e tagliare migliaia di bottiglie di plastica ogni anno. Meno plastica monouso, meno camion che trasportano acqua, meno CO₂.",
+      about_p3: "Non serve essere ambientalisti esperti: basta riempire la propria borraccia. Il resto lo facciamo insieme.",
 
-      act_eyebrow: "Attività & Eventi",
-      act_title: "Cosa facciamo",
-      act_intro: "Alcune delle attività e degli eventi che organizziamo durante l'anno.",
-      card1_tag: "Evento",
-      card1_title: "Serate a tema",
-      card1_meta: "📅 Ogni mese · 📍 Sede Marimeo",
-      card1_text: "Musica, giochi e momenti di condivisione aperti a tutti i giovani.",
-      card2_tag: "Progetto",
-      card2_title: "Laboratori creativi",
-      card2_meta: "📅 Autunno · 📍 Da definire",
-      card2_text: "Percorsi di arte, musica e volontariato per esprimere i propri talenti.",
-      card3_tag: "Community",
-      card3_title: "Volontariato locale",
-      card3_meta: "📅 Tutto l'anno · 📍 Territorio",
-      card3_text: "Iniziative sul territorio per dare una mano a chi ne ha bisogno.",
+      impact_eyebrow: "Il nostro impatto",
+      impact_title: "Numeri che fanno la differenza",
+      impact_intro: "Ogni borraccia riempita alla casetta è plastica in meno e CO₂ risparmiata. Ecco cosa abbiamo ottenuto insieme nel 2025.",
+      impact_water_label: "litri d'acqua erogati",
+      impact_bottles_label: "bottiglie di plastica evitate",
+      impact_co2_label: "di CO₂ risparmiata",
+      impact_note: "Dati stimati relativi al 2025.",
 
       water_eyebrow: "Il nostro progetto",
       water_title: "La casetta dell'acqua di Scauri",
-      water_desc: "Gestiamo la casetta dell'acqua di Scauri: acqua buona, controllata e a chilometro zero per tutta la comunità. Le analisi vengono aggiornate periodicamente e sono liberamente consultabili.",
-      water_address_label: "Dove si trova",
-      water_address: "Casetta dell'acqua di Scauri — Minturno (LT)",
-      water_analysis_label: "Analisi dell'acqua",
-      water_analysis_period: "Aggiornate — I semestre 2026",
+      water_desc: "Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.",
+      water_where_label: "Dove si trova",
+      water_where_value: "Scauri — Minturno (LT) · Aperta 24 ore su 24, 7 giorni su 7",
       water_directions: "Come arrivare",
-      water_analysis_link: "Scarica le analisi (PDF)",
+      water_analysis_link: "Analisi dell'acqua aggiornate (PDF) →",
 
-      contact_eyebrow: "Contatti",
-      contact_title: "Parla con noi",
-      legal_name: "Associazione Giovanile Marimeo",
+      price_title: "Quanto costa l'acqua",
+      price_type_head: "Tipo",
+      price_non_head: "Non associati",
+      price_mem_head: "Associati",
+      price_row1: "Naturale (ambiente o fredda)",
+      price_row2: "Frizzante fredda",
+      price_note: "Con la tessera da socio l'acqua ti costa meno ogni giorno.",
 
-      join_title: "Diventa socio",
-      join_intro: "Unisciti a Marimeo! Compila il modulo della campagna associativa 2026: ti ricontatteremo per darti il benvenuto.",
-      join_button: "Compila il modulo",
-      join_note: "Campagna associativa 2026",
+      why_eyebrow: "Perché associarsi",
+      why_title: "Bene per te, bene per il territorio",
+      why1_title: "Acqua a prezzo scontato",
+      why1_text: "Con la tessera paghi 5 cent/L invece di 8: risparmi ad ogni ricarica.",
+      why2_title: "Sostieni un progetto locale",
+      why2_text: "La tua quota aiuta a ridurre plastica e CO₂ nel nostro territorio.",
+      why3_title: "Partecipi alla vita associativa",
+      why3_text: "Entri in una comunità di giovani attivi e puoi dire la tua.",
+      why4_title: "Fai crescere nuove idee",
+      why4_text: "Contribuisci a nuove iniziative per l'ambiente e per la comunità.",
+      why_cta: "Assòciati ora — 10 €",
 
+      how_eyebrow: "Come funziona",
+      how_title: "Associarsi è semplice",
+      step1_title: "Compila il modulo",
+      step1_text: "Invia la richiesta di iscrizione online in pochi minuti.",
+      step2_title: "Versa la quota",
+      step2_text: "La quota associativa 2026 è di 10 € l'anno.",
+      step3_title: "Ricevi la tessera",
+      step3_text: "Ottieni la tessera ricaricabile, da ricaricare direttamente alla casetta.",
+      step4_title: "Usa la casetta",
+      step4_text: "Riempi la borraccia quando vuoi e risparmia acqua e plastica ogni giorno.",
+
+      future_eyebrow: "Progetti futuri",
+      future_title: "Un'associazione viva e in crescita",
+      future_text: "La casetta dell'acqua è solo l'inizio. Vogliamo far crescere nuove iniziative per l'ambiente, i giovani e la comunità: educazione ambientale, qualità dell'aria, spazi di incontro e molto altro.",
+      future_tag1: "🌿 Ambiente",
+      future_tag2: "🧑‍🤝‍🧑 Giovani",
+      future_tag3: "🏘️ Territorio",
+      future_tag4: "🌬️ Qualità dell'aria",
+      future_tag5: "📚 Educazione ambientale",
+      future_tag6: "✨ Comunità",
+
+      faq_eyebrow: "Domande frequenti",
+      faq_title: "Le risposte alle domande più comuni",
+      faq_q1: "Quanto costa associarsi?",
+      faq_a1: "Per il 2026 la quota associativa è di 10 € l'anno. Include la tessera ricaricabile che ti dà l'acqua a prezzo scontato.",
+      faq_q2: "Dove si trova la casetta dell'acqua?",
+      faq_a2: "A Scauri, nel comune di Minturno (LT). È aperta a tutti 24 ore su 24, 7 giorni su 7. Trovi la posizione esatta nella mappa qui sopra.",
+      faq_q3: "Posso usare la casetta anche se non sono associato?",
+      faq_a3: "Sì, la casetta è aperta a tutti. Gli associati, però, pagano meno: 5 cent/L invece di 8 per l'acqua naturale e 7 invece di 10 per la frizzante.",
+      faq_q4: "Come posso ricaricare la tessera?",
+      faq_a4: "La tessera si ricarica direttamente alla casetta dell'acqua, in modo semplice e veloce.",
+      faq_q5: "Come posso aiutare Marimeo?",
+      faq_a5: "Associandoti, usando la casetta con la tua borraccia, partecipando alle iniziative e seguendoci sui social. Ogni gesto conta!",
+
+      final_cta_title: "Entra anche tu in Marimeo",
+      final_cta_text: "Associati per il 2026 con soli 10 €: acqua scontata e un territorio con meno plastica.",
+      final_cta_btn: "Compila il modulo di iscrizione",
+      final_cta_note: "Campagna associativa 2026",
+
+      footer_tagline: "Associazione giovanile per un territorio con meno plastica.",
+      footer_contact_title: "Contatti",
+      footer_links_title: "Documenti",
       footer_statute: "Statuto (PDF)",
-      footer_copy: "Associazione Giovanile Marimeo. Tutti i diritti riservati.",
+      footer_analysis: "Analisi dell'acqua (PDF)",
+      footer_copy: "Associazione Giovanile Marimeo",
       back_top: "Torna su ↑"
     },
 
     /* ---------------- ENGLISH ---------------- */
     en: {
-      meta_desc: "Marimeo Youth Association: activities, events, the Scauri water house and chances to grow together. Discover who we are and become a member.",
-      nav_about: "About us",
-      nav_activities: "Activities",
+      meta_desc: "Marimeo is a youth association helping the local community use less plastic thanks to the Scauri water house. Join from €10.",
+
+      nav_about: "About",
+      nav_impact: "Impact",
       nav_water: "Water house",
-      nav_contact: "Contact",
+      nav_join_us: "Membership",
+      nav_faq: "FAQ",
       nav_join: "Become a member",
 
-      hero_eyebrow: "Youth association",
-      hero_title: "Growing together,<br />one activity at a time.",
-      hero_lead: "Marimeo is the meeting point for young people in our area: we organise activities, events and projects to spend time together, learn and make a difference.",
+      hero_eyebrow: "Youth association · Environment",
+      hero_title: "Drink better.<br />Save plastic.<br />Cut CO₂.",
+      hero_lead: "Marimeo is a youth association helping the local community use less plastic thanks to the water house.",
       hero_cta1: "Become a member",
-      hero_cta2: "Explore activities",
+      hero_cta2: "Discover the project",
+      hero_badge1: "Water from €0.05/L",
+      hero_badge2: "Open 24/7",
+      hero_badge3: "Less plastic, less CO₂",
 
       about_eyebrow: "About us",
-      about_title: "A community of young people full of ideas",
-      about_p1: "Marimeo was born from the desire of a group of young people to create an open, inclusive and energetic space. We believe that young people can be protagonists of change in their community.",
-      about_p2: "Through cultural, social and recreational activities we offer chances to meet, get involved and turn ideas into real projects.",
-      value1_title: "Inclusion",
-      value1_text: "A space for everyone, where each person can feel at home.",
-      value2_title: "Participation",
-      value2_text: "Everyone's ideas matter and turn into action.",
-      value3_title: "Community",
-      value3_text: "Together we grow, we learn and we have fun.",
+      about_title: "A group of young people for a community with less plastic",
+      about_p1: "Marimeo is a non-profit youth association. We believe that the small daily actions of many people, put together, can really reduce pollution in our area.",
+      about_p2: "That's why we run the Scauri water house: a simple way to drink good water, spend less and cut thousands of plastic bottles every year. Less single-use plastic, fewer trucks carrying water, less CO₂.",
+      about_p3: "You don't need to be an environmental expert: just refill your bottle. We'll do the rest together.",
 
-      act_eyebrow: "Activities & Events",
-      act_title: "What we do",
-      act_intro: "Some of the activities and events we organise throughout the year.",
-      card1_tag: "Event",
-      card1_title: "Themed evenings",
-      card1_meta: "📅 Every month · 📍 Marimeo venue",
-      card1_text: "Music, games and moments to share, open to all young people.",
-      card2_tag: "Project",
-      card2_title: "Creative workshops",
-      card2_meta: "📅 Autumn · 📍 To be defined",
-      card2_text: "Art, music and volunteering paths to express your talents.",
-      card3_tag: "Community",
-      card3_title: "Local volunteering",
-      card3_meta: "📅 All year round · 📍 Our area",
-      card3_text: "Local initiatives to give a hand to those in need.",
+      impact_eyebrow: "Our impact",
+      impact_title: "Numbers that make a difference",
+      impact_intro: "Every bottle refilled at the water house is less plastic and saved CO₂. Here's what we achieved together in 2025.",
+      impact_water_label: "litres of water dispensed",
+      impact_bottles_label: "plastic bottles avoided",
+      impact_co2_label: "of CO₂ saved",
+      impact_note: "Estimated figures for 2025.",
 
       water_eyebrow: "Our project",
       water_title: "The Scauri water house",
-      water_desc: "We run the Scauri water house: good, tested, zero-kilometre water for the whole community. The analyses are updated regularly and freely available to consult.",
-      water_address_label: "Where it is",
-      water_address: "Scauri water house — Minturno (LT), Italy",
-      water_analysis_label: "Water analysis",
-      water_analysis_period: "Updated — 1st half of 2026",
+      water_desc: "Good, tested, zero-kilometre water, open to everyone. Still or sparkling, room temperature or chilled: bring your bottle and fill it up.",
+      water_where_label: "Where it is",
+      water_where_value: "Scauri — Minturno (LT), Italy · Open 24 hours a day, 7 days a week",
       water_directions: "Get directions",
-      water_analysis_link: "Download the analysis (PDF)",
+      water_analysis_link: "Latest water analysis (PDF) →",
 
-      contact_eyebrow: "Contact",
-      contact_title: "Get in touch",
-      legal_name: "Marimeo Youth Association",
+      price_title: "How much the water costs",
+      price_type_head: "Type",
+      price_non_head: "Non-members",
+      price_mem_head: "Members",
+      price_row1: "Still (room temp. or chilled)",
+      price_row2: "Sparkling, chilled",
+      price_note: "With the membership card, water costs you less every day.",
 
-      join_title: "Become a member",
-      join_intro: "Join Marimeo! Fill in the 2026 membership campaign form: we'll get back to you to welcome you.",
-      join_button: "Fill in the form",
-      join_note: "2026 membership campaign",
+      why_eyebrow: "Why join",
+      why_title: "Good for you, good for the community",
+      why1_title: "Discounted water",
+      why1_text: "With the card you pay €0.05/L instead of €0.08: you save with every refill.",
+      why2_title: "Support a local project",
+      why2_text: "Your membership fee helps reduce plastic and CO₂ in our area.",
+      why3_title: "Take part in the association",
+      why3_text: "Join a community of active young people and have your say.",
+      why4_title: "Help new ideas grow",
+      why4_text: "Contribute to new initiatives for the environment and the community.",
+      why_cta: "Join now — €10",
 
+      how_eyebrow: "How it works",
+      how_title: "Joining is simple",
+      step1_title: "Fill in the form",
+      step1_text: "Send your membership request online in just a few minutes.",
+      step2_title: "Pay the fee",
+      step2_text: "The 2026 membership fee is €10 per year.",
+      step3_title: "Get your card",
+      step3_text: "Receive the rechargeable card, to top up directly at the water house.",
+      step4_title: "Use the water house",
+      step4_text: "Refill your bottle whenever you like and save water and plastic every day.",
+
+      future_eyebrow: "Future projects",
+      future_title: "A living, growing association",
+      future_text: "The water house is only the beginning. We want to grow new initiatives for the environment, young people and the community: environmental education, air quality, meeting spaces and much more.",
+      future_tag1: "🌿 Environment",
+      future_tag2: "🧑‍🤝‍🧑 Youth",
+      future_tag3: "🏘️ Local area",
+      future_tag4: "🌬️ Air quality",
+      future_tag5: "📚 Environmental education",
+      future_tag6: "✨ Community",
+
+      faq_eyebrow: "Frequently asked questions",
+      faq_title: "Answers to the most common questions",
+      faq_q1: "How much does membership cost?",
+      faq_a1: "For 2026 the membership fee is €10 per year. It includes the rechargeable card that gives you water at a discounted price.",
+      faq_q2: "Where is the water house?",
+      faq_a2: "In Scauri, in the municipality of Minturno (LT), Italy. It's open to everyone 24 hours a day, 7 days a week. You'll find the exact location on the map above.",
+      faq_q3: "Can I use the water house even if I'm not a member?",
+      faq_a3: "Yes, the water house is open to everyone. Members, however, pay less: €0.05/L instead of €0.08 for still water and €0.07 instead of €0.10 for sparkling.",
+      faq_q4: "How can I recharge the card?",
+      faq_a4: "The card is topped up directly at the water house, quickly and easily.",
+      faq_q5: "How can I help Marimeo?",
+      faq_a5: "By joining, using the water house with your own bottle, taking part in our initiatives and following us on social media. Every action counts!",
+
+      final_cta_title: "Join Marimeo too",
+      final_cta_text: "Become a member for 2026 for just €10: discounted water and a community with less plastic.",
+      final_cta_btn: "Fill in the membership form",
+      final_cta_note: "2026 membership campaign",
+
+      footer_tagline: "Youth association for a community with less plastic.",
+      footer_contact_title: "Contact",
+      footer_links_title: "Documents",
       footer_statute: "Statute (PDF)",
-      footer_copy: "Marimeo Youth Association. All rights reserved.",
+      footer_analysis: "Water analysis (PDF)",
+      footer_copy: "Marimeo Youth Association",
       back_top: "Back to top ↑"
     },
 
     /* ---------------- FRANÇAIS ---------------- */
     fr: {
-      meta_desc: "Association de Jeunesse Marimeo : activités, événements, la maison de l'eau de Scauri et occasions de grandir ensemble. Découvrez qui nous sommes et devenez membre.",
+      meta_desc: "Marimeo est une association de jeunesse qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau de Scauri. Adhésion dès 10 €.",
+
       nav_about: "À propos",
-      nav_activities: "Activités",
+      nav_impact: "Impact",
       nav_water: "Maison de l'eau",
-      nav_contact: "Contact",
+      nav_join_us: "Adhésion",
+      nav_faq: "FAQ",
       nav_join: "Devenir membre",
 
-      hero_eyebrow: "Association de jeunesse",
-      hero_title: "Grandir ensemble,<br />une activité à la fois.",
-      hero_lead: "Marimeo est le point de rencontre des jeunes du territoire : nous organisons des activités, des événements et des projets pour être ensemble, apprendre et laisser une trace.",
+      hero_eyebrow: "Association de jeunesse · Environnement",
+      hero_title: "Buvez mieux.<br />Économisez le plastique.<br />Réduisez le CO₂.",
+      hero_lead: "Marimeo est une association de jeunesse qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau.",
       hero_cta1: "Devenir membre",
-      hero_cta2: "Découvrir les activités",
+      hero_cta2: "Découvrir le projet",
+      hero_badge1: "Eau dès 0,05 €/L",
+      hero_badge2: "Ouverte 24h/24",
+      hero_badge3: "Moins de plastique, moins de CO₂",
 
       about_eyebrow: "À propos",
-      about_title: "Une communauté de jeunes pleine d'idées",
-      about_p1: "Marimeo est né de l'envie d'un groupe de jeunes de créer un espace ouvert, inclusif et plein d'énergie. Nous croyons que les jeunes peuvent être les protagonistes du changement dans leur communauté.",
-      about_p2: "À travers des activités culturelles, sociales et récréatives, nous offrons des occasions de se rencontrer, de s'impliquer et de transformer les idées en projets concrets.",
-      value1_title: "Inclusion",
-      value1_text: "Un espace pour tous, où chacun peut se sentir chez soi.",
-      value2_title: "Participation",
-      value2_text: "Les idées de chacun comptent et deviennent action.",
-      value3_title: "Communauté",
-      value3_text: "Ensemble, on grandit, on apprend et on s'amuse.",
+      about_title: "Une association de jeunes pour un territoire avec moins de plastique",
+      about_p1: "Marimeo est une association de jeunesse à but non lucratif. Nous croyons que les petits gestes quotidiens, additionnés, peuvent vraiment réduire la pollution de notre territoire.",
+      about_p2: "C'est pourquoi nous gérons la maison de l'eau de Scauri : une façon simple de boire une bonne eau, de dépenser moins et d'éviter des milliers de bouteilles en plastique chaque année. Moins de plastique jetable, moins de camions transportant de l'eau, moins de CO₂.",
+      about_p3: "Pas besoin d'être un expert de l'environnement : il suffit de remplir sa gourde. Le reste, on le fait ensemble.",
 
-      act_eyebrow: "Activités & Événements",
-      act_title: "Ce que nous faisons",
-      act_intro: "Quelques activités et événements que nous organisons tout au long de l'année.",
-      card1_tag: "Événement",
-      card1_title: "Soirées à thème",
-      card1_meta: "📅 Chaque mois · 📍 Siège Marimeo",
-      card1_text: "Musique, jeux et moments de partage ouverts à tous les jeunes.",
-      card2_tag: "Projet",
-      card2_title: "Ateliers créatifs",
-      card2_meta: "📅 Automne · 📍 À définir",
-      card2_text: "Des parcours d'art, de musique et de bénévolat pour exprimer ses talents.",
-      card3_tag: "Communauté",
-      card3_title: "Bénévolat local",
-      card3_meta: "📅 Toute l'année · 📍 Le territoire",
-      card3_text: "Des initiatives locales pour donner un coup de main à ceux qui en ont besoin.",
+      impact_eyebrow: "Notre impact",
+      impact_title: "Des chiffres qui font la différence",
+      impact_intro: "Chaque gourde remplie à la maison de l'eau, c'est moins de plastique et du CO₂ économisé. Voici ce que nous avons accompli ensemble en 2025.",
+      impact_water_label: "litres d'eau distribués",
+      impact_bottles_label: "bouteilles en plastique évitées",
+      impact_co2_label: "de CO₂ économisé",
+      impact_note: "Chiffres estimés pour 2025.",
 
       water_eyebrow: "Notre projet",
       water_title: "La maison de l'eau de Scauri",
-      water_desc: "Nous gérons la maison de l'eau de Scauri : une eau bonne, contrôlée et de proximité pour toute la communauté. Les analyses sont mises à jour régulièrement et librement consultables.",
-      water_address_label: "Où se trouve-t-elle",
-      water_address: "Maison de l'eau de Scauri — Minturno (LT), Italie",
-      water_analysis_label: "Analyses de l'eau",
-      water_analysis_period: "À jour — 1er semestre 2026",
+      water_desc: "Une eau bonne, contrôlée et de proximité, ouverte à tous. Plate ou pétillante, à température ambiante ou fraîche : apportez votre gourde et remplissez-la.",
+      water_where_label: "Où se trouve-t-elle",
+      water_where_value: "Scauri — Minturno (LT), Italie · Ouverte 24h/24, 7j/7",
       water_directions: "Itinéraire",
-      water_analysis_link: "Télécharger les analyses (PDF)",
+      water_analysis_link: "Analyses de l'eau à jour (PDF) →",
 
-      contact_eyebrow: "Contact",
-      contact_title: "Parlez avec nous",
-      legal_name: "Association de Jeunesse Marimeo",
+      price_title: "Combien coûte l'eau",
+      price_type_head: "Type",
+      price_non_head: "Non-membres",
+      price_mem_head: "Membres",
+      price_row1: "Plate (ambiante ou fraîche)",
+      price_row2: "Pétillante, fraîche",
+      price_note: "Avec la carte de membre, l'eau vous coûte moins cher chaque jour.",
 
-      join_title: "Devenir membre",
-      join_intro: "Rejoignez Marimeo ! Remplissez le formulaire de la campagne d'adhésion 2026 : nous vous recontacterons pour vous accueillir.",
-      join_button: "Remplir le formulaire",
-      join_note: "Campagne d'adhésion 2026",
+      why_eyebrow: "Pourquoi adhérer",
+      why_title: "Bon pour vous, bon pour le territoire",
+      why1_title: "Eau à prix réduit",
+      why1_text: "Avec la carte, vous payez 0,05 €/L au lieu de 0,08 : vous économisez à chaque recharge.",
+      why2_title: "Soutenez un projet local",
+      why2_text: "Votre cotisation aide à réduire le plastique et le CO₂ sur notre territoire.",
+      why3_title: "Participez à la vie associative",
+      why3_text: "Rejoignez une communauté de jeunes actifs et faites entendre votre voix.",
+      why4_title: "Faites grandir de nouvelles idées",
+      why4_text: "Contribuez à de nouvelles initiatives pour l'environnement et la communauté.",
+      why_cta: "Adhérez maintenant — 10 €",
 
+      how_eyebrow: "Comment ça marche",
+      how_title: "Adhérer, c'est simple",
+      step1_title: "Remplissez le formulaire",
+      step1_text: "Envoyez votre demande d'adhésion en ligne en quelques minutes.",
+      step2_title: "Réglez la cotisation",
+      step2_text: "La cotisation 2026 est de 10 € par an.",
+      step3_title: "Recevez la carte",
+      step3_text: "Obtenez la carte rechargeable, à recharger directement à la maison de l'eau.",
+      step4_title: "Utilisez la maison de l'eau",
+      step4_text: "Remplissez votre gourde quand vous voulez et économisez eau et plastique chaque jour.",
+
+      future_eyebrow: "Projets futurs",
+      future_title: "Une association vivante et en croissance",
+      future_text: "La maison de l'eau n'est qu'un début. Nous voulons développer de nouvelles initiatives pour l'environnement, les jeunes et la communauté : éducation à l'environnement, qualité de l'air, espaces de rencontre et bien plus encore.",
+      future_tag1: "🌿 Environnement",
+      future_tag2: "🧑‍🤝‍🧑 Jeunes",
+      future_tag3: "🏘️ Territoire",
+      future_tag4: "🌬️ Qualité de l'air",
+      future_tag5: "📚 Éducation à l'environnement",
+      future_tag6: "✨ Communauté",
+
+      faq_eyebrow: "Questions fréquentes",
+      faq_title: "Les réponses aux questions les plus courantes",
+      faq_q1: "Combien coûte l'adhésion ?",
+      faq_a1: "Pour 2026, la cotisation est de 10 € par an. Elle comprend la carte rechargeable qui vous donne l'eau à prix réduit.",
+      faq_q2: "Où se trouve la maison de l'eau ?",
+      faq_a2: "À Scauri, dans la commune de Minturno (LT), en Italie. Elle est ouverte à tous 24h/24, 7j/7. Vous trouverez l'emplacement exact sur la carte ci-dessus.",
+      faq_q3: "Puis-je utiliser la maison de l'eau même sans être membre ?",
+      faq_a3: "Oui, la maison de l'eau est ouverte à tous. Les membres paient cependant moins : 0,05 €/L au lieu de 0,08 pour l'eau plate et 0,07 au lieu de 0,10 pour la pétillante.",
+      faq_q4: "Comment recharger la carte ?",
+      faq_a4: "La carte se recharge directement à la maison de l'eau, simplement et rapidement.",
+      faq_q5: "Comment puis-je aider Marimeo ?",
+      faq_a5: "En adhérant, en utilisant la maison de l'eau avec votre gourde, en participant aux initiatives et en nous suivant sur les réseaux sociaux. Chaque geste compte !",
+
+      final_cta_title: "Rejoignez Marimeo, vous aussi",
+      final_cta_text: "Adhérez pour 2026 pour seulement 10 € : eau à prix réduit et un territoire avec moins de plastique.",
+      final_cta_btn: "Remplir le formulaire d'adhésion",
+      final_cta_note: "Campagne d'adhésion 2026",
+
+      footer_tagline: "Association de jeunesse pour un territoire avec moins de plastique.",
+      footer_contact_title: "Contact",
+      footer_links_title: "Documents",
       footer_statute: "Statuts (PDF)",
-      footer_copy: "Association de Jeunesse Marimeo. Tous droits réservés.",
+      footer_analysis: "Analyses de l'eau (PDF)",
+      footer_copy: "Association de Jeunesse Marimeo",
       back_top: "Retour en haut ↑"
     }
   };
@@ -217,7 +349,6 @@
   }
 
   function detectInitialLang() {
-    // 1) preferenza salvata  2) lingua del browser  3) default
     let saved = null;
     try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
     return normalize(saved) || normalize(navigator.language) || DEFAULT_LANG;
@@ -225,7 +356,6 @@
 
   let currentLang = detectInitialLang();
 
-  /* ---------- Applicazione delle traduzioni ---------- */
   function t(key) {
     const dict = translations[currentLang] || translations[DEFAULT_LANG];
     return (key in dict) ? dict[key] : (translations[DEFAULT_LANG][key] || "");
@@ -236,13 +366,12 @@
     currentLang = chosen;
     document.documentElement.lang = chosen;
 
-    // Testo degli elementi con data-i18n
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       const value = t(key);
       if (value === "") return;
       if (el.hasAttribute("data-i18n-html")) {
-        el.innerHTML = value;             // solo per contenuti interni fidati (es. <br>)
+        el.innerHTML = value;
       } else if (el.tagName === "META") {
         el.setAttribute("content", value);
       } else {
@@ -250,21 +379,17 @@
       }
     });
 
-    // Stato dei pulsanti lingua
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       const isActive = btn.getAttribute("data-lang") === chosen;
       btn.classList.toggle("is-active", isActive);
       btn.setAttribute("aria-pressed", String(isActive));
     });
 
-    // Salva preferenza
     try { localStorage.setItem(STORAGE_KEY, chosen); } catch (e) {}
 
-    // Notifica altri script (es. main.js) del cambio lingua
     document.dispatchEvent(new CustomEvent("marimeo:langchange", { detail: { lang: chosen } }));
   }
 
-  /* ---------- Collega i pulsanti ---------- */
   function initSwitcher() {
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => applyTranslations(btn.getAttribute("data-lang")));
@@ -278,7 +403,6 @@
     initSwitcher();
   }
 
-  /* ---------- API pubblica ---------- */
   window.i18n = {
     t: t,
     get lang() { return currentLang; },
