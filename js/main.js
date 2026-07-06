@@ -35,31 +35,4 @@
   /* ---------- Anno corrente nel footer ---------- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-  /* ---------- Validazione form iscrizione ---------- */
-  const form = document.querySelector(".signup-form");
-  if (form) {
-    const note = form.querySelector(".form-note");
-    // Fallback nel caso i18n non sia disponibile
-    const tr = (key) => (window.i18n ? window.i18n.t(key) : "");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const nome = form.nome.value.trim();
-      const email = form.email.value.trim();
-      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-      if (!nome || !emailOk) {
-        note.textContent = tr("form_error") || "Controlla nome ed email.";
-        note.className = "form-note err";
-        return;
-      }
-
-      // SEGNAPOSTO: qui va collegato l'invio reale (es. servizio email/Formspree)
-      const msg = tr("form_success") || "Grazie {name}!";
-      note.textContent = msg.replace("{name}", nome);
-      note.className = "form-note ok";
-      form.reset();
-    });
-  }
 })();

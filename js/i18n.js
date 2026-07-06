@@ -12,16 +12,17 @@
   const translations = {
     /* ---------------- ITALIANO (default) ---------------- */
     it: {
-      meta_desc: "Marimeo è un'associazione giovanile: attività, eventi e occasioni per crescere insieme. Scopri chi siamo e come partecipare.",
+      meta_desc: "Associazione Giovanile Marimeo: attività, eventi, la casetta dell'acqua di Scauri e occasioni per crescere insieme. Scopri chi siamo e diventa socio.",
       nav_about: "Chi siamo",
       nav_activities: "Attività",
+      nav_water: "Casetta dell'acqua",
       nav_contact: "Contatti",
-      nav_join: "Iscriviti",
+      nav_join: "Diventa socio",
 
       hero_eyebrow: "Associazione giovanile",
       hero_title: "Crescere insieme,<br />un'attività alla volta.",
       hero_lead: "Marimeo è il punto di ritrovo dei giovani del territorio: organizziamo attività, eventi e progetti per stare insieme, imparare e lasciare il segno.",
-      hero_cta1: "Unisciti a noi",
+      hero_cta1: "Diventa socio",
       hero_cta2: "Scopri le attività",
 
       about_eyebrow: "Chi siamo",
@@ -51,35 +52,43 @@
       card3_meta: "📅 Tutto l'anno · 📍 Territorio",
       card3_text: "Iniziative sul territorio per dare una mano a chi ne ha bisogno.",
 
+      water_eyebrow: "Il nostro progetto",
+      water_title: "La casetta dell'acqua di Scauri",
+      water_desc: "Gestiamo la casetta dell'acqua di Scauri: acqua buona, controllata e a chilometro zero per tutta la comunità. Le analisi vengono aggiornate periodicamente e sono liberamente consultabili.",
+      water_address_label: "Dove si trova",
+      water_address: "Casetta dell'acqua di Scauri — Minturno (LT)",
+      water_analysis_label: "Analisi dell'acqua",
+      water_analysis_period: "Aggiornate — I semestre 2026",
+      water_directions: "Come arrivare",
+      water_analysis_link: "Scarica le analisi (PDF)",
+
       contact_eyebrow: "Contatti",
       contact_title: "Parla con noi",
-      contact_address: "Via Esempio 1, Città",
+      legal_name: "Associazione Giovanile Marimeo",
 
-      signup_title: "Iscriviti a Marimeo",
-      signup_intro: "Compila il modulo: ti ricontatteremo per darti il benvenuto!",
-      field_name: "Nome e cognome",
-      field_email: "Email",
-      field_message: "Messaggio (facoltativo)",
-      signup_submit: "Invia richiesta",
-      form_error: "Controlla nome ed email prima di inviare.",
-      form_success: "Grazie {name}! Ti ricontatteremo presto. 🎉",
+      join_title: "Diventa socio",
+      join_intro: "Unisciti a Marimeo! Compila il modulo della campagna associativa 2026: ti ricontatteremo per darti il benvenuto.",
+      join_button: "Compila il modulo",
+      join_note: "Campagna associativa 2026",
 
+      footer_statute: "Statuto (PDF)",
       footer_copy: "Associazione Giovanile Marimeo. Tutti i diritti riservati.",
       back_top: "Torna su ↑"
     },
 
     /* ---------------- ENGLISH ---------------- */
     en: {
-      meta_desc: "Marimeo is a youth association: activities, events and chances to grow together. Discover who we are and how to take part.",
+      meta_desc: "Marimeo Youth Association: activities, events, the Scauri water house and chances to grow together. Discover who we are and become a member.",
       nav_about: "About us",
       nav_activities: "Activities",
+      nav_water: "Water house",
       nav_contact: "Contact",
-      nav_join: "Join us",
+      nav_join: "Become a member",
 
       hero_eyebrow: "Youth association",
       hero_title: "Growing together,<br />one activity at a time.",
       hero_lead: "Marimeo is the meeting point for young people in our area: we organise activities, events and projects to spend time together, learn and make a difference.",
-      hero_cta1: "Join us",
+      hero_cta1: "Become a member",
       hero_cta2: "Explore activities",
 
       about_eyebrow: "About us",
@@ -109,35 +118,43 @@
       card3_meta: "📅 All year round · 📍 Our area",
       card3_text: "Local initiatives to give a hand to those in need.",
 
+      water_eyebrow: "Our project",
+      water_title: "The Scauri water house",
+      water_desc: "We run the Scauri water house: good, tested, zero-kilometre water for the whole community. The analyses are updated regularly and freely available to consult.",
+      water_address_label: "Where it is",
+      water_address: "Scauri water house — Minturno (LT), Italy",
+      water_analysis_label: "Water analysis",
+      water_analysis_period: "Updated — 1st half of 2026",
+      water_directions: "Get directions",
+      water_analysis_link: "Download the analysis (PDF)",
+
       contact_eyebrow: "Contact",
       contact_title: "Get in touch",
-      contact_address: "1 Example Street, City",
+      legal_name: "Marimeo Youth Association",
 
-      signup_title: "Join Marimeo",
-      signup_intro: "Fill in the form: we'll get back to you to welcome you!",
-      field_name: "Full name",
-      field_email: "Email",
-      field_message: "Message (optional)",
-      signup_submit: "Send request",
-      form_error: "Please check your name and email before sending.",
-      form_success: "Thank you {name}! We'll be in touch soon. 🎉",
+      join_title: "Become a member",
+      join_intro: "Join Marimeo! Fill in the 2026 membership campaign form: we'll get back to you to welcome you.",
+      join_button: "Fill in the form",
+      join_note: "2026 membership campaign",
 
+      footer_statute: "Statute (PDF)",
       footer_copy: "Marimeo Youth Association. All rights reserved.",
       back_top: "Back to top ↑"
     },
 
     /* ---------------- FRANÇAIS ---------------- */
     fr: {
-      meta_desc: "Marimeo est une association de jeunesse : activités, événements et occasions de grandir ensemble. Découvrez qui nous sommes et comment participer.",
+      meta_desc: "Association de Jeunesse Marimeo : activités, événements, la maison de l'eau de Scauri et occasions de grandir ensemble. Découvrez qui nous sommes et devenez membre.",
       nav_about: "À propos",
       nav_activities: "Activités",
+      nav_water: "Maison de l'eau",
       nav_contact: "Contact",
-      nav_join: "Nous rejoindre",
+      nav_join: "Devenir membre",
 
       hero_eyebrow: "Association de jeunesse",
       hero_title: "Grandir ensemble,<br />une activité à la fois.",
       hero_lead: "Marimeo est le point de rencontre des jeunes du territoire : nous organisons des activités, des événements et des projets pour être ensemble, apprendre et laisser une trace.",
-      hero_cta1: "Nous rejoindre",
+      hero_cta1: "Devenir membre",
       hero_cta2: "Découvrir les activités",
 
       about_eyebrow: "À propos",
@@ -167,19 +184,26 @@
       card3_meta: "📅 Toute l'année · 📍 Le territoire",
       card3_text: "Des initiatives locales pour donner un coup de main à ceux qui en ont besoin.",
 
+      water_eyebrow: "Notre projet",
+      water_title: "La maison de l'eau de Scauri",
+      water_desc: "Nous gérons la maison de l'eau de Scauri : une eau bonne, contrôlée et de proximité pour toute la communauté. Les analyses sont mises à jour régulièrement et librement consultables.",
+      water_address_label: "Où se trouve-t-elle",
+      water_address: "Maison de l'eau de Scauri — Minturno (LT), Italie",
+      water_analysis_label: "Analyses de l'eau",
+      water_analysis_period: "À jour — 1er semestre 2026",
+      water_directions: "Itinéraire",
+      water_analysis_link: "Télécharger les analyses (PDF)",
+
       contact_eyebrow: "Contact",
       contact_title: "Parlez avec nous",
-      contact_address: "1 rue de l'Exemple, Ville",
+      legal_name: "Association de Jeunesse Marimeo",
 
-      signup_title: "Rejoindre Marimeo",
-      signup_intro: "Remplissez le formulaire : nous vous recontacterons pour vous accueillir !",
-      field_name: "Nom et prénom",
-      field_email: "E-mail",
-      field_message: "Message (facultatif)",
-      signup_submit: "Envoyer la demande",
-      form_error: "Vérifiez votre nom et votre e-mail avant d'envoyer.",
-      form_success: "Merci {name} ! Nous vous recontacterons bientôt. 🎉",
+      join_title: "Devenir membre",
+      join_intro: "Rejoignez Marimeo ! Remplissez le formulaire de la campagne d'adhésion 2026 : nous vous recontacterons pour vous accueillir.",
+      join_button: "Remplir le formulaire",
+      join_note: "Campagne d'adhésion 2026",
 
+      footer_statute: "Statuts (PDF)",
       footer_copy: "Association de Jeunesse Marimeo. Tous droits réservés.",
       back_top: "Retour en haut ↑"
     }

@@ -299,6 +299,38 @@ h1, h2, h3 {
 .card-meta { font-size: 0.9rem; color: var(--color-text-soft); margin: 0 0 0.6rem; }
 .card p:last-child { color: var(--color-text-soft); margin-bottom: 0; }
 
+/* ---------- Casetta dell'acqua ---------- */
+.water-grid { margin-top: 2rem; }
+.water-info { max-width: 720px; }
+.water-info > p { color: var(--color-text-soft); font-size: 1.08rem; }
+.water-list {
+  list-style: none;
+  margin: 1.8rem 0 2rem;
+  padding: 0;
+  display: grid;
+  gap: 1.1rem;
+}
+.water-list li { display: flex; align-items: flex-start; gap: 0.9rem; }
+.water-ico {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: var(--color-accent-soft);
+  font-size: 1.3rem;
+}
+.water-list div { display: flex; flex-direction: column; }
+.water-label {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+}
+.water-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+
 /* ---------- Contatti ---------- */
 .contact-grid {
   display: grid;
@@ -310,6 +342,24 @@ h1, h2, h3 {
 .contact-list li { display: flex; align-items: center; gap: 0.7rem; font-size: 1.05rem; }
 .contact-list a { color: var(--color-text); text-decoration: none; }
 .contact-list a:hover { color: var(--color-primary); text-decoration: underline; }
+
+.tag-pec {
+  font-family: var(--font-head);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  background: var(--color-bg-alt);
+  padding: 0.1rem 0.45rem;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+.legal-info {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  line-height: 1.7;
+}
 
 .socials { display: flex; gap: 0.8rem; }
 .social {
@@ -334,6 +384,13 @@ h1, h2, h3 {
 }
 .signup-card h3 { font-size: 1.4rem; }
 .signup-card > p { color: var(--color-text-soft); margin-top: 0; }
+.signup-card .btn-full { margin-top: 0.5rem; }
+.join-note {
+  text-align: center;
+  margin: 0.9rem 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+}
 .signup-form { display: grid; gap: 1.1rem; margin-top: 1.2rem; }
 .field { display: grid; gap: 0.35rem; }
 .field label { font-family: var(--font-head); font-weight: 600; font-size: 0.95rem; }
@@ -371,16 +428,24 @@ h1, h2, h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
 }
-.footer-copy { margin: 0; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; }
-.back-top {
-  color: #fff;
+.footer-copy { margin: 0.6rem 0 0; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.4rem;
+}
+.footer-links a {
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-family: var(--font-head);
   font-weight: 600;
+  font-size: 0.95rem;
 }
-.back-top:hover { color: var(--color-accent); }
+.footer-links a:hover { color: var(--color-accent); }
+.back-top { color: #fff; }
 
 /* ============================================================
    Responsive
