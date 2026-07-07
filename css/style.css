@@ -108,6 +108,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-head); font-weight: 800; font-size: 1.25rem; color: var(--color-text);
 }
 .brand-logo { border-radius: 10px; }
+.brand-wordmark { height: 30px; width: auto; display: block; }
 .header-right { display: flex; align-items: center; gap: 1.2rem; }
 
 /* ---------- Selettore lingua ---------- */
@@ -305,6 +306,7 @@ th.price-hl { background: var(--color-tint-green); border-radius: 8px 8px 0 0; }
   display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem;
   padding-bottom: 2rem; border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
+.footer-logo { height: 92px; width: auto; margin-bottom: 0.4rem; }
 .footer-col h4 { font-size: 1rem; margin-bottom: 1rem; color: #fff; }
 .footer-col .brand-name { color: #fff; }
 .footer-tagline { color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-top: 0.8rem; max-width: 30ch; }
