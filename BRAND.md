@@ -3,29 +3,28 @@
 Fonte unica dell'identità visiva del sito. I valori qui sotto corrispondono alle
 variabili CSS in `css/style.css` (`:root`). Aggiorna prima qui, poi nel CSS.
 
+Stile: **brutalista** (bordi neri spessi, ombre dure, blocchi di colore piatti).
+
 ## Logo
-- File: `assets/img/favicon.png` (M bianca su cerchio blu).
-- Usato come favicon e come marchio nell'header/footer.
-- **Da migliorare**: fornire una versione vettoriale (SVG) e una PNG grande
-  (512×512) per icona home / social preview.
+- `favicon.png` — marchio "M" (scheda browser).
+- `marimeo-wordmark-black.png` / `-white.png` — wordmark "marimeo.org" (navbar).
+- `marimeo-logo-white.png` / `-black.png` — logo completo (footer).
 
 ## Colori
 | Ruolo | Hex | Variabile CSS |
 |---|---|---|
-| Blu primario (acqua) | `#1466C7` | `--color-primary` |
-| Blu scuro (hover) | `#0F4E9B` | `--color-primary-dark` |
-| Verde (natura) | `#2FA36B` | `--color-accent` |
-| Verde scuro | `#217A4F` | `--color-accent-dark` |
-| Azzurro chiaro (sfondi) | `#EAF3FB` | `--color-tint` |
-| Verde chiaro (sfondi) | `#E6F4EC` | `--color-tint-green` |
-| Testo | `#12233A` | `--color-text` |
-| Testo tenue | `#4A5A6E` | `--color-text-soft` |
+| Blu primario | `#2F4798` | `--blue` |
+| Nero (bordi/testo) | `#000000` | `--black` |
+| Azzurro (sfondi/hero) | `#A6DDF4` | `--cyan` |
+| Giallo (CTA) | `#FFF203` | `--yellow` |
+| Bianco | `#FFFFFF` | `--white` |
 
-Palette ispirata ad acqua, natura e sostenibilità (azzurro, verde, bianco).
+Elementi chiave: bordi `3px solid #000`, ombre dure `6px 6px 0 #000`,
+pulsanti gialli che si "premono" all'hover.
 
 ## Tipografia
-- Font unico: **Nunito** — titoli 600–800, testo 400–600.
-- Caricato da Google Fonts in `index.html`.
+- **Titoli: Dimbo** (font display arrotondato) — ospitato in `assets/fonts/`.
+- Testo: Helvetica/Arial di sistema, pesi 500–800.
 
 ## Tono di voce
 Positivo, giovane, concreto, accessibile. Niente burocratese.
