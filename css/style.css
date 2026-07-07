@@ -23,7 +23,7 @@
   --shadow-sm: 4px 4px 0 var(--black);
 
   --font-head: "Dimbo", "Arial Black", system-ui, sans-serif;
-  --font-body: "Helvetica Neue", Arial, system-ui, sans-serif;
+  --font-body: "Nunito", "Helvetica Neue", Arial, system-ui, sans-serif;
 
   --container: 1160px;
   --space: clamp(3.5rem, 8vw, 6rem);
