@@ -315,16 +315,16 @@ th.price-hl { background: var(--color-tint-green); border-radius: 8px 8px 0 0; }
 .footer-funding { text-align: center; padding-top: 1.8rem; }
 .funding-card {
   display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center;
-  gap: 1.4rem 2rem; background: #fff; border-radius: 12px; padding: 0.9rem 1.4rem;
+  gap: 1.6rem 3rem;
 }
-.funding-group { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.funding-group { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
 .funding-cap {
-  font-family: var(--font-head); font-weight: 700; font-size: 0.6rem;
-  text-transform: uppercase; letter-spacing: 0.1em; color: #7a8699;
+  font-family: var(--font-head); font-weight: 700; font-size: 0.62rem;
+  text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.5);
 }
-.funding-row { display: flex; align-items: center; gap: 1.3rem; }
-.funding-logo { height: 40px; width: auto; }
-.funding-sep { width: 1px; align-self: stretch; background: #e2e8f0; }
+.funding-row { display: flex; align-items: center; gap: 1.6rem; }
+.funding-logo { height: 42px; width: auto; }
+.funding-sep { width: 1px; align-self: stretch; background: rgba(255, 255, 255, 0.16); }
 .footer-funding-text {
   display: block; margin: 1rem auto 0; max-width: 56ch;
   font-size: 0.72rem; color: rgba(255, 255, 255, 0.45); line-height: 1.5;
