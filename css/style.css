@@ -220,6 +220,33 @@ th.price-hl { background: var(--color-tint-green); border-radius: 8px 8px 0 0; }
 }
 .card h3 { font-size: 1.15rem; }
 .card p { color: var(--color-text-soft); margin: 0; }
+.cards-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card-list { list-style: none; margin: 0.9rem 0 0; padding: 0; display: grid; gap: 0.6rem; }
+.card-list li {
+  position: relative; padding-left: 1.7rem; color: var(--color-text-soft); font-size: 0.98rem;
+}
+.card-list li::before {
+  content: "✓"; position: absolute; left: 0; top: 0;
+  color: var(--color-accent); font-weight: 800; font-family: var(--font-head);
+}
+.card p + .card-list { margin-top: 0.9rem; }
+
+/* ---------- Come iscriverti ---------- */
+.enroll {
+  margin-top: 3rem; background: #fff; border: 1px solid var(--color-border);
+  border-radius: var(--radius); padding: clamp(1.5rem, 4vw, 2.2rem); box-shadow: var(--shadow-sm);
+}
+.enroll-title { font-size: 1.4rem; margin-bottom: 1.3rem; }
+.enroll-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 2.5rem); }
+.enroll-option { display: flex; flex-direction: column; align-items: flex-start; }
+.enroll-ico {
+  display: inline-grid; place-items: center; width: 44px; height: 44px;
+  border-radius: 12px; background: var(--color-tint); font-size: 1.4rem; margin-bottom: 0.8rem;
+}
+.enroll-option h4 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+.enroll-option p { color: var(--color-text-soft); margin: 0 0 1rem; }
+.enroll-option p a { color: var(--color-primary); font-weight: 600; }
+.enroll-option .btn { margin-top: auto; }
 
 /* ---------- Come funziona (steps) ---------- */
 .steps {
@@ -309,6 +336,7 @@ th.price-hl { background: var(--color-tint-green); border-radius: 8px 8px 0 0; }
    ============================================================ */
 @media (max-width: 860px) {
   .water-layout { grid-template-columns: 1fr; }
+  .enroll-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-col:first-child { grid-column: 1 / -1; }
 }
