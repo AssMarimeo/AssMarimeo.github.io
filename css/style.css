@@ -123,8 +123,8 @@ h1, h2, h3, h4 {
   padding: 0 0.8rem; cursor: pointer; box-shadow: 3px 3px 0 var(--black);
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
-/* Stessa altezza per il pulsante lingua e il CTA "Diventa socio" della nav */
-.lang-trigger, .nav-menu .btn { height: 46px; }
+/* Stessa altezza per il pulsante lingua e il CTA "Diventa socio" */
+.lang-trigger, .header-cta { height: 46px; }
 .lang-trigger:hover { background: var(--cyan); }
 .lang-trigger:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--black); }
 .lang-caret { font-family: var(--font-body); font-size: 0.75rem; transition: transform 0.15s ease; }
@@ -340,9 +340,16 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 .bn-cta { background: var(--yellow); }
 
 @media (max-width: 760px) {
-  .nav { display: none; }          /* niente hamburger: navigazione in basso */
+  .nav { display: none; }          /* i link vanno nella tab bar in basso */
   .bottom-nav { display: flex; }
   body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+
+  /* Logo -50%, header compatto: restano logo + Diventa socio + lingua */
+  .brand-wordmark { height: 17px; }
+  .header-right { gap: 0.5rem; }
+  .header-cta { font-size: 0.85rem; padding: 0 0.7rem; }
+  .lang-trigger { padding: 0 0.55rem; }
+  .header-inner { min-height: 60px; }
 }
 @media (max-width: 560px) { .funding-group { flex-direction: column; gap: 0.4rem; } }
 
