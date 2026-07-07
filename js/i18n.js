@@ -131,6 +131,7 @@
 
       footer_tagline: "Associazione giovanile per un territorio con meno plastica.",
       footer_contact_title: "Contatti",
+      footer_social_title: "Social",
       footer_links_title: "Documenti",
       footer_statute: "Statuto (PDF)",
       footer_analysis: "Analisi dell'acqua (PDF)",
@@ -259,6 +260,7 @@
 
       footer_tagline: "Youth association for a community with less plastic.",
       footer_contact_title: "Contact",
+      footer_social_title: "Social",
       footer_links_title: "Documents",
       footer_statute: "Statute (PDF)",
       footer_analysis: "Water analysis (PDF)",
@@ -387,6 +389,7 @@
 
       footer_tagline: "Association de jeunesse pour un territoire avec moins de plastique.",
       footer_contact_title: "Contact",
+      footer_social_title: "Réseaux",
       footer_links_title: "Documents",
       footer_statute: "Statuts (PDF)",
       footer_analysis: "Analyses de l'eau (PDF)",

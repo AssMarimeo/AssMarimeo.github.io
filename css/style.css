@@ -303,7 +303,7 @@ th.price-hl { background: var(--color-tint-green); border-radius: 8px 8px 0 0; }
 /* ---------- Footer ---------- */
 .site-footer { background: var(--color-text); color: #fff; padding-block: 3rem 2rem; }
 .footer-grid {
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem;
+  display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem;
   padding-bottom: 2rem; border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 .footer-logo { height: 92px; width: auto; margin-bottom: 0.4rem; }
