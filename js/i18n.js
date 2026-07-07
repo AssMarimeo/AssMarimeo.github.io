@@ -20,6 +20,7 @@
       nav_join_us: "Associarsi",
       nav_faq: "FAQ",
       nav_join: "Diventa socio",
+      nav_join_short: "Socio",
 
       hero_eyebrow: "Associazione giovanile · Ambiente",
       hero_title: "Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.",
@@ -149,6 +150,7 @@
       nav_join_us: "Membership",
       nav_faq: "FAQ",
       nav_join: "Become a member",
+      nav_join_short: "Join",
 
       hero_eyebrow: "Youth association · Environment",
       hero_title: "Drink better.<br />Save plastic.<br />Cut CO₂.",
@@ -278,6 +280,7 @@
       nav_join_us: "Adhésion",
       nav_faq: "FAQ",
       nav_join: "Devenir membre",
+      nav_join_short: "Adhérer",
 
       hero_eyebrow: "Association de jeunesse · Environnement",
       hero_title: "Buvez mieux.<br />Économisez le plastique.<br />Réduisez le CO₂.",

@@ -320,20 +320,29 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 }
 @media (max-width: 992px) { .funding-sep { display: none; } }
 
+/* ---------- Bottom nav (stile app mobile) ---------- */
+.bottom-nav {
+  display: none;
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  justify-content: space-around; align-items: stretch;
+  background: var(--white); border-top: var(--border);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.bn-item {
+  flex: 1 1 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  text-decoration: none; color: var(--black);
+  font-family: var(--font-head); font-size: 0.62rem; line-height: 1.05; text-align: center;
+  padding: 0.5rem 0.15rem;
+}
+.bn-item + .bn-item { border-left: 2px solid var(--black); }
+.bn-ico { font-size: 1.35rem; line-height: 1; }
+.bn-item:active { background: var(--cyan); }
+.bn-cta { background: var(--yellow); }
+
 @media (max-width: 760px) {
-  .nav-toggle { display: flex; }
-  .nav-menu {
-    position: fixed; inset: 72px 0 auto 0; flex-direction: column; align-items: stretch; gap: 0.3rem;
-    background: var(--white); border-bottom: var(--border); padding: 1rem 1.25rem 1.5rem;
-    box-shadow: var(--shadow); transform: translateY(-140%); transition: transform 0.28s ease;
-    max-height: calc(100vh - 72px); overflow-y: auto;
-  }
-  .nav-menu.open { transform: translateY(0); }
-  .nav-menu a { padding: 0.6rem 0.2rem; font-size: 1.2rem; }
-  .nav-menu .btn { justify-content: center; margin-top: 0.4rem; }
-  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  .nav { display: none; }          /* niente hamburger: navigazione in basso */
+  .bottom-nav { display: flex; }
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
 }
 @media (max-width: 560px) { .funding-group { flex-direction: column; gap: 0.4rem; } }
 
