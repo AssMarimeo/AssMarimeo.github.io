@@ -76,7 +76,7 @@
       save_card_intro: "Con lo sconto riservato agli associati, una famiglia di 3-4 persone può risparmiare:",
       save_card_b1: "fino a 80 € l'anno rispetto ai prezzi standard",
       save_card_b2: "fino a 1.000 € rispetto all'acqua in bottiglia di plastica!",
-      why_cta: "Assòciati ora — 10 €",
+      why_cta: "Diventa socio",
 
       how_eyebrow: "Come funziona",
       how_title: "Associarsi è semplice",
@@ -202,7 +202,7 @@
       save_card_intro: "With the members' discount, a family of 3-4 people can save:",
       save_card_b1: "up to €80 a year compared with standard prices",
       save_card_b2: "up to €1,000 compared with bottled plastic water!",
-      why_cta: "Join now — €10",
+      why_cta: "Become a member",
 
       how_eyebrow: "How it works",
       how_title: "Joining is simple",
@@ -328,7 +328,7 @@
       save_card_intro: "Avec la réduction réservée aux membres, une famille de 3 à 4 personnes peut économiser :",
       save_card_b1: "jusqu'à 80 € par an par rapport aux prix standard",
       save_card_b2: "jusqu'à 1 000 € par rapport à l'eau en bouteille plastique !",
-      why_cta: "Adhérez maintenant — 10 €",
+      why_cta: "Devenir membre",
 
       how_eyebrow: "Comment ça marche",
       how_title: "Adhérer, c'est simple",
