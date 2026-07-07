@@ -124,8 +124,10 @@
       final_cta_note: "Campagna associativa 2026",
 
       funding_eyebrow: "Con il sostegno di",
+      funding_support: "con il sostegno di",
+      funding_within: "nell'ambito di",
       funding_title: "Progetto finanziato dalla Regione Lazio",
-      funding_text: "Questo progetto è stato realizzato grazie al contributo della Regione Lazio, nell'ambito dell'avviso pubblico «Vitamina G» 2022.",
+      funding_text: "Progetto realizzato con il contributo della Regione Lazio, avviso pubblico «Vitamina G» 2022.",
 
       footer_tagline: "Associazione giovanile per un territorio con meno plastica.",
       footer_contact_title: "Contatti",
@@ -250,8 +252,10 @@
       final_cta_note: "2026 membership campaign",
 
       funding_eyebrow: "With the support of",
+      funding_support: "with the support of",
+      funding_within: "as part of",
       funding_title: "Project funded by the Lazio Region",
-      funding_text: "This project was made possible thanks to the contribution of the Lazio Region, under the public call «Vitamina G» 2022.",
+      funding_text: "Project carried out with the contribution of the Lazio Region, public call «Vitamina G» 2022.",
 
       footer_tagline: "Youth association for a community with less plastic.",
       footer_contact_title: "Contact",
@@ -376,8 +380,10 @@
       final_cta_note: "Campagne d'adhésion 2026",
 
       funding_eyebrow: "Avec le soutien de",
+      funding_support: "avec le soutien de",
+      funding_within: "dans le cadre de",
       funding_title: "Projet financé par la Région du Latium",
-      funding_text: "Ce projet a été réalisé grâce à la contribution de la Région du Latium, dans le cadre de l'appel public «Vitamina G» 2022.",
+      funding_text: "Projet réalisé avec le soutien de la Région du Latium, appel public «Vitamina G» 2022.",
 
       footer_tagline: "Association de jeunesse pour un territoire avec moins de plastique.",
       footer_contact_title: "Contact",

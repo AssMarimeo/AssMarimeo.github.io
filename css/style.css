@@ -299,18 +299,6 @@ th.price-hl { background: var(--color-tint-green); border-radius: 8px 8px 0 0; }
 .cta-band p { font-size: 1.1rem; opacity: 0.95; margin-bottom: 1.8rem; }
 .cta-note { font-size: 0.9rem; opacity: 0.85; margin: 1rem 0 0; }
 
-/* ---------- Finanziamento (Regione Lazio) ---------- */
-.funding { text-align: center; padding-block: clamp(2.5rem, 6vw, 4rem); }
-.funding .section-eyebrow { text-align: center; }
-.funding-title { font-size: clamp(1.3rem, 3vw, 1.8rem); }
-.funding-text { color: var(--color-text-soft); max-width: 62ch; margin: 0 auto 2rem; }
-.funding-logos {
-  max-width: 900px; margin-inline: auto;
-  background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
-  padding: clamp(1rem, 3vw, 1.8rem); box-shadow: var(--shadow-sm);
-}
-.funding-logos img { width: 100%; height: auto; }
-
 /* ---------- Footer ---------- */
 .site-footer { background: var(--color-text); color: #fff; padding-block: 3rem 2rem; }
 .footer-grid {
@@ -323,9 +311,33 @@ th.price-hl { background: var(--color-tint-green); border-radius: 8px 8px 0 0; }
 .footer-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
 .footer-list a { color: rgba(255, 255, 255, 0.82); text-decoration: none; font-size: 0.95rem; }
 .footer-list a:hover { color: var(--color-accent); }
+/* Finanziamento Regione Lazio — loghi singoli nel footer */
+.footer-funding { text-align: center; padding-top: 1.8rem; }
+.funding-card {
+  display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 1.4rem 2rem; background: #fff; border-radius: 12px; padding: 0.9rem 1.4rem;
+}
+.funding-group { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.funding-cap {
+  font-family: var(--font-head); font-weight: 700; font-size: 0.6rem;
+  text-transform: uppercase; letter-spacing: 0.1em; color: #7a8699;
+}
+.funding-row { display: flex; align-items: center; gap: 1.3rem; }
+.funding-logo { height: 40px; width: auto; }
+.funding-sep { width: 1px; align-self: stretch; background: #e2e8f0; }
+.footer-funding-text {
+  display: block; margin: 1rem auto 0; max-width: 56ch;
+  font-size: 0.72rem; color: rgba(255, 255, 255, 0.45); line-height: 1.5;
+}
+
+@media (max-width: 560px) {
+  .funding-sep { display: none; }
+  .funding-logo { height: 34px; }
+}
+
 .footer-bottom {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 1rem; padding-top: 1.5rem;
+  gap: 1rem; padding-top: 1.8rem; margin-top: 1.8rem; border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 .footer-copy { margin: 0; color: rgba(255, 255, 255, 0.6); font-size: 0.85rem; }
 .back-top { color: #fff; text-decoration: none; font-family: var(--font-head); font-weight: 600; }
