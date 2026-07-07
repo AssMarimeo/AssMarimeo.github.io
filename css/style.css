@@ -112,16 +112,36 @@ h1, h2, h3, h4 {
 .brand-wordmark { height: 34px; width: auto; display: block; }
 .header-right { display: flex; align-items: center; gap: 1.1rem; }
 
-/* ---------- Lang switch ---------- */
-.lang-switch { display: inline-flex; border: var(--border); border-radius: 8px; overflow: hidden; }
-.lang-btn {
-  font-family: var(--font-head); font-size: 0.9rem; color: var(--black);
-  background: var(--white); border: none; border-right: 2px solid var(--black);
-  padding: 0.4rem 0.7rem; cursor: pointer;
+/* ---------- Lang switch (dropdown) ---------- */
+.lang-switch { position: relative; }
+.lang-trigger {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--font-head); font-size: 1rem; color: var(--black);
+  background: var(--white); border: var(--border); border-radius: 8px;
+  padding: 0.4rem 0.7rem; cursor: pointer; box-shadow: 3px 3px 0 var(--black);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
-.lang-btn:last-child { border-right: none; }
+.lang-trigger:hover { background: var(--cyan); }
+.lang-trigger:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--black); }
+.lang-caret { font-family: var(--font-body); font-size: 0.75rem; transition: transform 0.15s ease; }
+.lang-trigger[aria-expanded="true"] .lang-caret { transform: rotate(180deg); }
+
+.lang-menu {
+  position: absolute; top: calc(100% + 6px); right: 0; z-index: 60;
+  list-style: none; margin: 0; padding: 0; min-width: 150px;
+  background: var(--white); border: var(--border); border-radius: 10px;
+  box-shadow: var(--shadow); overflow: hidden; display: none;
+}
+.lang-menu.open { display: block; }
+.lang-btn {
+  display: block; width: 100%; text-align: left;
+  font-family: var(--font-head); font-size: 1rem; color: var(--black);
+  background: var(--white); border: none; border-bottom: 2px solid var(--black);
+  padding: 0.6rem 0.9rem; cursor: pointer;
+}
+.lang-menu li:last-child .lang-btn { border-bottom: none; }
 .lang-btn:hover { background: var(--cyan); }
-.lang-btn.is-active { background: var(--blue); color: var(--white); }
+.lang-btn.is-active { background: var(--yellow); }
 
 /* ---------- Nav ---------- */
 .nav-menu { display: flex; align-items: center; gap: 1.3rem; list-style: none; margin: 0; padding: 0; }

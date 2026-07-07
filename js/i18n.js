@@ -442,15 +442,47 @@
       btn.setAttribute("aria-pressed", String(isActive));
     });
 
+    // Etichetta del pulsante dropdown (codice lingua)
+    const current = document.querySelector(".lang-current");
+    if (current) current.textContent = chosen.toUpperCase();
+
     try { localStorage.setItem(STORAGE_KEY, chosen); } catch (e) {}
 
     document.dispatchEvent(new CustomEvent("marimeo:langchange", { detail: { lang: chosen } }));
   }
 
   function initSwitcher() {
+    const trigger = document.querySelector(".lang-trigger");
+    const menu = document.querySelector(".lang-menu");
+
+    const closeMenu = () => {
+      if (!menu) return;
+      menu.classList.remove("open");
+      if (trigger) trigger.setAttribute("aria-expanded", "false");
+    };
+
+    if (trigger && menu) {
+      trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const open = menu.classList.toggle("open");
+        trigger.setAttribute("aria-expanded", String(open));
+      });
+      // Chiudi cliccando fuori o con Esc
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".lang-switch")) closeMenu();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+    }
+
     document.querySelectorAll(".lang-btn").forEach((btn) => {
-      btn.addEventListener("click", () => applyTranslations(btn.getAttribute("data-lang")));
+      btn.addEventListener("click", () => {
+        applyTranslations(btn.getAttribute("data-lang"));
+        closeMenu();
+      });
     });
+
     applyTranslations(currentLang);
   }
 
