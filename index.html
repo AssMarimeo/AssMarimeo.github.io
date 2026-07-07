@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- ===== Sprite icone (Lucide, ISC) ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></symbol><symbol id="i-impact" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></symbol><symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" /></symbol><symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></symbol><symbol id="i-faq" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></symbol><symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol><symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M13 5v2" /><path d="M13 17v2" /><path d="M13 11v2" /></symbol><symbol id="i-save" viewBox="0 0 24 24"><path d="M11 17h3v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a3.16 3.16 0 0 0 2-2h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-1a5 5 0 0 0-2-4V3a4 4 0 0 0-3.2 1.6l-.3.4H11a6 6 0 0 0-6 6v1a5 5 0 0 0 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z" /><path d="M16 10h.01" /><path d="M2 8v1a2 2 0 0 0 2 2h1" /></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></symbol><symbol id="i-map" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z" /><path d="M15 5.764v15" /><path d="M9 3.236v15" /></symbol><symbol id="i-wind" viewBox="0 0 24 24"><path d="M12.8 19.6A2 2 0 1 0 14 16H2" /><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" /><path d="M9.8 4.4A2 2 0 1 1 11 8H2" /></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></symbol></svg>
+
   <!-- ===== Header / Navbar ===== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
@@ -60,11 +63,11 @@
 
   <!-- ===== Barra di navigazione mobile (in basso, stile app) ===== -->
   <nav class="bottom-nav" aria-label="Navigazione mobile">
-    <a href="#chi-siamo" class="bn-item"><span class="bn-ico" aria-hidden="true">👋</span><span class="bn-label" data-i18n="nav_about">Chi siamo</span></a>
-    <a href="#impatto" class="bn-item"><span class="bn-ico" aria-hidden="true">📊</span><span class="bn-label" data-i18n="nav_impact">Impatto</span></a>
-    <a href="#casetta" class="bn-item"><span class="bn-ico" aria-hidden="true">💧</span><span class="bn-label" data-i18n="nav_water">Casetta</span></a>
-    <a href="#associarsi" class="bn-item"><span class="bn-ico" aria-hidden="true">🤝</span><span class="bn-label" data-i18n="nav_join_us">Associarsi</span></a>
-    <a href="#faq" class="bn-item"><span class="bn-ico" aria-hidden="true">❓</span><span class="bn-label" data-i18n="nav_faq">FAQ</span></a>
+    <a href="#chi-siamo" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-users"></use></svg><span class="bn-label" data-i18n="nav_about">Chi siamo</span></a>
+    <a href="#impatto" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-impact"></use></svg><span class="bn-label" data-i18n="nav_impact">Impatto</span></a>
+    <a href="#casetta" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-droplet"></use></svg><span class="bn-label" data-i18n="nav_water">Casetta</span></a>
+    <a href="#associarsi" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-handshake"></use></svg><span class="bn-label" data-i18n="nav_join_us">Associarsi</span></a>
+    <a href="#faq" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-faq"></use></svg><span class="bn-label" data-i18n="nav_faq">FAQ</span></a>
   </nav>
 
   <main>
@@ -82,9 +85,9 @@
           <a href="#casetta" class="btn btn-ghost btn-lg" data-i18n="hero_cta2">Scopri il progetto</a>
         </div>
         <ul class="hero-badges">
-          <li><span aria-hidden="true">💧</span> <span data-i18n="hero_badge1">Acqua da 5 cent/L</span></li>
-          <li><span aria-hidden="true">🕒</span> <span data-i18n="hero_badge2">Aperta 24/7</span></li>
-          <li><span aria-hidden="true">🌱</span> <span data-i18n="hero_badge3">Meno plastica, meno CO₂</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-droplet"></use></svg> <span data-i18n="hero_badge1">Acqua da 5 cent/L</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-clock"></use></svg> <span data-i18n="hero_badge2">Aperta 24/7</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-leaf"></use></svg> <span data-i18n="hero_badge3">Meno plastica, meno CO₂</span></li>
         </ul>
       </div>
     </section>
@@ -217,7 +220,7 @@
         <h2 class="section-title" data-i18n="why_title">Diventa socio Marimeo</h2>
         <div class="cards cards-3">
           <article class="card">
-            <span class="card-ico" aria-hidden="true">🎫</span>
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-ticket"></use></svg></span>
             <h3 data-i18n="join_card_title">Diventa socio</h3>
             <p data-i18n="join_card_intro">La quota associativa annuale è di 10 €. Ricevi la tessera che ti permette di:</p>
             <ul class="card-list">
@@ -227,7 +230,7 @@
             </ul>
           </article>
           <article class="card">
-            <span class="card-ico" aria-hidden="true">💧</span>
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-droplet"></use></svg></span>
             <h3 data-i18n="drink_card_title">BIVI</h3>
             <ul class="card-list">
               <li data-i18n="drink_card_b1">Ogni litro erogato evita circa 50 g di CO₂ rispetto alle bottiglie di plastica.</li>
@@ -237,7 +240,7 @@
             </ul>
           </article>
           <article class="card">
-            <span class="card-ico" aria-hidden="true">💶</span>
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-save"></use></svg></span>
             <h3 data-i18n="save_card_title">Risparmia</h3>
             <p data-i18n="save_card_intro">Con lo sconto riservato agli associati, una famiglia di 3-4 persone può risparmiare:</p>
             <ul class="card-list">
@@ -284,14 +287,14 @@
           <h3 class="enroll-title" data-i18n="enroll_title">Come iscriverti</h3>
           <div class="enroll-grid">
             <div class="enroll-option">
-              <span class="enroll-ico" aria-hidden="true">💻</span>
+              <span class="enroll-ico" aria-hidden="true"><svg class="ico"><use href="#i-monitor"></use></svg></span>
               <h4 data-i18n="enroll_online_title">Online</h4>
               <p data-i18n="enroll_online_text">Compila il modulo di iscrizione: sarai ricontattato per la consegna della tessera socio e l'erogazione dell'acqua.</p>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form"
                  class="btn btn-sm" target="_blank" rel="noopener" data-i18n="enroll_online_btn">Compila il modulo</a>
             </div>
             <div class="enroll-option">
-              <span class="enroll-ico" aria-hidden="true">📍</span>
+              <span class="enroll-ico" aria-hidden="true"><svg class="ico"><use href="#i-pin"></use></svg></span>
               <h4 data-i18n="enroll_office_title">Di persona</h4>
               <p data-i18n="enroll_office_text" data-i18n-html>Oppure presso lo studio del nostro presidente, Ing. Salvatore Pirolozzi, in Via Castagna 38 — Scauri, previo appuntamento via email (<a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a>) o sui canali social.</p>
             </div>
@@ -311,12 +314,12 @@
           dell'aria, spazi di incontro e molto altro.
         </p>
         <ul class="tag-list">
-          <li data-i18n="future_tag1">🌿 Ambiente</li>
-          <li data-i18n="future_tag2">🧑‍🤝‍🧑 Giovani</li>
-          <li data-i18n="future_tag3">🏘️ Territorio</li>
-          <li data-i18n="future_tag4">🌬️ Qualità dell'aria</li>
-          <li data-i18n="future_tag5">📚 Educazione ambientale</li>
-          <li data-i18n="future_tag6">✨ Comunità</li>
+          <li><svg class="ico"><use href="#i-leaf"></use></svg> <span data-i18n="future_tag1">Ambiente</span></li>
+          <li><svg class="ico"><use href="#i-users"></use></svg> <span data-i18n="future_tag2">Giovani</span></li>
+          <li><svg class="ico"><use href="#i-map"></use></svg> <span data-i18n="future_tag3">Territorio</span></li>
+          <li><svg class="ico"><use href="#i-wind"></use></svg> <span data-i18n="future_tag4">Qualità dell'aria</span></li>
+          <li><svg class="ico"><use href="#i-book"></use></svg> <span data-i18n="future_tag5">Educazione ambientale</span></li>
+          <li><svg class="ico"><use href="#i-sparkles"></use></svg> <span data-i18n="future_tag6">Comunità</span></li>
         </ul>
       </div>
     </section>
