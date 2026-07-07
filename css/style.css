@@ -116,11 +116,13 @@ h1, h2, h3, h4 {
 .lang-switch { position: relative; }
 .lang-trigger {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  font-family: var(--font-head); font-size: 1rem; color: var(--black);
-  background: var(--white); border: var(--border); border-radius: 8px;
-  padding: 0.4rem 0.7rem; cursor: pointer; box-shadow: 3px 3px 0 var(--black);
+  font-family: var(--font-head); font-size: 0.95rem; color: var(--black);
+  background: var(--white); border: var(--border); border-radius: 10px;
+  padding: 0 0.8rem; cursor: pointer; box-shadow: 3px 3px 0 var(--black);
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+/* Stessa altezza per il pulsante lingua e il CTA "Diventa socio" della nav */
+.lang-trigger, .nav-menu .btn { height: 46px; }
 .lang-trigger:hover { background: var(--cyan); }
 .lang-trigger:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--black); }
 .lang-caret { font-family: var(--font-body); font-size: 0.75rem; transition: transform 0.15s ease; }
