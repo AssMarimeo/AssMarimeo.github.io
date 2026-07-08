@@ -24,7 +24,7 @@
       nav_join_short: "Socio",
 
       hero_eyebrow: "Associazione Giovanile Marimeo",
-      hero_title: "Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.",
+      hero_title: "Combattiamo il consumo di plastica e le emissioni di CO₂, un litro d'acqua alla volta.",
       hero_lead: "Marimeo è un'associazione giovanile ambientale che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri, a Minturno (LT).",
       hero_cta1: "Diventa socio",
       hero_cta2: "Scopri il progetto",
@@ -155,7 +155,7 @@
       nav_join_short: "Join",
 
       hero_eyebrow: "Marimeo Youth Association",
-      hero_title: "Drink better.<br />Save plastic.<br />Cut CO₂.",
+      hero_title: "We fight plastic use and CO₂ emissions, one litre of water at a time.",
       hero_lead: "Marimeo is a youth environmental association helping the local community use less plastic thanks to the Scauri water house, in Minturno (LT), Italy.",
       hero_cta1: "Become a member",
       hero_cta2: "Discover the project",
@@ -286,7 +286,7 @@
       nav_join_short: "Adhérer",
 
       hero_eyebrow: "Association de Jeunesse Marimeo",
-      hero_title: "Buvez mieux.<br />Économisez le plastique.<br />Réduisez le CO₂.",
+      hero_title: "Nous combattons la consommation de plastique et les émissions de CO₂, un litre d'eau à la fois.",
       hero_lead: "Marimeo est une association de jeunesse écologiste qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau de Scauri, à Minturno (LT), en Italie.",
       hero_cta1: "Devenir membre",
       hero_cta2: "Découvrir le projet",

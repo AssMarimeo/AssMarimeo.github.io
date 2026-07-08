@@ -201,7 +201,9 @@ h1, h2, h3, h4 {
 /* Stesso principio del .narrow: la hero sta sulla griglia, sono i suoi blocchi
    a fermarsi a 900px. */
 .hero-inner > * { max-width: 900px; }
-.hero h1 { font-size: clamp(3.1rem, 9.9vw, 6.6rem); }
+/* Il claim e' una frase intera, non tre parole: a 6.6rem occupava mezza pagina.
+   Qui la misura resta 900px e a stare sotto le tre righe ci pensa il font-size. */
+.hero h1 { font-size: clamp(2.35rem, 6.4vw, 4.5rem); }
 /* L'eyebrow vive dentro l'h1 (le keyword devono stare nel titolo), quindi va
    sottratto all'ereditarieta' di font-size/line-height del titolo stesso. */
 .hero-title .eyebrow { line-height: 1.4; }
