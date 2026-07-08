@@ -89,7 +89,7 @@
       step3_text: "Ottieni la tessera ricaricabile, da ricaricare direttamente alla casetta.",
       step4_title: "Usa la casetta",
       step4_text: "Riempi la borraccia quando vuoi e risparmia acqua e plastica ogni giorno.",
-      enroll_title: "Come iscriverti",
+      enroll_title: "Come associarsi",
       enroll_online_title: "Online",
       enroll_online_text: "Compila il modulo di iscrizione: sarai ricontattato per la consegna della tessera socio e l'erogazione dell'acqua.",
       enroll_online_btn: "Compila il modulo",
