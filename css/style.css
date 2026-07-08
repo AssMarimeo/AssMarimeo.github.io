@@ -247,11 +247,13 @@ h1, h2, h3, h4 {
   list-style: none; margin: 0; padding: 0;
 }
 
+/* Senza bordo: a separarle dalla pagina bianca ci pensa il colore di fondo.
+   La casetta prende il celeste, i progetti futuri il verde. */
 .project-card {
   min-width: 0;
   display: flex; flex-direction: column;
-  background: var(--white); color: var(--black);
-  border: var(--border); border-radius: 14px; padding: 1.8rem;
+  background: var(--cyan); color: var(--black);
+  border-radius: 14px; padding: 1.8rem;
 }
 
 .project-status {
@@ -263,7 +265,6 @@ h1, h2, h3, h4 {
 .project-name { font-size: clamp(1.9rem, 3.4vw, 2.7rem); max-width: 22ch; }
 .project-desc { font-size: 1.15rem; font-weight: 500; max-width: 62ch; margin: 0 0 1.8rem; }
 
-/* La card dei progetti futuri eredita il verde che era della vecchia sezione. */
 .project-next { background: var(--green); color: var(--ink); }
 .project-next .project-status { background: var(--yellow); color: var(--black); }
 .project-cta { align-self: flex-start; }
