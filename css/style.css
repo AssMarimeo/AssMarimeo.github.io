@@ -23,6 +23,12 @@
   --shadow: 6px 6px 0 var(--black);
   --shadow-sm: 4px 4px 0 var(--black);
 
+  /* Stacco delle barre flottanti (navbar e tab bar) dai bordi dello schermo. */
+  --bn-gap: 16px;
+  /* Altezza della navbar: min-height di .header-inner + i 3px di bordo per lato.
+     Serve a hero e scroll-padding, che devono sapere quanto spazio occupa. */
+  --header-h: 78px;
+
   --font-head: "Dimbo", "Arial Black", system-ui, sans-serif;
   --font-body: "Nunito", "Helvetica Neue", Arial, system-ui, sans-serif;
 
@@ -31,7 +37,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+/* Le ancore devono fermarsi sotto la navbar flottante, non dietro. */
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--bn-gap) + var(--header-h) + 12px); }
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -99,13 +106,28 @@ h1, h2, h3, h4 {
 .hero-badges .ico, .tag-list .ico { width: 1.25em; height: 1.25em; }
 
 /* ---------- Header ---------- */
+/* Navbar flottante: fixed e non sticky, altrimenti occuperebbe il flusso e
+   l'hero partirebbe sotto di lei, scoprendo il bianco del body attorno alla
+   pillola. Niente ombra: l'ombra netta e' l'affordance di click, e la barra
+   non e' un elemento cliccabile (lo sono i bottoni al suo interno). */
 .site-header {
-  position: sticky; top: 0; z-index: 50;
-  background: var(--white); border-bottom: var(--border);
+  position: fixed; top: var(--bn-gap); left: 0; right: 0; z-index: 50;
+  width: min(100% - var(--bn-gap) * 2, var(--container));
+  margin-inline: auto;
+  background: var(--white); border: var(--border); border-radius: 16px;
 }
+/* Il .container aggiungerebbe il suo margine a quello della barra: lo neutralizzo. */
+.site-header .container { width: auto; margin-inline: 0; padding-inline: 1rem; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; }
+/* Rigidi entrambi: da flex item comprimibili, il wordmark (altezza fissa,
+   max-width 100%) veniva schiacciato in orizzontale e si deformava. */
+.brand, .header-right { flex: 0 0 auto; }
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--black); }
-.brand-wordmark { height: clamp(17px, 4.5vw, 34px); width: auto; display: block; }
+/* Logo fluido: larghezza proporzionale allo schermo (32vw), con un minimo che ne
+   preserva la leggibilita' e un massimo pari alla dimensione desktop.
+   Dimensiono la larghezza e lascio l'altezza automatica: gli attributi width/height
+   dell'<img> danno l'aspect-ratio, quindi non si deforma. */
+.brand-wordmark { width: clamp(100px, 32vw, 213px); height: auto; max-width: none; display: block; }
 .header-right { display: flex; align-items: center; gap: 1.1rem; }
 
 /* ---------- Lang switch (dropdown) ---------- */
@@ -143,14 +165,23 @@ h1, h2, h3, h4 {
 
 /* ---------- Nav ---------- */
 .nav-menu { display: flex; align-items: center; gap: 1.3rem; list-style: none; margin: 0; padding: 0; }
+/* Senza questi, quando lo spazio stringe i link si comprimono e "Chi siamo"
+   va a capo dentro la barra. Meglio che la nav resti rigida. */
+.nav-menu li { flex: 0 0 auto; }
 .nav-menu a {
   text-decoration: none; font-family: var(--font-head); font-size: 1.26rem; color: var(--black);
+  white-space: nowrap;
 }
 .nav-menu a:hover { color: var(--blue); text-decoration: underline; text-decoration-thickness: 3px; }
 .nav-menu .btn { color: var(--black); }
 
 /* ---------- Hero ---------- */
-.hero { background: var(--cyan); border-bottom: var(--border); padding-block: clamp(3rem, 8vw, 5.5rem); }
+/* L'hero parte da y=0, dietro la navbar flottante: il padding-top gli restituisce
+   lo spazio che l'header non occupa piu' nel flusso. */
+.hero {
+  background: var(--cyan); border-bottom: var(--border);
+  padding-block: calc(var(--bn-gap) + var(--header-h) + clamp(3rem, 8vw, 5.5rem)) clamp(3rem, 8vw, 5.5rem);
+}
 .hero-inner { max-width: 900px; }
 .hero h1 { font-size: clamp(3.1rem, 9.9vw, 6.6rem); }
 /* L'eyebrow vive dentro l'h1 (le keyword devono stare nel titolo), quindi va
@@ -321,13 +352,27 @@ h1, h2, h3, h4 {
 }
 @media (max-width: 992px) { .funding-sep { display: none; } }
 
-/* ---------- Bottom nav (stile app mobile) ---------- */
+/* Sotto i 1000px la navbar flottante e' piu' stretta del vecchio header full-width
+   (32px di stacco + 6px di bordo + padding interno): senza stringere qui, i link
+   sfondano di ~36px contro il logo. */
+@media (max-width: 1000px) and (min-width: 761px) {
+  .nav-menu { gap: 0.85rem; }
+  .nav-menu a { font-size: 1.05rem; }
+  .header-right { gap: 0.7rem; }
+}
+
+/* ---------- Bottom nav (tab bar flottante, stile app mobile) ---------- */
 .bottom-nav {
   display: none;
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  /* Staccata di 16px dai lati e dal fondo; su iPhone la safe area si somma
+     all'offset, altrimenti la barra finirebbe sotto l'home indicator. */
+  position: fixed; z-index: 60;
+  left: var(--bn-gap); right: var(--bn-gap);
+  bottom: calc(var(--bn-gap) + env(safe-area-inset-bottom, 0px));
   justify-content: space-around; align-items: stretch;
-  background: var(--white); border-top: var(--border);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: var(--white); border: var(--border); border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden; /* i separatori e lo stato :active non devono sbordare dagli angoli */
 }
 .bn-item {
   flex: 1 1 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
@@ -341,9 +386,16 @@ h1, h2, h3, h4 {
 @media (max-width: 760px) {
   .nav { display: none; }          /* i link vanno nella tab bar in basso */
   .bottom-nav { display: flex; }
-  body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+  /* Lo spazio per la barra flottante lo riserva il footer, non il body: cosi' il
+     nero del footer prosegue dietro la barra invece di lasciare una fascia bianca. */
+  .site-footer { padding-bottom: calc(2rem + 62px + var(--bn-gap) * 2 + env(safe-area-inset-bottom, 0px)); }
 
-  /* Header compatto: restano logo + Diventa socio + lingua */
+  /* La navbar flottante e' gia' nel CSS di base: qui resta solo cio' che cambia.
+     Barra piu' bassa (60 + 6 di bordo) e padding interno piu' stretto. */
+  :root { --header-h: 66px; }
+  .site-header .container { padding-inline: 0.7rem; }
+
+  /* Header compatto: wordmark rimpicciolito, poi CTA e lingua */
   .header-right { gap: 0.5rem; }
   .header-cta { font-size: 1.02rem; padding: 0 0.7rem; }
   .lang-trigger { padding: 0 0.55rem; }
