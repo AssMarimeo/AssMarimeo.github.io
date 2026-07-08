@@ -171,11 +171,18 @@
       </div>
     </section>
 
-    <!-- Marquee -->
+    <!-- Marquee. Gli span sono copie identiche e portano lo stesso data-i18n,
+         cosi' restano identici anche cambiando lingua: l'animazione trasla il
+         track del 50%, e senza copie uguali il ciclo si chiuderebbe con un salto.
+         Ne servono quattro, non due: a fine ciclo il track e' scorso di meta'
+         larghezza, cioe' di due span, e sotto quella soglia su schermi larghi
+         resterebbe una fascia gialla vuota a destra. -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>MENO PLASTICA <i class="marquee-sep">✦</i> MENO CO₂ <i class="marquee-sep">✦</i> UN LITRO ALLA VOLTA <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
-        <span>MENO PLASTICA <i class="marquee-sep">✦</i> MENO CO₂ <i class="marquee-sep">✦</i> UN LITRO ALLA VOLTA <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
+        <span data-i18n="marquee_text" data-i18n-html>MENO PLASTICA <i class="marquee-sep">✦</i> MENO CO₂ <i class="marquee-sep">✦</i> UN LITRO ALLA VOLTA <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
+        <span data-i18n="marquee_text" data-i18n-html>MENO PLASTICA <i class="marquee-sep">✦</i> MENO CO₂ <i class="marquee-sep">✦</i> UN LITRO ALLA VOLTA <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
+        <span data-i18n="marquee_text" data-i18n-html>MENO PLASTICA <i class="marquee-sep">✦</i> MENO CO₂ <i class="marquee-sep">✦</i> UN LITRO ALLA VOLTA <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
+        <span data-i18n="marquee_text" data-i18n-html>MENO PLASTICA <i class="marquee-sep">✦</i> MENO CO₂ <i class="marquee-sep">✦</i> UN LITRO ALLA VOLTA <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
       </div>
     </div>
 

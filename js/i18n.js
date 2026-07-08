@@ -32,6 +32,10 @@
       hero_badge2: "Aperta 24/7",
       hero_badge3: "Meno plastica, meno CO₂",
 
+      /* Il separatore fa parte della stringa: e' un <i> perche' i18n scrive
+         innerHTML, e va ripetuto anche in coda per chiudere il ciclo. */
+      marquee_text: "MENO PLASTICA <i class=\"marquee-sep\">✦</i> MENO CO₂ <i class=\"marquee-sep\">✦</i> UN LITRO ALLA VOLTA <i class=\"marquee-sep\">✦</i> CASETTA DELL'ACQUA <i class=\"marquee-sep\">✦</i> DIVENTA SOCIO <i class=\"marquee-sep\">✦</i>",
+
       about_eyebrow: "Chi siamo",
       about_title: "Un'associazione di giovani per un territorio con meno plastica",
       about_p1: "Marimeo è un'associazione giovanile senza scopo di lucro. Crediamo che i piccoli gesti di ogni giorno, messi insieme, possano ridurre davvero l'inquinamento del nostro territorio.",
@@ -163,6 +167,8 @@
       hero_badge2: "Open 24/7",
       hero_badge3: "Less plastic, less CO₂",
 
+      marquee_text: "LESS PLASTIC <i class=\"marquee-sep\">✦</i> LESS CO₂ <i class=\"marquee-sep\">✦</i> ONE LITRE AT A TIME <i class=\"marquee-sep\">✦</i> WATER HOUSE <i class=\"marquee-sep\">✦</i> BECOME A MEMBER <i class=\"marquee-sep\">✦</i>",
+
       about_eyebrow: "About us",
       about_title: "A group of young people for a community with less plastic",
       about_p1: "Marimeo is a non-profit youth association. We believe that the small daily actions of many people, put together, can really reduce pollution in our area.",
@@ -293,6 +299,8 @@
       hero_badge1: "Eau dès 0,05 €/L",
       hero_badge2: "Ouverte 24h/24",
       hero_badge3: "Moins de plastique, moins de CO₂",
+
+      marquee_text: "MOINS DE PLASTIQUE <i class=\"marquee-sep\">✦</i> MOINS DE CO₂ <i class=\"marquee-sep\">✦</i> UN LITRE À LA FOIS <i class=\"marquee-sep\">✦</i> MAISON DE L'EAU <i class=\"marquee-sep\">✦</i> DEVENIR MEMBRE <i class=\"marquee-sep\">✦</i>",
 
       about_eyebrow: "À propos",
       about_title: "Une association de jeunes pour un territoire avec moins de plastique",
