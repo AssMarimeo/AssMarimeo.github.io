@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
 /* ---------- Layout ---------- */
 .container { width: min(100% - 2.5rem, var(--container)); margin-inline: auto; }
 .container.narrow { max-width: 780px; }
-.section { padding-block: var(--space); border-bottom: var(--border); }
+.section { padding-block: var(--space); }
 .section-cyan { background: var(--cyan); }
 .section-blue { background: var(--blue); color: var(--white); }
 
@@ -74,7 +74,7 @@ h1, h2, h3, h4 {
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   background: var(--yellow); color: var(--black);
-  font-family: var(--font-head); font-size: 1.1rem; text-decoration: none;
+  font-family: var(--font-head); font-size: 1.32rem; text-decoration: none;
   padding: 0.65rem 1.4rem; border: var(--border); border-radius: 10px;
   box-shadow: var(--shadow-sm); cursor: pointer;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
@@ -82,8 +82,8 @@ h1, h2, h3, h4 {
 .btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--black); background: var(--yellow); }
 .btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--black); }
 .btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
-.btn-lg { font-size: 1.3rem; padding: 0.85rem 1.9rem; }
-.btn-sm { font-size: 0.95rem; padding: 0.45rem 1rem; box-shadow: 3px 3px 0 var(--black); }
+.btn-lg { font-size: 1.56rem; padding: 0.85rem 1.9rem; }
+.btn-sm { font-size: 1.14rem; padding: 0.45rem 1rem; box-shadow: 3px 3px 0 var(--black); }
 .btn-ghost { background: var(--white); }
 .btn-on-dark { background: var(--yellow); }
 
@@ -162,7 +162,7 @@ h1, h2, h3, h4 {
 /* ---------- Nav ---------- */
 .nav-menu { display: flex; align-items: center; gap: 1.3rem; list-style: none; margin: 0; padding: 0; }
 .nav-menu a {
-  text-decoration: none; font-family: var(--font-head); font-size: 1.05rem; color: var(--black);
+  text-decoration: none; font-family: var(--font-head); font-size: 1.26rem; color: var(--black);
 }
 .nav-menu a:hover { color: var(--blue); text-decoration: underline; text-decoration-thickness: 3px; }
 .nav-menu .btn { color: var(--black); }
@@ -294,14 +294,14 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 .faq-a p { margin: 0; }
 
 /* ---------- CTA band ---------- */
-.cta-band { background: var(--blue); color: var(--white); padding-block: clamp(3rem, 7vw, 5rem); border-bottom: var(--border); }
+.cta-band { background: var(--blue); color: var(--white); padding-block: clamp(3rem, 7vw, 5rem); }
 .cta-inner { text-align: center; max-width: 680px; margin-inline: auto; }
 .cta-band h2 { font-size: clamp(2.4rem, 6.6vw, 4rem); }
 .cta-band p { font-size: 1.32rem; margin-bottom: 1.8rem; font-weight: 600; }
 .cta-note { font-weight: 700; margin: 1rem 0 0; }
 
 /* ---------- Funding strip ---------- */
-.funding-strip { background: var(--white); border-bottom: var(--border); padding-block: 1rem; }
+.funding-strip { background: var(--white); padding-block: 1rem; }
 .funding-strip-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.8rem 2.2rem; }
 .funding-group { display: flex; align-items: center; gap: 0.9rem; }
 .funding-cap { font-family: var(--font-head); font-size: 0.8rem; color: var(--black); white-space: nowrap; }
@@ -311,9 +311,9 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--black); color: var(--white); padding-block: 3rem 2rem; }
-.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem; padding-bottom: 2rem; border-bottom: 3px solid var(--yellow); }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem; padding-bottom: 2rem; border-bottom: 3px solid var(--white); }
 .footer-logo { height: 96px; width: auto; margin-bottom: 0.6rem; }
-.footer-col h4 { font-family: var(--font-head); font-size: 1.45rem; color: var(--yellow); margin-bottom: 1rem; }
+.footer-col h4 { font-family: var(--font-head); font-size: 1.45rem; color: var(--white); margin-bottom: 1rem; }
 .footer-col .brand { color: var(--white); }
 .footer-col .brand-name { color: var(--white); }
 .footer-tagline { color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 0.8rem; max-width: 32ch; }
@@ -322,13 +322,13 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 .footer-list a:hover { color: var(--yellow); }
 .footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; }
 .footer-copy { margin: 0; color: rgba(255, 255, 255, 0.7); font-size: 0.85rem; }
-.back-top { color: var(--yellow); text-decoration: none; font-family: var(--font-head); font-size: 1.1rem; }
+.back-top { color: var(--white); text-decoration: none; font-family: var(--font-head); font-size: 1.1rem; }
 
 /* ============================================================
    Responsive
    ============================================================ */
 @media (max-width: 900px) {
-  .water-layout, .enroll-grid, .cards { grid-template-columns: 1fr; }
+  .water-layout, .enroll-grid, .cards, .stats { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-col:first-child { grid-column: 1 / -1; }
 }
@@ -345,7 +345,7 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 .bn-item {
   flex: 1 1 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
   text-decoration: none; color: var(--black);
-  font-family: var(--font-head); font-size: 0.62rem; line-height: 1.05; text-align: center;
+  font-family: var(--font-head); font-size: 0.744rem; line-height: 1.05; text-align: center;
   padding: 0.5rem 0.15rem;
 }
 .bn-item + .bn-item { border-left: 2px solid var(--black); }
@@ -359,7 +359,7 @@ th.price-hl { background: var(--yellow); color: var(--black); }
   /* Logo -50%, header compatto: restano logo + Diventa socio + lingua */
   .brand-wordmark { height: 17px; }
   .header-right { gap: 0.5rem; }
-  .header-cta { font-size: 0.85rem; padding: 0 0.7rem; }
+  .header-cta { font-size: 1.02rem; padding: 0 0.7rem; }
   .lang-trigger { padding: 0 0.55rem; }
   .header-inner { min-height: 60px; }
 }
