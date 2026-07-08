@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marimeo — Bevi meglio, risparmia plastica, riduci CO₂</title>
-  <meta name="description" data-i18n="meta_desc" content="Marimeo è un'associazione giovanile che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri. Associati da 10 €." />
+  <title>Marimeo — Associazione giovanile · Casetta dell'acqua a Scauri</title>
+  <meta name="description" data-i18n="meta_desc" content="Marimeo, associazione giovanile ambientale: gestiamo la casetta dell'acqua a Scauri di Minturno (LT). Acqua da 5 cent/L, meno plastica, risparmio di CO2." />
+  <link rel="canonical" href="https://marimeo.org/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Marimeo — Bevi meglio, risparmia plastica, riduci CO₂" />
-  <meta property="og:description" content="Associazione giovanile per un territorio con meno plastica. La casetta dell'acqua di Scauri, aperta a tutti 24/7." />
+  <meta property="og:title" content="Marimeo — Associazione giovanile · Casetta dell'acqua a Scauri" />
+  <meta property="og:description" content="Associazione giovanile ambientale a Scauri di Minturno (LT). La casetta dell'acqua è aperta a tutti h24: acqua buona, meno plastica, meno CO2." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://marimeo.org/" />
+  <meta property="og:site_name" content="Marimeo" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:image" content="https://marimeo.org/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Marimeo — casetta dell'acqua di Scauri, associazione giovanile ambientale a Minturno (LT)" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
@@ -21,6 +30,72 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Dati strutturati: associazione + il luogo fisico della casetta.
+       Le coordinate sono le stesse del marker nella mappa della sezione "casetta". -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "NGO",
+        "@id": "https://marimeo.org/#organizzazione",
+        "name": "Marimeo",
+        "alternateName": "Associazione Giovanile Marimeo",
+        "description": "Associazione giovanile ambientale senza scopo di lucro che gestisce la casetta dell'acqua di Scauri, a Minturno (LT), per ridurre la plastica monouso e il consumo di CO2 sul territorio.",
+        "url": "https://marimeo.org/",
+        "logo": "https://marimeo.org/assets/img/marimeo-logo-black.png",
+        "image": "https://marimeo.org/assets/img/og-image.png",
+        "email": "associazione.marimeo@gmail.com",
+        "foundingLocation": { "@id": "https://marimeo.org/#casetta" },
+        "areaServed": {
+          "@type": "City",
+          "name": "Minturno",
+          "containedInPlace": { "@type": "AdministrativeArea", "name": "Provincia di Latina" }
+        },
+        "knowsAbout": [
+          "casetta dell'acqua",
+          "riduzione della plastica monouso",
+          "risparmio di CO2",
+          "educazione ambientale"
+        ],
+        "sameAs": [
+          "https://instagram.com/marimeo_org",
+          "https://www.facebook.com/marimeo.org"
+        ]
+      },
+      {
+        "@type": "Place",
+        "@id": "https://marimeo.org/#casetta",
+        "name": "Casetta dell'acqua di Scauri",
+        "description": "Casetta dell'acqua pubblica di Scauri, aperta a tutti h24: acqua naturale o frizzante, a temperatura ambiente o fredda, a partire da 5 cent/L per gli associati.",
+        "url": "https://marimeo.org/#casetta",
+        "isAccessibleForFree": true,
+        "publicAccess": true,
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Scauri",
+          "addressRegion": "LT",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.2585642,
+          "longitude": 13.6988841
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday", "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a id="top" tabindex="-1"></a>
@@ -76,11 +151,13 @@
     <!-- ===== 1. Hero ===== -->
     <section class="hero">
       <div class="container hero-inner">
-        <p class="eyebrow" data-i18n="hero_eyebrow">Associazione giovanile · Ambiente</p>
-        <h1 data-i18n="hero_title" data-i18n-html>Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.</h1>
+        <h1 class="hero-title">
+          <span class="eyebrow" data-i18n="hero_eyebrow">Marimeo · Associazione giovanile ambientale</span>
+          <span class="hero-claim" data-i18n="hero_title" data-i18n-html>Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.</span>
+        </h1>
         <p class="hero-lead" data-i18n="hero_lead">
-          Marimeo è un'associazione giovanile che aiuta il territorio a consumare
-          meno plastica grazie alla casetta dell'acqua.
+          Marimeo è un'associazione giovanile ambientale che aiuta il territorio a
+          consumare meno plastica grazie alla casetta dell'acqua di Scauri, a Minturno (LT).
         </p>
         <div class="hero-actions">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form" class="btn btn-lg" target="_blank" rel="noopener" data-i18n="hero_cta1">Diventa socio</a>
@@ -134,7 +211,8 @@
         <h2 class="section-title" data-i18n="impact_title">Numeri che fanno la differenza</h2>
         <p class="section-intro" data-i18n="impact_intro">
           Ogni borraccia riempita alla casetta è plastica in meno e CO₂ risparmiata.
-          Ecco cosa abbiamo ottenuto insieme nel 2025.
+          Ecco la plastica evitata e il risparmio di CO2 ottenuti insieme nel 2025
+          a Scauri di Minturno.
         </p>
 
         <div class="stats">

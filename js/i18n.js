@@ -12,7 +12,7 @@
   const translations = {
     /* ---------------- ITALIANO (default) ---------------- */
     it: {
-      meta_desc: "Marimeo è un'associazione giovanile che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri. Associati da 10 €.",
+      meta_desc: "Marimeo, associazione giovanile ambientale: gestiamo la casetta dell'acqua a Scauri di Minturno (LT). Acqua da 5 cent/L, meno plastica, risparmio di CO2.",
 
       nav_about: "Chi siamo",
       nav_impact: "Impatto",
@@ -22,9 +22,9 @@
       nav_join: "Diventa socio",
       nav_join_short: "Socio",
 
-      hero_eyebrow: "Associazione giovanile · Ambiente",
+      hero_eyebrow: "Marimeo · Associazione giovanile ambientale",
       hero_title: "Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.",
-      hero_lead: "Marimeo è un'associazione giovanile che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua.",
+      hero_lead: "Marimeo è un'associazione giovanile ambientale che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri, a Minturno (LT).",
       hero_cta1: "Diventa socio",
       hero_cta2: "Scopri il progetto",
       hero_badge1: "Acqua da 5 cent/L",
@@ -39,7 +39,7 @@
 
       impact_eyebrow: "Il nostro impatto",
       impact_title: "Numeri che fanno la differenza",
-      impact_intro: "Ogni borraccia riempita alla casetta è plastica in meno e CO₂ risparmiata. Ecco cosa abbiamo ottenuto insieme nel 2025.",
+      impact_intro: "Ogni borraccia riempita alla casetta è plastica in meno e CO₂ risparmiata. Ecco la plastica evitata e il risparmio di CO2 ottenuti insieme nel 2025 a Scauri di Minturno.",
       impact_water_label: "litri d'acqua erogati",
       impact_bottles_label: "bottiglie di plastica evitate",
       impact_co2_label: "di CO₂ risparmiata",
@@ -139,7 +139,7 @@
 
     /* ---------------- ENGLISH ---------------- */
     en: {
-      meta_desc: "Marimeo is a youth association helping the local community use less plastic thanks to the Scauri water house. Join from €10.",
+      meta_desc: "Marimeo, a youth environmental association: we run the water house in Scauri, Minturno (LT), Italy. Water from 5 cents/L, less plastic, CO2 savings.",
 
       nav_about: "About",
       nav_impact: "Impact",
@@ -149,9 +149,9 @@
       nav_join: "Become a member",
       nav_join_short: "Join",
 
-      hero_eyebrow: "Youth association · Environment",
+      hero_eyebrow: "Marimeo · Youth environmental association",
       hero_title: "Drink better.<br />Save plastic.<br />Cut CO₂.",
-      hero_lead: "Marimeo is a youth association helping the local community use less plastic thanks to the water house.",
+      hero_lead: "Marimeo is a youth environmental association helping the local community use less plastic thanks to the Scauri water house, in Minturno (LT), Italy.",
       hero_cta1: "Become a member",
       hero_cta2: "Discover the project",
       hero_badge1: "Water from €0.05/L",
@@ -266,7 +266,7 @@
 
     /* ---------------- FRANÇAIS ---------------- */
     fr: {
-      meta_desc: "Marimeo est une association de jeunesse qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau de Scauri. Adhésion dès 10 €.",
+      meta_desc: "Marimeo, association de jeunesse écologiste : nous gérons la maison de l'eau de Scauri, à Minturno (LT), en Italie. Eau dès 5 cts/L, moins de plastique, moins de CO2.",
 
       nav_about: "À propos",
       nav_impact: "Impact",
@@ -276,9 +276,9 @@
       nav_join: "Devenir membre",
       nav_join_short: "Adhérer",
 
-      hero_eyebrow: "Association de jeunesse · Environnement",
+      hero_eyebrow: "Marimeo · Association de jeunesse écologiste",
       hero_title: "Buvez mieux.<br />Économisez le plastique.<br />Réduisez le CO₂.",
-      hero_lead: "Marimeo est une association de jeunesse qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau.",
+      hero_lead: "Marimeo est une association de jeunesse écologiste qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau de Scauri, à Minturno (LT), en Italie.",
       hero_cta1: "Devenir membre",
       hero_cta2: "Découvrir le projet",
       hero_badge1: "Eau dès 0,05 €/L",

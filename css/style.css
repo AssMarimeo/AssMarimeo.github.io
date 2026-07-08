@@ -153,6 +153,10 @@ h1, h2, h3, h4 {
 .hero { background: var(--cyan); border-bottom: var(--border); padding-block: clamp(3rem, 8vw, 5.5rem); }
 .hero-inner { max-width: 900px; }
 .hero h1 { font-size: clamp(3.1rem, 9.9vw, 6.6rem); }
+/* L'eyebrow vive dentro l'h1 (le keyword devono stare nel titolo), quindi va
+   sottratto all'ereditarieta' di font-size/line-height del titolo stesso. */
+.hero-title .eyebrow { line-height: 1.4; }
+.hero-claim { display: block; }
 .hero-lead { font-size: clamp(1.2rem, 2.75vw, 1.6rem); max-width: 46ch; margin-bottom: 2rem; font-weight: 600; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 .hero-badges { display: flex; flex-wrap: wrap; gap: 0.8rem; list-style: none; margin: 2.2rem 0 0; padding: 0; }
