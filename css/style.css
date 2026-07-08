@@ -58,6 +58,7 @@ h1, h2, h3, h4 {
 .section { padding-block: var(--space); }
 .section-cyan { background: var(--cyan); }
 .section-blue { background: var(--blue); color: var(--white); }
+.section-yellow { background: var(--yellow); }
 
 .section-eyebrow, .eyebrow {
   display: inline-block; background: var(--black); color: var(--yellow);
@@ -85,14 +86,7 @@ h1, h2, h3, h4 {
 .btn-lg { font-size: 1.56rem; padding: 0.85rem 1.9rem; }
 .btn-sm { font-size: 1.14rem; padding: 0.45rem 1rem; box-shadow: 3px 3px 0 var(--black); }
 .btn-ghost { background: var(--white); }
-.btn-on-dark { background: var(--yellow); }
 
-.link-arrow {
-  display: inline-block; margin-top: 1rem; font-family: var(--font-head);
-  font-size: 1.15rem; color: var(--black); text-decoration: none;
-  border-bottom: 3px solid var(--yellow);
-}
-.link-arrow:hover { background: var(--yellow); }
 .center-cta { text-align: center; margin-top: 3rem; }
 
 /* ---------- Icone (Material Symbols Sharp, filled) ---------- */
@@ -106,14 +100,6 @@ h1, h2, h3, h4 {
 .enroll-ico .ico { width: 26px; height: 26px; }
 .hero-badges .ico, .tag-list .ico { width: 1.25em; height: 1.25em; }
 
-/* ---------- Test flag ---------- */
-.test-flag {
-  background: var(--black); color: var(--yellow); text-align: center;
-  font-family: var(--font-body); font-weight: 800; font-size: 0.85rem;
-  padding: 0.5rem 1rem; letter-spacing: 0.04em;
-}
-.test-flag a { color: var(--white); }
-
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -121,9 +107,7 @@ h1, h2, h3, h4 {
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; }
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--black); }
-.brand-logo { border: var(--border); border-radius: 50%; }
-.brand-name { font-family: var(--font-head); font-size: 1.6rem; }
-.brand-wordmark { height: 34px; width: auto; display: block; }
+.brand-wordmark { height: clamp(17px, 4.5vw, 34px); width: auto; display: block; }
 .header-right { display: flex; align-items: center; gap: 1.1rem; }
 
 /* ---------- Lang switch (dropdown) ---------- */
@@ -166,8 +150,6 @@ h1, h2, h3, h4 {
 }
 .nav-menu a:hover { color: var(--blue); text-decoration: underline; text-decoration-thickness: 3px; }
 .nav-menu .btn { color: var(--black); }
-.nav-toggle { display: none; flex-direction: column; gap: 5px; background: var(--yellow); border: var(--border); border-radius: 8px; cursor: pointer; padding: 9px 8px; }
-.nav-toggle span { width: 24px; height: 3px; background: var(--black); transition: transform 0.25s ease, opacity 0.25s ease; }
 
 /* ---------- Hero ---------- */
 .hero { background: var(--cyan); border-bottom: var(--border); padding-block: clamp(3rem, 8vw, 5.5rem); }
@@ -186,6 +168,7 @@ h1, h2, h3, h4 {
 .marquee { overflow: hidden; background: var(--yellow); border-bottom: var(--border); }
 .marquee-track { display: flex; width: max-content; animation: marquee 20s linear infinite; }
 .marquee-track span { font-family: var(--font-head); font-size: 1.85rem; padding: 0.5rem 0; white-space: nowrap; }
+.marquee-sep { font-style: normal; display: inline-block; padding-inline: 0.5em; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* ---------- About ---------- */
@@ -209,20 +192,23 @@ h1, h2, h3, h4 {
   background: var(--white); border: var(--border); border-radius: 14px; overflow: hidden;
   display: flex; flex-direction: column;
 }
-.map-embed { width: 100%; height: 300px; border: 0; border-bottom: var(--border); flex: 1 1 auto; }
+.map-card-title { font-size: 1.75rem; padding: 1.6rem 1.6rem 0; margin: 0 0 1rem; }
+.map-embed { width: 100%; height: 220px; border: 0; border-top: var(--border); border-bottom: var(--border); flex: 1 1 auto; }
 .map-foot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 1.3rem; }
 .map-foot > div { display: flex; flex-direction: column; }
-.water-label { font-family: var(--font-head); font-size: 0.85rem; color: var(--blue); }
+.map-foot .btn { white-space: nowrap; flex-shrink: 0; }
+#casetta [data-i18n="water_where_value"] { white-space: pre-line; }
 .price-card { padding: 1.6rem; }
 .price-card h3 { font-size: 1.75rem; }
 .price-table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; }
 .price-table th, .price-table td { text-align: left; padding: 0.7rem 0.6rem; border-bottom: 2px solid var(--black); }
-.price-table thead th { font-family: var(--font-head); font-size: 0.95rem; background: var(--blue); color: var(--white); }
+.price-table thead th { font-family: var(--font-head); font-size: 1.2rem; background: var(--blue); color: var(--white); }
 .price-table thead th:first-child { border-top-left-radius: 6px; }
 .price-table thead th:last-child { border-top-right-radius: 6px; }
 .price-table td:first-child { font-weight: 700; }
+/* Evidenzia la colonna "Associati" nel corpo tabella. Sull'intestazione non si
+   applica: .price-table thead th ha specificita' maggiore e vince. */
 .price-hl { background: var(--yellow); font-weight: 800; }
-th.price-hl { background: var(--yellow); color: var(--black); }
 .price-note { margin-top: 1rem; font-weight: 600; }
 
 /* ---------- Cards (perché associarsi) ---------- */
@@ -233,7 +219,7 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 }
 .card-ico {
   display: inline-grid; place-items: center; width: 54px; height: 54px;
-  border: var(--border); border-radius: 12px; background: var(--yellow); font-size: 1.6rem; margin-bottom: 1rem;
+  border: var(--border); border-radius: 12px; background: transparent; font-size: 1.6rem; margin-bottom: 1rem;
 }
 .card h3 { font-size: 1.65rem; }
 .card p { margin: 0; font-weight: 500; }
@@ -262,7 +248,7 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 .enroll-title { font-size: 1.85rem; margin-bottom: 1.3rem; }
 .enroll-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; }
 .enroll-option { display: flex; flex-direction: column; align-items: flex-start; background: var(--white); border: var(--border); border-radius: 12px; padding: 1.3rem; min-width: 0; overflow-wrap: anywhere; }
-.enroll-ico { display: inline-grid; place-items: center; width: 48px; height: 48px; border: var(--border); border-radius: 10px; background: var(--yellow); font-size: 1.5rem; margin-bottom: 0.7rem; }
+.enroll-ico { display: inline-grid; place-items: center; width: 48px; height: 48px; border: var(--border); border-radius: 10px; background: transparent; font-size: 1.5rem; margin-bottom: 0.7rem; }
 .enroll-option h4 { font-size: 1.5rem; margin-bottom: 0.3rem; }
 .enroll-option p { font-weight: 500; margin: 0 0 1rem; }
 .enroll-option p a { color: var(--blue); font-weight: 700; }
@@ -275,7 +261,6 @@ th.price-hl { background: var(--yellow); color: var(--black); }
   background: var(--cyan); color: var(--black); border-radius: 999px;
   padding: 0.5rem 1.1rem; font-family: var(--font-head); font-size: 1.05rem;
 }
-.tag-list .ico { color: var(--blue); }
 
 /* ---------- FAQ ---------- */
 .faq { display: grid; gap: 1rem; }
@@ -287,11 +272,13 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-item summary::after {
   content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
-  font-family: var(--font-head); font-size: 2rem; color: var(--blue);
+  font-family: var(--font-head); font-size: 2rem; color: var(--black);
 }
 .faq-item[open] summary::after { content: "−"; }
-.faq-a { padding: 0 0 1.3rem; font-weight: 500; }
-.faq-a p { margin: 0; }
+/* Il padding sta sul figlio: con box-sizing:border-box l'altezza di .faq-a
+   non potrebbe scendere sotto il proprio padding, e il collasso salterebbe a 0. */
+.faq-a { padding: 0; font-weight: 500; overflow: hidden; transition: height 0.22s ease-out; }
+.faq-a p { margin: 0; padding-bottom: 1.3rem; }
 
 /* ---------- CTA band ---------- */
 .cta-band { background: var(--blue); color: var(--white); padding-block: clamp(3rem, 7vw, 5rem); }
@@ -314,8 +301,6 @@ th.price-hl { background: var(--yellow); color: var(--black); }
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem; padding-bottom: 2rem; border-bottom: 3px solid var(--white); }
 .footer-logo { height: 96px; width: auto; margin-bottom: 0.6rem; }
 .footer-col h4 { font-family: var(--font-head); font-size: 1.45rem; color: var(--white); margin-bottom: 1rem; }
-.footer-col .brand { color: var(--white); }
-.footer-col .brand-name { color: var(--white); }
 .footer-tagline { color: rgba(255, 255, 255, 0.8); font-weight: 500; margin-top: 0.8rem; max-width: 32ch; }
 .footer-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
 .footer-list a { color: var(--white); text-decoration: none; font-weight: 600; }
@@ -329,8 +314,7 @@ th.price-hl { background: var(--yellow); color: var(--black); }
    ============================================================ */
 @media (max-width: 900px) {
   .water-layout, .enroll-grid, .cards, .stats { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .footer-col:first-child { grid-column: 1 / -1; }
+  .footer-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 992px) { .funding-sep { display: none; } }
 
@@ -356,8 +340,7 @@ th.price-hl { background: var(--yellow); color: var(--black); }
   .bottom-nav { display: flex; }
   body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
 
-  /* Logo -50%, header compatto: restano logo + Diventa socio + lingua */
-  .brand-wordmark { height: 17px; }
+  /* Header compatto: restano logo + Diventa socio + lingua */
   .header-right { gap: 0.5rem; }
   .header-cta { font-size: 1.02rem; padding: 0 0.7rem; }
   .lang-trigger { padding: 0 0.55rem; }

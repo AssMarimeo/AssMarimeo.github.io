@@ -4,27 +4,6 @@
 (function () {
   "use strict";
 
-  /* ---------- Menu mobile ---------- */
-  const toggle = document.querySelector(".nav-toggle");
-  const menu = document.getElementById("nav-menu");
-
-  if (toggle && menu) {
-    const closeMenu = () => {
-      menu.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-      toggle.setAttribute("aria-label", "Apri il menu");
-    };
-
-    toggle.addEventListener("click", () => {
-      const isOpen = menu.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-      toggle.setAttribute("aria-label", isOpen ? "Chiudi il menu" : "Apri il menu");
-    });
-
-    menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
-  }
-
   /* ---------- Anno corrente nel footer ---------- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
@@ -81,6 +60,53 @@
     document.addEventListener("marimeo:langchange", () => {
       counters.forEach((el) => {
         if (el.textContent.trim() !== "0") renderCounter(el, parseFloat(el.dataset.target) || 0);
+      });
+    });
+  }
+
+  /* ---------- FAQ: apertura/chiusura animata ---------- */
+  if (!reduceMotion) {
+    document.querySelectorAll(".faq-item").forEach((item) => {
+      const summary = item.querySelector("summary");
+      const content = item.querySelector(".faq-a");
+      if (!summary || !content) return;
+
+      summary.addEventListener("click", (e) => {
+        if (item.classList.contains("is-animating")) { e.preventDefault(); return; }
+        e.preventDefault();
+
+        const closing = item.open;
+        const from = closing ? content.getBoundingClientRect().height : 0;
+
+        // Il contenuto di un <details> chiuso non e' sottoposto a layout: va aperto
+        // e va forzato un reflow, altrimenti scrollHeight puo' restituire 0.
+        if (!closing) item.open = true;
+        void content.offsetHeight;
+        const to = closing ? 0 : content.scrollHeight;
+
+        if (from === to) { // niente da animare: evita di restare bloccati in attesa di transitionend
+          if (closing) item.open = false;
+          content.style.height = "";
+          return;
+        }
+
+        item.classList.add("is-animating");
+        content.style.height = from + "px";
+        void content.offsetHeight; // committa l'altezza di partenza: senza, la transizione non parte
+
+        const finish = () => {
+          clearTimeout(timer);
+          content.removeEventListener("transitionend", onEnd);
+          content.style.height = "";
+          item.classList.remove("is-animating");
+          if (closing) item.open = false;
+        };
+        const onEnd = (ev) => { if (ev.propertyName === "height") finish(); };
+        content.addEventListener("transitionend", onEnd);
+        // Rete di sicurezza: se transitionend non arriva, non lasciare l'item bloccato.
+        const timer = setTimeout(finish, 400);
+
+        content.style.height = to + "px";
       });
     });
   }

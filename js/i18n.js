@@ -49,8 +49,8 @@
       water_title: "La casetta dell'acqua di Scauri",
       water_desc: "Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.",
       water_where_label: "Dove si trova",
-      water_where_value: "Scauri — Minturno (LT) · Aperta 24 ore su 24, 7 giorni su 7",
-      water_directions: "Come arrivare",
+      water_where_value: "Scauri — Minturno (LT) ·\nAperta h24, 7 giorni su 7",
+      water_directions: "Come arrivarci",
       water_analysis_link: "Analisi dell'acqua aggiornate (PDF) ↗",
 
       price_title: "Quanto costa l'acqua",
@@ -180,7 +180,7 @@
       water_title: "The Scauri water house",
       water_desc: "Good, tested, zero-kilometre water, open to everyone. Still or sparkling, room temperature or chilled: bring your bottle and fill it up.",
       water_where_label: "Where it is",
-      water_where_value: "Scauri — Minturno (LT), Italy · Open 24 hours a day, 7 days a week",
+      water_where_value: "Scauri — Minturno (LT), Italy ·\nOpen 24 hours a day, 7 days a week",
       water_directions: "Get directions",
       water_analysis_link: "Latest water analysis (PDF) ↗",
 
@@ -311,7 +311,7 @@
       water_title: "La maison de l'eau de Scauri",
       water_desc: "Une eau bonne, contrôlée et de proximité, ouverte à tous. Plate ou pétillante, à température ambiante ou fraîche : apportez votre gourde et remplissez-la.",
       water_where_label: "Où se trouve-t-elle",
-      water_where_value: "Scauri — Minturno (LT), Italie · Ouverte 24h/24, 7j/7",
+      water_where_value: "Scauri — Minturno (LT), Italie ·\nOuverte 24h/24, 7j/7",
       water_directions: "Itinéraire",
       water_analysis_link: "Analyses de l'eau à jour (PDF) ↗",
 

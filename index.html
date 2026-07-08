@@ -23,11 +23,13 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a id="top" tabindex="-1"></a>
+
   <!-- ===== Sprite icone (Material Symbols Sharp, filled — Apache 2.0) ===== -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-users" viewBox="0 -960 960 960"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113Z"/></symbol><symbol id="i-impact" viewBox="0 -960 960 960"><path d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z"/></symbol><symbol id="i-droplet" viewBox="0 -960 960 960"><path d="M491-200q12-1 20.5-9.5T520-230q0-14-9-22.5t-23-7.5q-41 3-87-22.5T343-375q-2-11-10.5-18t-19.5-7q-14 0-23 10.5t-6 24.5q17 91 80 130t127 35ZM480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Z"/></symbol><symbol id="i-handshake" viewBox="0 -960 960 960"><path d="M622-144 484-282l56-56 82 82 202-202 56 56-258 258ZM400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm114 52L368-282l122 122H80v-112q0-33 17-62t47-44q51-26 115-44t141-18q30 0 58.5 3t55.5 9Z"/></symbol><symbol id="i-faq" viewBox="0 -960 960 960"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></symbol><symbol id="i-clock" viewBox="0 -960 960 960"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></symbol><symbol id="i-leaf" viewBox="0 -960 960 960"><path d="M450-80q-33 0-66.5-7.5T315-109q12-121 70-226t149-185q-110 56-190.5 148T231-162q-4-3-7.5-6.5L216-176q-47-47-71.5-105T120-402q0-68 27-130t75-110q81-81 210-105.5t362-4.5q18 239-6 364.5T684-182q-49 49-109.5 75.5T450-80Z"/></symbol><symbol id="i-ticket" viewBox="0 -960 960 960"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm0-160q17 0 28.5-11.5T520-480q0-17-11.5-28.5T480-520q-17 0-28.5 11.5T440-480q0 17 11.5 28.5T480-440Zm0-160q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600ZM80-160v-240q33 0 56.5-23.5T160-480q0-33-23.5-56.5T80-560v-240h800v240q-33 0-56.5 23.5T800-480q0 33 23.5 56.5T880-400v240H80Z"/></symbol><symbol id="i-save" viewBox="0 -960 960 960"><path d="M640-520q17 0 28.5-11.5T680-560q0-17-11.5-28.5T640-600q-17 0-28.5 11.5T600-560q0 17 11.5 28.5T640-520Zm-320-80h200v-80H320v80ZM180-120q-34-114-67-227.5T80-580q0-92 64-156t156-64h200q29-38 70.5-59t89.5-21q25 0 42.5 17.5T720-820q0 5-5 23-4 11-7.5 22.5T702-751l91 91h87v279l-113 37-67 224H480v-80h-80v80H180Z"/></symbol><symbol id="i-monitor" viewBox="0 -960 960 960"><path d="M320-120v-80h80v-80H80v-560h800v560H560v80h80v80H320Z"/></symbol><symbol id="i-pin" viewBox="0 -960 960 960"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"/></symbol><symbol id="i-map" viewBox="0 -960 960 960"><path d="m600-120-240-84-240 93v-647l240-82 240 84 240-93v647l-240 82Zm-40-98v-468l-160-56v468l160 56Z"/></symbol><symbol id="i-wind" viewBox="0 -960 960 960"><path d="M460-160q-50 0-85-35t-35-85h80q0 17 11.5 28.5T460-240q17 0 28.5-11.5T500-280q0-17-11.5-28.5T460-320H80v-80h380q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-80h540q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43h-80q0-59 40.5-99.5T620-840q59 0 99.5 40.5T760-700q0 59-40.5 99.5T620-560H80Zm660 320v-80q26 0 43-17t17-43q0-26-17-43t-43-17H80v-80h660q59 0 99.5 40.5T880-380q0 59-40.5 99.5T740-240Z"/></symbol><symbol id="i-book" viewBox="0 -960 960 960"><path d="M520-278q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-53 0-111 20T40-158v-580q44-30 103.5-46T260-800q58 0 113.5 15T480-740q51-30 106.5-45T700-800q57 0 116.5 16T920-738v580q-50-42-108.5-62T700-240q-60 0-116 21t-104 59Zm80-404v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454Z"/></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m19 9-1.25-2.75L15 5l2.75-1.25L19 1l1.25 2.75L23 5l-2.75 1.25Zm0 14-1.25-2.75L15 19l2.75-1.25L19 15l1.25 2.75L23 19l-2.75 1.25ZM9 20l-2.5-5.5L1 12l5.5-2.5L9 4l2.5 5.5L17 12l-5.5 2.5Z"/></symbol></svg>
 
   <!-- ===== Header / Navbar ===== -->
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Marimeo — home">
         <img class="brand-wordmark" src="assets/img/marimeo-wordmark-black.png" alt="Marimeo" width="609" height="80" />
@@ -95,8 +97,8 @@
     <!-- Marquee -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>BEVI MEGLIO ✦ RISPARMIA PLASTICA ✦ RIDUCI CO₂ ✦ CASETTA DELL'ACQUA ✦ DIVENTA SOCIO ✦&nbsp;</span>
-        <span>BEVI MEGLIO ✦ RISPARMIA PLASTICA ✦ RIDUCI CO₂ ✦ CASETTA DELL'ACQUA ✦ DIVENTA SOCIO ✦&nbsp;</span>
+        <span>BEVI MEGLIO <i class="marquee-sep">✦</i> RISPARMIA PLASTICA <i class="marquee-sep">✦</i> RIDUCI CO₂ <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
+        <span>BEVI MEGLIO <i class="marquee-sep">✦</i> RISPARMIA PLASTICA <i class="marquee-sep">✦</i> RIDUCI CO₂ <i class="marquee-sep">✦</i> CASETTA DELL'ACQUA <i class="marquee-sep">✦</i> DIVENTA SOCIO <i class="marquee-sep">✦</i></span>
       </div>
     </div>
 
@@ -165,6 +167,7 @@
 
         <div class="water-layout">
           <div class="map-card">
+            <h3 class="map-card-title" data-i18n="water_where_label">Dove si trova</h3>
             <iframe
               class="map-embed"
               src="https://www.openstreetmap.org/export/embed.html?bbox=13.6949%2C41.2566%2C13.7029%2C41.2606&layer=mapnik&marker=41.2585642%2C13.6988841"
@@ -174,10 +177,9 @@
               allowfullscreen></iframe>
             <div class="map-foot">
               <div>
-                <span class="water-label" data-i18n="water_where_label">Dove si trova</span>
-                <span data-i18n="water_where_value">Scauri — Minturno (LT) · Aperta 24 ore su 24, 7 giorni su 7</span>
+                <span data-i18n="water_where_value">Scauri — Minturno (LT) · Aperta h24, 7 giorni su 7</span>
               </div>
-              <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" class="btn btn-sm" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivare</a>
+              <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" class="btn btn-sm" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivarci</a>
             </div>
           </div>
 
@@ -326,7 +328,7 @@
     </section>
 
     <!-- ===== 8. FAQ ===== -->
-    <section id="faq" class="section">
+    <section id="faq" class="section section-yellow">
       <div class="container narrow">
         <p class="section-eyebrow" data-i18n="faq_eyebrow">Domande frequenti</p>
         <h2 class="section-title" data-i18n="faq_title">Le risposte alle domande più comuni</h2>
@@ -361,7 +363,7 @@
         <h2 data-i18n="final_cta_title">Entra anche tu in Marimeo</h2>
         <p data-i18n="final_cta_text">Associati per il 2026 con soli 10 €: acqua scontata e un territorio con meno plastica.</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form"
-           class="btn btn-lg btn-on-dark" target="_blank" rel="noopener" data-i18n="final_cta_btn">Compila il modulo di iscrizione</a>
+           class="btn btn-lg" target="_blank" rel="noopener" data-i18n="final_cta_btn">Compila il modulo di iscrizione</a>
         <p class="cta-note" data-i18n="final_cta_note">Campagna associativa 2026</p>
       </div>
     </section>
