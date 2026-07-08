@@ -51,7 +51,7 @@
       water_where_label: "Dove si trova",
       water_where_value: "Scauri — Minturno (LT) · Aperta 24 ore su 24, 7 giorni su 7",
       water_directions: "Come arrivare",
-      water_analysis_link: "Analisi dell'acqua aggiornate (PDF) →",
+      water_analysis_link: "Analisi dell'acqua aggiornate (PDF) ↗",
 
       price_title: "Quanto costa l'acqua",
       price_type_head: "Tipo",
@@ -94,7 +94,8 @@
       enroll_online_text: "Compila il modulo di iscrizione: sarai ricontattato per la consegna della tessera socio e l'erogazione dell'acqua.",
       enroll_online_btn: "Compila il modulo",
       enroll_office_title: "Di persona",
-      enroll_office_text: "Oppure presso lo studio del nostro presidente, Ing. Salvatore Pirolozzi, in Via Castagna 38 — Scauri, previo appuntamento via email (<a href=\"mailto:associazione.marimeo@gmail.com\">associazione.marimeo@gmail.com</a>) o sui canali social.",
+      enroll_office_text: "Oppure presso lo studio del nostro presidente, Ing. Salvatore Pirolozzi, in Via Castagna 38 — Scauri, previo appuntamento via email o sui canali social.",
+      enroll_office_btn: "Prendi appuntamento via email",
 
       future_eyebrow: "Progetti futuri",
       future_title: "Un'associazione viva e in crescita",
@@ -181,7 +182,7 @@
       water_where_label: "Where it is",
       water_where_value: "Scauri — Minturno (LT), Italy · Open 24 hours a day, 7 days a week",
       water_directions: "Get directions",
-      water_analysis_link: "Latest water analysis (PDF) →",
+      water_analysis_link: "Latest water analysis (PDF) ↗",
 
       price_title: "How much the water costs",
       price_type_head: "Type",
@@ -224,7 +225,8 @@
       enroll_online_text: "Fill in the membership form: we'll contact you to hand over your member card and set up water dispensing.",
       enroll_online_btn: "Fill in the form",
       enroll_office_title: "In person",
-      enroll_office_text: "Or at the office of our president, Ing. Salvatore Pirolozzi, at Via Castagna 38 — Scauri, by appointment via email (<a href=\"mailto:associazione.marimeo@gmail.com\">associazione.marimeo@gmail.com</a>) or on social media.",
+      enroll_office_text: "Or at the office of our president, Ing. Salvatore Pirolozzi, at Via Castagna 38 — Scauri, by appointment via email or on social media.",
+      enroll_office_btn: "Book an appointment via email",
 
       future_eyebrow: "Future projects",
       future_title: "A living, growing association",
@@ -311,7 +313,7 @@
       water_where_label: "Où se trouve-t-elle",
       water_where_value: "Scauri — Minturno (LT), Italie · Ouverte 24h/24, 7j/7",
       water_directions: "Itinéraire",
-      water_analysis_link: "Analyses de l'eau à jour (PDF) →",
+      water_analysis_link: "Analyses de l'eau à jour (PDF) ↗",
 
       price_title: "Combien coûte l'eau",
       price_type_head: "Type",
@@ -354,7 +356,8 @@
       enroll_online_text: "Remplissez le formulaire d'adhésion : nous vous recontacterons pour la remise de votre carte de membre et la distribution de l'eau.",
       enroll_online_btn: "Remplir le formulaire",
       enroll_office_title: "En personne",
-      enroll_office_text: "Ou au cabinet de notre président, Ing. Salvatore Pirolozzi, Via Castagna 38 — Scauri, sur rendez-vous par e-mail (<a href=\"mailto:associazione.marimeo@gmail.com\">associazione.marimeo@gmail.com</a>) ou sur les réseaux sociaux.",
+      enroll_office_text: "Ou au cabinet de notre président, Ing. Salvatore Pirolozzi, Via Castagna 38 — Scauri, sur rendez-vous par e-mail ou sur les réseaux sociaux.",
+      enroll_office_btn: "Prendre rendez-vous par e-mail",
 
       future_eyebrow: "Projets futurs",
       future_title: "Une association vivante et en croissance",
