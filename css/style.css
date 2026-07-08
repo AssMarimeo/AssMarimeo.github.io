@@ -266,13 +266,15 @@ h1, h2, h3, h4 {
 .project-desc { font-size: 1.15rem; font-weight: 500; max-width: 62ch; margin: 0 0 1.8rem; }
 
 .project-next { background: var(--green); color: var(--ink); }
-.project-next .project-status { background: var(--yellow); color: var(--black); }
+.project-next .project-status { background: var(--ink); color: var(--green); }
 .project-cta { align-self: flex-start; }
 .project-next .tag-list { margin-bottom: 1.8rem; }
 
 /* Le chip spostate qui dall'hero: spinte in fondo alla card, con un filo di
-   stacco dal contenuto sopra. */
+   stacco dal contenuto sopra. Sul celeste della card diventano blu piene
+   (senza bordo) con testo e icone bianchi. */
 .project-badges { margin-top: auto; padding-top: 1.8rem; }
+.project-badges li { background: var(--blue); color: var(--white); border: none; }
 
 /* ---------- Casetta ---------- */
 .water-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.8rem; align-items: stretch; }
@@ -380,16 +382,17 @@ h1, h2, h3, h4 {
 /* I loghi del sostegno stanno dentro una card bordata (stile brutalista),
    dimensioni +20% rispetto alla vecchia striscia. */
 .funding-strip { background: var(--white); padding-block: 2.5rem; }
+/* Card contenitore, non un tasto: bordo si', ombra netta no. */
 .funding-card {
   background: var(--white); border: var(--border); border-radius: 14px;
-  box-shadow: var(--shadow-sm); padding: 1.9rem 2.4rem;
+  padding: 1.9rem 2.4rem;
 }
 .funding-strip-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem 2.6rem; }
 .funding-group { display: flex; align-items: center; gap: 1.1rem; }
 .funding-cap { font-family: var(--font-head); font-size: 0.96rem; color: var(--black); white-space: nowrap; }
 .funding-row { display: flex; align-items: center; gap: 1.55rem; }
-.funding-logo { height: 43px; width: auto; }
-.funding-sep { width: 3px; align-self: stretch; min-height: 43px; background: var(--black); }
+.funding-logo { height: 52px; width: auto; }
+.funding-sep { width: 3px; align-self: stretch; min-height: 52px; background: var(--black); }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--black); color: var(--white); padding-block: 3rem 2rem; }
