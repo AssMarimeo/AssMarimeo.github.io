@@ -87,8 +87,6 @@ h1, h2, h3, h4 {
 .btn-sm { font-size: 1.14rem; padding: 0.45rem 1rem; box-shadow: 3px 3px 0 var(--black); }
 .btn-ghost { background: var(--white); }
 
-.center-cta { text-align: center; margin-top: 3rem; }
-
 /* ---------- Icone (Material Symbols Sharp, filled) ---------- */
 .ico {
   display: inline-block; width: 1.15em; height: 1.15em; vertical-align: -0.2em;
@@ -283,6 +281,7 @@ h1, h2, h3, h4 {
 /* ---------- CTA band ---------- */
 .cta-band { background: var(--blue); color: var(--white); padding-block: clamp(3rem, 7vw, 5rem); }
 .cta-inner { text-align: center; max-width: 680px; margin-inline: auto; }
+.cta-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
 .cta-band h2 { font-size: clamp(2.4rem, 6.6vw, 4rem); }
 .cta-band p { font-size: 1.32rem; margin-bottom: 1.8rem; font-weight: 600; }
 .cta-note { font-weight: 700; margin: 1rem 0 0; }
