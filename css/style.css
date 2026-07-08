@@ -17,6 +17,9 @@
   --cyan: #A6DDF4;
   --yellow: #FFF203;
   --white: #FFFFFF;
+  --green: #CAFF61;
+  /* Inchiostro del verde: sul lime il nero puro vibra, questo blu profondo no. */
+  --ink: #1F3C4C;
 
   --border: 3px solid var(--black);
   /* Ombra netta = affordance di click. Solo su CTA ed elementi interattivi. */
@@ -75,9 +78,10 @@ h1, h2, h3, h4 {
 .section-cyan { background: var(--cyan); }
 .section-blue { background: var(--blue); color: var(--white); }
 .section-yellow { background: var(--yellow); }
+.section-green { background: var(--green); color: var(--ink); }
 
 .section-eyebrow, .eyebrow {
-  display: inline-block; background: var(--black); color: var(--yellow);
+  display: inline-block; background: var(--black); color: var(--white);
   font-family: var(--font-body); font-weight: 800; text-transform: uppercase;
   letter-spacing: 0.08em; font-size: 0.8rem; padding: 0.3rem 0.7rem; margin: 0 0 1rem;
 }
@@ -355,7 +359,17 @@ h1, h2, h3, h4 {
 .footer-list a:hover { color: var(--yellow); }
 .footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; }
 .footer-copy { margin: 0; color: rgba(255, 255, 255, 0.7); font-size: 0.85rem; }
-.back-top { color: var(--white); text-decoration: none; font-family: var(--font-head); font-size: 1.1rem; }
+/* Bottone su fondo nero: fondo nero, testo, bordo e ombra netta bianchi. */
+.back-top {
+  margin-left: auto;
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--white);
+  box-shadow: 3px 3px 0 var(--white);
+}
+.back-top:hover { background: var(--black); box-shadow: 2px 2px 0 var(--white); }
+.back-top:active { box-shadow: 0 0 0 var(--white); }
+.back-top:focus-visible { outline-color: var(--white); }
 
 /* ============================================================
    Responsive

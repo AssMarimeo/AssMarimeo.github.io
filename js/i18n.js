@@ -45,7 +45,7 @@
       impact_co2_label: "di CO₂ risparmiata",
       impact_note: "Dati stimati relativi al 2025.",
 
-      water_eyebrow: "Il nostro progetto",
+      water_eyebrow: "La nostra soluzione",
       water_title: "La casetta dell'acqua di Scauri",
       water_desc: "Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.",
       water_where_label: "Dove si trova",
@@ -134,7 +134,7 @@
       footer_statute: "Statuto (PDF)",
       footer_analysis: "Analisi dell'acqua (PDF)",
       footer_copy: "Associazione Giovanile Marimeo",
-      back_top: "Torna su ↑"
+      back_top: "Torna su"
     },
 
     /* ---------------- ENGLISH ---------------- */
@@ -172,7 +172,7 @@
       impact_co2_label: "of CO₂ saved",
       impact_note: "Estimated figures for 2025.",
 
-      water_eyebrow: "Our project",
+      water_eyebrow: "Our solution",
       water_title: "The Scauri water house",
       water_desc: "Good, tested, zero-kilometre water, open to everyone. Still or sparkling, room temperature or chilled: bring your bottle and fill it up.",
       water_where_label: "Where it is",
@@ -261,7 +261,7 @@
       footer_statute: "Statute (PDF)",
       footer_analysis: "Water analysis (PDF)",
       footer_copy: "Marimeo Youth Association",
-      back_top: "Back to top ↑"
+      back_top: "Back to top"
     },
 
     /* ---------------- FRANÇAIS ---------------- */
@@ -299,7 +299,7 @@
       impact_co2_label: "de CO₂ économisé",
       impact_note: "Chiffres estimés pour 2025.",
 
-      water_eyebrow: "Notre projet",
+      water_eyebrow: "Notre solution",
       water_title: "La maison de l'eau de Scauri",
       water_desc: "Une eau bonne, contrôlée et de proximité, ouverte à tous. Plate ou pétillante, à température ambiante ou fraîche : apportez votre gourde et remplissez-la.",
       water_where_label: "Où se trouve-t-elle",
@@ -388,7 +388,7 @@
       footer_statute: "Statuts (PDF)",
       footer_analysis: "Analyses de l'eau (PDF)",
       footer_copy: "Association de Jeunesse Marimeo",
-      back_top: "Retour en haut ↑"
+      back_top: "Retour en haut"
     }
   };
 
