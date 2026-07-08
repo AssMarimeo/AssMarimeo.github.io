@@ -328,7 +328,7 @@ th.price-hl { background: var(--yellow); color: var(--black); }
    Responsive
    ============================================================ */
 @media (max-width: 900px) {
-  .water-layout, .enroll-grid { grid-template-columns: 1fr; }
+  .water-layout, .enroll-grid, .cards { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-col:first-child { grid-column: 1 / -1; }
 }
