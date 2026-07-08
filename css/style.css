@@ -237,6 +237,36 @@ h1, h2, h3, h4 {
 .stat-note { margin-top: 1.6rem; font-weight: 700; }
 .section-blue .stat-note { color: var(--white); }
 
+/* ---------- Cosa facciamo: i progetti ---------- */
+/* Le due card stanno una sotto l'altra, a tutta colonna: niente scroll
+   orizzontale, niente contenuto nascosto. */
+.projects-track {
+  display: grid; gap: 1.6rem;
+  list-style: none; margin: 0; padding: 0;
+}
+
+.project-card {
+  min-width: 0;
+  display: flex; flex-direction: column;
+  background: var(--white); color: var(--black);
+  border: var(--border); border-radius: 14px; padding: 1.8rem;
+}
+
+.project-status {
+  align-self: flex-start;
+  background: var(--black); color: var(--white);
+  font-family: var(--font-body); font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em; font-size: 0.8rem; padding: 0.3rem 0.7rem; margin: 0 0 1rem;
+}
+.project-name { font-size: clamp(1.9rem, 3.4vw, 2.7rem); max-width: 22ch; }
+.project-desc { font-size: 1.15rem; font-weight: 500; max-width: 62ch; margin: 0 0 1.8rem; }
+
+/* La card dei progetti futuri eredita il verde che era della vecchia sezione. */
+.project-next { background: var(--green); color: var(--ink); }
+.project-next .project-status { background: var(--yellow); color: var(--black); }
+.project-cta { align-self: flex-start; }
+.project-next .tag-list { margin-bottom: 1.8rem; }
+
 /* ---------- Casetta ---------- */
 .water-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.8rem; align-items: stretch; }
 .map-card, .price-card {
@@ -250,7 +280,7 @@ h1, h2, h3, h4 {
 .map-foot .btn { white-space: nowrap; flex-shrink: 0; }
 #casetta [data-i18n="water_where_value"] { white-space: pre-line; }
 .price-card { padding: 1.6rem; }
-.price-card h3 { font-size: 1.75rem; }
+.price-card h4 { font-size: 1.75rem; }
 .price-table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; }
 .price-table th, .price-table td { text-align: left; padding: 0.7rem 0.6rem; border-bottom: 2px solid var(--black); }
 .price-table thead th { font-family: var(--font-head); font-size: 1.2rem; background: var(--blue); color: var(--white); }
@@ -412,6 +442,7 @@ h1, h2, h3, h4 {
 .bn-item:active { background: var(--cyan); }
 
 @media (max-width: 760px) {
+  .project-card { padding: 1.3rem; }
   .nav { display: none; }          /* i link vanno nella tab bar in basso */
   .bottom-nav { display: flex; }
   /* Lo spazio per la barra flottante lo riserva il footer, non il body: cosi' il

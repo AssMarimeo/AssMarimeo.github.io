@@ -152,7 +152,7 @@
     <section class="hero">
       <div class="container hero-inner">
         <h1 class="hero-title">
-          <span class="eyebrow" data-i18n="hero_eyebrow">Marimeo · Associazione giovanile ambientale</span>
+          <span class="eyebrow" data-i18n="hero_eyebrow">Associazione Giovanile Marimeo</span>
           <span class="hero-claim" data-i18n="hero_title" data-i18n-html>Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.</span>
         </h1>
         <p class="hero-lead" data-i18n="hero_lead">
@@ -204,63 +204,95 @@
       </div>
     </section>
 
-    <!-- ===== 3. La casetta dell'acqua ===== -->
+    <!-- ===== 3. Cosa facciamo: i progetti ===== -->
+    <!-- L'id resta "casetta": e' l'ancora dei menu, del CTA nell'hero e l'@id
+         del Place nei dati strutturati. La sezione ora e' un contenitore di
+         progetti, ma il luogo fisico a cui punta l'ancora e' sempre questo. -->
     <section id="casetta" class="section">
       <div class="container">
-        <p class="section-eyebrow" data-i18n="water_eyebrow">La nostra soluzione</p>
-        <h2 class="section-title" data-i18n="water_title">La casetta dell'acqua di Scauri</h2>
-        <p class="section-intro" data-i18n="water_desc">
-          Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o
-          frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.
+        <p class="section-eyebrow" data-i18n="water_eyebrow">Cosa facciamo</p>
+        <h2 class="section-title" data-i18n="projects_title">I nostri progetti</h2>
+        <p class="section-intro" data-i18n="projects_intro">
+          Oggi gestiamo la casetta dell'acqua di Scauri. Domani, molto altro.
         </p>
 
-        <div class="water-layout">
-          <div class="map-card">
-            <h3 class="map-card-title" data-i18n="water_where_label">Dove si trova</h3>
-            <iframe
-              class="map-embed"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=13.6949%2C41.2566%2C13.7029%2C41.2606&layer=mapnik&marker=41.2585642%2C13.6988841"
-              title="Mappa della casetta dell'acqua di Scauri"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen></iframe>
-            <div class="map-foot">
-              <div>
-                <span data-i18n="water_where_value">Scauri — Minturno (LT) · Aperta h24, 7 giorni su 7</span>
-              </div>
-              <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" class="btn btn-sm" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivarci</a>
-            </div>
-          </div>
-
-          <div class="price-card">
-            <h3 data-i18n="price_title">Quanto costa l'acqua</h3>
-            <table class="price-table">
-              <thead>
-                <tr>
-                  <th data-i18n="price_type_head">Tipo</th>
-                  <th data-i18n="price_non_head">Non associati</th>
-                  <th class="price-hl" data-i18n="price_mem_head">Associati</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-i18n="price_row1">Naturale (ambiente o fredda)</td>
-                  <td>8 cent/L</td>
-                  <td class="price-hl">5 cent/L</td>
-                </tr>
-                <tr>
-                  <td data-i18n="price_row2">Frizzante fredda</td>
-                  <td>10 cent/L</td>
-                  <td class="price-hl">7 cent/L</td>
-                </tr>
-              </tbody>
-            </table>
-            <p class="price-note" data-i18n="price_note">
-              Con la tessera da socio l'acqua ti costa meno ogni giorno.
+        <ul class="projects-track">
+          <li class="project-card">
+            <p class="project-status" data-i18n="project_status_active">Attivo</p>
+            <h3 class="project-name" data-i18n="water_title">La casetta dell'acqua di Scauri</h3>
+            <p class="project-desc" data-i18n="water_desc">
+              Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o
+              frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.
             </p>
-            <a href="assets/docs/analisi-acqua-2026-06.pdf" class="btn btn-ghost btn-sm" style="margin-top: 1rem;" target="_blank" rel="noopener" data-i18n="water_analysis_link">Analisi dell'acqua aggiornate (PDF) ↗</a>
-          </div>
-        </div>
+
+            <div class="water-layout">
+              <div class="map-card">
+                <h4 class="map-card-title" data-i18n="water_where_label">Dove si trova</h4>
+                <iframe
+                  class="map-embed"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.6949%2C41.2566%2C13.7029%2C41.2606&layer=mapnik&marker=41.2585642%2C13.6988841"
+                  title="Mappa della casetta dell'acqua di Scauri"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen></iframe>
+                <div class="map-foot">
+                  <div>
+                    <span data-i18n="water_where_value">Scauri — Minturno (LT) · Aperta h24, 7 giorni su 7</span>
+                  </div>
+                  <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" class="btn btn-sm" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivarci</a>
+                </div>
+              </div>
+
+              <div class="price-card">
+                <h4 data-i18n="price_title">Quanto costa l'acqua</h4>
+                <table class="price-table">
+                  <thead>
+                    <tr>
+                      <th data-i18n="price_type_head">Tipo</th>
+                      <th data-i18n="price_non_head">Non associati</th>
+                      <th class="price-hl" data-i18n="price_mem_head">Associati</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-i18n="price_row1">Naturale (ambiente o fredda)</td>
+                      <td>8 cent/L</td>
+                      <td class="price-hl">5 cent/L</td>
+                    </tr>
+                    <tr>
+                      <td data-i18n="price_row2">Frizzante fredda</td>
+                      <td>10 cent/L</td>
+                      <td class="price-hl">7 cent/L</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="price-note" data-i18n="price_note">
+                  Con la tessera da socio l'acqua ti costa meno ogni giorno.
+                </p>
+                <a href="assets/docs/analisi-acqua-2026-06.pdf" class="btn btn-ghost btn-sm" style="margin-top: 1rem;" target="_blank" rel="noopener" data-i18n="water_analysis_link">Analisi dell'acqua aggiornate (PDF) ↗</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-card project-next" id="futuro">
+            <p class="project-status" data-i18n="project_status_soon">In arrivo</p>
+            <h3 class="project-name" data-i18n="future_title">Un'associazione viva e in crescita</h3>
+            <p class="project-desc" data-i18n="future_text">
+              La casetta dell'acqua è solo l'inizio. Vogliamo far crescere nuove iniziative
+              per l'ambiente, i giovani e la comunità: educazione ambientale, qualità
+              dell'aria, spazi di incontro e molto altro.
+            </p>
+            <ul class="tag-list">
+              <li><svg class="ico"><use href="#i-leaf"></use></svg> <span data-i18n="future_tag1">Ambiente</span></li>
+              <li><svg class="ico"><use href="#i-users"></use></svg> <span data-i18n="future_tag2">Giovani</span></li>
+              <li><svg class="ico"><use href="#i-map"></use></svg> <span data-i18n="future_tag3">Territorio</span></li>
+              <li><svg class="ico"><use href="#i-wind"></use></svg> <span data-i18n="future_tag4">Qualità dell'aria</span></li>
+              <li><svg class="ico"><use href="#i-book"></use></svg> <span data-i18n="future_tag5">Educazione ambientale</span></li>
+              <li><svg class="ico"><use href="#i-sparkles"></use></svg> <span data-i18n="future_tag6">Comunità</span></li>
+            </ul>
+            <a href="#come-associarsi" class="btn project-cta" data-i18n="hero_cta1">Diventa socio</a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -376,28 +408,7 @@
       </div>
     </section>
 
-    <!-- ===== 7. Progetti futuri ===== -->
-    <section id="futuro" class="section section-green">
-      <div class="container narrow">
-        <p class="section-eyebrow" data-i18n="future_eyebrow">Progetti futuri</p>
-        <h2 class="section-title" data-i18n="future_title">Un'associazione viva e in crescita</h2>
-        <p class="section-intro" data-i18n="future_text">
-          La casetta dell'acqua è solo l'inizio. Vogliamo far crescere nuove iniziative
-          per l'ambiente, i giovani e la comunità: educazione ambientale, qualità
-          dell'aria, spazi di incontro e molto altro.
-        </p>
-        <ul class="tag-list">
-          <li><svg class="ico"><use href="#i-leaf"></use></svg> <span data-i18n="future_tag1">Ambiente</span></li>
-          <li><svg class="ico"><use href="#i-users"></use></svg> <span data-i18n="future_tag2">Giovani</span></li>
-          <li><svg class="ico"><use href="#i-map"></use></svg> <span data-i18n="future_tag3">Territorio</span></li>
-          <li><svg class="ico"><use href="#i-wind"></use></svg> <span data-i18n="future_tag4">Qualità dell'aria</span></li>
-          <li><svg class="ico"><use href="#i-book"></use></svg> <span data-i18n="future_tag5">Educazione ambientale</span></li>
-          <li><svg class="ico"><use href="#i-sparkles"></use></svg> <span data-i18n="future_tag6">Comunità</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ===== 8. FAQ ===== -->
+    <!-- ===== 7. FAQ ===== -->
     <section id="faq" class="section section-yellow">
       <div class="container narrow centered">
         <p class="section-eyebrow" data-i18n="faq_eyebrow">Domande frequenti</p>

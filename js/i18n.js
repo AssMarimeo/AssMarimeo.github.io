@@ -23,7 +23,7 @@
       nav_join: "Diventa socio",
       nav_join_short: "Socio",
 
-      hero_eyebrow: "Marimeo · Associazione giovanile ambientale",
+      hero_eyebrow: "Associazione Giovanile Marimeo",
       hero_title: "Bevi meglio.<br />Risparmia plastica.<br />Riduci CO₂.",
       hero_lead: "Marimeo è un'associazione giovanile ambientale che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri, a Minturno (LT).",
       hero_cta1: "Diventa socio",
@@ -46,7 +46,11 @@
       impact_co2_label: "di CO₂ risparmiata",
       impact_note: "Dati stimati relativi al 2025.",
 
-      water_eyebrow: "La nostra soluzione",
+      water_eyebrow: "Cosa facciamo",
+      projects_title: "I nostri progetti",
+      projects_intro: "Oggi gestiamo la casetta dell'acqua di Scauri. Domani, molto altro.",
+      project_status_active: "Attivo",
+      project_status_soon: "In arrivo",
       water_title: "La casetta dell'acqua di Scauri",
       water_desc: "Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.",
       water_where_label: "Dove si trova",
@@ -94,7 +98,6 @@
       enroll_office_text: "Oppure presso lo studio del nostro presidente, Ing. Salvatore Pirolozzi, in Via Castagna 38 — Scauri, previo appuntamento via email o sui canali social.",
       enroll_office_btn: "Prendi appuntamento via email",
 
-      future_eyebrow: "Progetti futuri",
       future_title: "Un'associazione viva e in crescita",
       future_text: "La casetta dell'acqua è solo l'inizio. Vogliamo far crescere nuove iniziative per l'ambiente, i giovani e la comunità: educazione ambientale, qualità dell'aria, spazi di incontro e molto altro.",
       future_tag1: "Ambiente",
@@ -151,7 +154,7 @@
       nav_join: "Become a member",
       nav_join_short: "Join",
 
-      hero_eyebrow: "Marimeo · Youth environmental association",
+      hero_eyebrow: "Marimeo Youth Association",
       hero_title: "Drink better.<br />Save plastic.<br />Cut CO₂.",
       hero_lead: "Marimeo is a youth environmental association helping the local community use less plastic thanks to the Scauri water house, in Minturno (LT), Italy.",
       hero_cta1: "Become a member",
@@ -174,7 +177,11 @@
       impact_co2_label: "of CO₂ saved",
       impact_note: "Estimated figures for 2025.",
 
-      water_eyebrow: "Our solution",
+      water_eyebrow: "What we do",
+      projects_title: "Our projects",
+      projects_intro: "Today we run the Scauri water house. Tomorrow, much more.",
+      project_status_active: "Active",
+      project_status_soon: "Coming soon",
       water_title: "The Scauri water house",
       water_desc: "Good, tested, zero-kilometre water, open to everyone. Still or sparkling, room temperature or chilled: bring your bottle and fill it up.",
       water_where_label: "Where it is",
@@ -222,7 +229,6 @@
       enroll_office_text: "Or at the office of our president, Ing. Salvatore Pirolozzi, at Via Castagna 38 — Scauri, by appointment via email or on social media.",
       enroll_office_btn: "Book an appointment via email",
 
-      future_eyebrow: "Future projects",
       future_title: "A living, growing association",
       future_text: "The water house is only the beginning. We want to grow new initiatives for the environment, young people and the community: environmental education, air quality, meeting spaces and much more.",
       future_tag1: "Environment",
@@ -279,7 +285,7 @@
       nav_join: "Devenir membre",
       nav_join_short: "Adhérer",
 
-      hero_eyebrow: "Marimeo · Association de jeunesse écologiste",
+      hero_eyebrow: "Association de Jeunesse Marimeo",
       hero_title: "Buvez mieux.<br />Économisez le plastique.<br />Réduisez le CO₂.",
       hero_lead: "Marimeo est une association de jeunesse écologiste qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau de Scauri, à Minturno (LT), en Italie.",
       hero_cta1: "Devenir membre",
@@ -302,7 +308,11 @@
       impact_co2_label: "de CO₂ économisé",
       impact_note: "Chiffres estimés pour 2025.",
 
-      water_eyebrow: "Notre solution",
+      water_eyebrow: "Ce que nous faisons",
+      projects_title: "Nos projets",
+      projects_intro: "Aujourd'hui nous gérons la maison de l'eau de Scauri. Demain, bien plus.",
+      project_status_active: "Actif",
+      project_status_soon: "Bientôt",
       water_title: "La maison de l'eau de Scauri",
       water_desc: "Une eau bonne, contrôlée et de proximité, ouverte à tous. Plate ou pétillante, à température ambiante ou fraîche : apportez votre gourde et remplissez-la.",
       water_where_label: "Où se trouve-t-elle",
@@ -350,7 +360,6 @@
       enroll_office_text: "Ou au cabinet de notre président, Ing. Salvatore Pirolozzi, Via Castagna 38 — Scauri, sur rendez-vous par e-mail ou sur les réseaux sociaux.",
       enroll_office_btn: "Prendre rendez-vous par e-mail",
 
-      future_eyebrow: "Projets futurs",
       future_title: "Une association vivante et en croissance",
       future_text: "La maison de l'eau n'est qu'un début. Nous voulons développer de nouvelles initiatives pour l'environnement, les jeunes et la communauté : éducation à l'environnement, qualité de l'air, espaces de rencontre et bien plus encore.",
       future_tag1: "Environnement",
