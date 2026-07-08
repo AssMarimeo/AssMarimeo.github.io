@@ -411,14 +411,12 @@
     return SUPPORTED.includes(short) ? short : null;
   }
 
-  /* L'italiano e' la lingua canonica del sito: e' quella nel sorgente, nel
-     canonical e nella sitemap. Non si guarda navigator.language, altrimenti
-     Googlebot (en-US) renderizzerebbe il corpo in inglese sotto un titolo
-     italiano. Le altre lingue restano un servizio per chi le sceglie. */
+  /* Chi ha gia' scelto una lingua se la ritrova; agli altri il sito parla nella
+     lingua del browser, se e' fra quelle supportate. */
   function detectInitialLang() {
     let saved = null;
     try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
-    return normalize(saved) || DEFAULT_LANG;
+    return normalize(saved) || normalize(navigator.language) || DEFAULT_LANG;
   }
 
   let currentLang = detectInitialLang();
