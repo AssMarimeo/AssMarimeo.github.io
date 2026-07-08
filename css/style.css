@@ -60,8 +60,17 @@ h1, h2, h3, h4 {
 }
 
 /* ---------- Layout ---------- */
+/* .container e' l'unica griglia della pagina: fissa la colonna e i suoi margini,
+   cosi' ogni sezione parte dalla stessa verticale. Chi vuole righe piu' corte
+   NON restringe il container (lo ricentrerebbe, spostando il bordo sinistro):
+   limita la misura del contenuto, che resta a filo. */
 .container { width: min(100% - 2.5rem, var(--container)); margin-inline: auto; }
-.container.narrow { max-width: 780px; }
+.container.narrow { --measure: 780px; }
+.container.narrow > * { max-width: var(--measure); }
+/* Eccezione voluta: la colonna stretta si stacca dalla griglia e si ricentra.
+   Da usare solo dove il blocco e' un'isola autoconclusa (la FAQ), mai su
+   sezioni che devono leggersi in continuita' con quelle sopra e sotto. */
+.container.narrow.centered { width: min(100% - 2.5rem, var(--measure)); }
 .section { padding-block: var(--space); }
 .section-cyan { background: var(--cyan); }
 .section-blue { background: var(--blue); color: var(--white); }
@@ -73,7 +82,8 @@ h1, h2, h3, h4 {
   letter-spacing: 0.08em; font-size: 0.8rem; padding: 0.3rem 0.7rem; margin: 0 0 1rem;
 }
 .section-title { font-size: clamp(2.4rem, 6vw, 4rem); max-width: 20ch; }
-.container.narrow .section-title { max-width: none; }
+/* Nelle sezioni strette il titolo usa tutta la misura, non i 20ch di default. */
+.container.narrow > .section-title { max-width: var(--measure); }
 .section-intro { font-size: 1.2rem; max-width: 58ch; margin-bottom: 2.5rem; font-weight: 500; }
 /* Testo generico del corpo (+10%) */
 .card p, .card-list li, .step p, .faq-a p, .price-note, .enroll-option p { font-size: 1.1rem; }
@@ -177,12 +187,16 @@ h1, h2, h3, h4 {
 
 /* ---------- Hero ---------- */
 /* L'hero parte da y=0, dietro la navbar flottante: il padding-top gli restituisce
-   lo spazio che l'header non occupa piu' nel flusso. */
+   lo spazio che l'header non occupa piu' nel flusso. Lo stacco sotto la navbar
+   cresce meno del padding di fondo: su desktop i ~94px di offset dell'header
+   danno gia' aria al titolo, un secondo clamp a 5.5rem lo spingerebbe troppo giu'. */
 .hero {
   background: var(--cyan); border-bottom: var(--border);
-  padding-block: calc(var(--bn-gap) + var(--header-h) + clamp(3rem, 8vw, 5.5rem)) clamp(3rem, 8vw, 5.5rem);
+  padding-block: calc(var(--bn-gap) + var(--header-h) + clamp(3rem, 4vw, 3.5rem)) clamp(3rem, 8vw, 5.5rem);
 }
-.hero-inner { max-width: 900px; }
+/* Stesso principio del .narrow: la hero sta sulla griglia, sono i suoi blocchi
+   a fermarsi a 900px. */
+.hero-inner > * { max-width: 900px; }
 .hero h1 { font-size: clamp(3.1rem, 9.9vw, 6.6rem); }
 /* L'eyebrow vive dentro l'h1 (le keyword devono stare nel titolo), quindi va
    sottratto all'ereditarieta' di font-size/line-height del titolo stesso. */
