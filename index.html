@@ -161,13 +161,8 @@
         </p>
         <div class="hero-actions">
           <a href="#come-associarsi" class="btn btn-lg" data-i18n="hero_cta1">Diventa socio</a>
-          <a href="#casetta" class="btn btn-ghost btn-lg" data-i18n="hero_cta2">Scopri il progetto</a>
+          <a href="#casetta" class="btn btn-ghost btn-lg" data-i18n="hero_cta2">Scopri i progetti</a>
         </div>
-        <ul class="hero-badges">
-          <li><svg class="ico" aria-hidden="true"><use href="#i-droplet"></use></svg> <span data-i18n="hero_badge1">Acqua da 5 cent/L</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-clock"></use></svg> <span data-i18n="hero_badge2">Aperta 24/7</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-leaf"></use></svg> <span data-i18n="hero_badge3">Meno plastica, meno CO₂</span></li>
-        </ul>
       </div>
     </section>
 
@@ -279,6 +274,12 @@
                 <a href="assets/docs/analisi-acqua-2026-06.pdf" class="btn btn-ghost btn-sm" style="margin-top: 1rem;" target="_blank" rel="noopener" data-i18n="water_analysis_link">Analisi dell'acqua aggiornate (PDF) ↗</a>
               </div>
             </div>
+
+            <ul class="hero-badges project-badges">
+              <li><svg class="ico" aria-hidden="true"><use href="#i-droplet"></use></svg> <span data-i18n="hero_badge1">Acqua da 5 cent/L</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-clock"></use></svg> <span data-i18n="hero_badge2">Aperta 24/7</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-leaf"></use></svg> <span data-i18n="hero_badge3">Meno plastica, meno CO₂</span></li>
+            </ul>
           </li>
 
           <li class="project-card project-next" id="futuro">
@@ -448,7 +449,7 @@
     <!-- ===== CTA finale ===== -->
     <section id="diventa-associato" class="cta-band">
       <div class="container cta-inner">
-        <h2 data-i18n="final_cta_title">Entra anche tu in Marimeo</h2>
+        <h2 data-i18n="final_cta_title">Aiutaci a crescere, diventa socio Marimeo</h2>
         <p data-i18n="final_cta_text">Associati per il 2026 con soli 10 €: acqua scontata e un territorio con meno plastica.</p>
         <div class="cta-actions">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form"
@@ -463,20 +464,24 @@
 
   <!-- ===== Sostegno Regione Lazio (striscia compatta) ===== -->
   <section id="finanziamento" class="funding-strip" aria-label="Con il sostegno di">
-    <div class="container funding-strip-inner">
-      <div class="funding-group">
-        <span class="funding-cap" data-i18n="funding_support">con il sostegno di</span>
-        <div class="funding-row">
-          <img class="funding-logo" src="assets/img/lazio-regione.png" alt="Regione Lazio" loading="lazy" width="578" height="160" />
-          <img class="funding-logo" src="assets/img/lazio-presidenza.png" alt="Presidenza del Consiglio dei Ministri — Dipartimento della Gioventù e del Servizio Civile Nazionale" loading="lazy" width="379" height="160" />
-        </div>
-      </div>
-      <span class="funding-sep" aria-hidden="true"></span>
-      <div class="funding-group">
-        <span class="funding-cap" data-i18n="funding_within">nell'ambito di</span>
-        <div class="funding-row">
-          <img class="funding-logo" src="assets/img/lazio-vitamina-g.png" alt="Vincitore di Vitamina G — Regione Lazio" loading="lazy" width="160" height="160" />
-          <img class="funding-logo" src="assets/img/lazio-generazioni-giovani.png" alt="Generazioni Giovani.it — Regione Lazio" loading="lazy" width="289" height="160" />
+    <div class="container">
+      <div class="funding-card">
+        <div class="funding-strip-inner">
+          <div class="funding-group">
+            <span class="funding-cap" data-i18n="funding_support">con il sostegno di</span>
+            <div class="funding-row">
+              <img class="funding-logo" src="assets/img/lazio-regione.png" alt="Regione Lazio" loading="lazy" width="578" height="160" />
+              <img class="funding-logo" src="assets/img/lazio-presidenza.png" alt="Presidenza del Consiglio dei Ministri — Dipartimento della Gioventù e del Servizio Civile Nazionale" loading="lazy" width="379" height="160" />
+            </div>
+          </div>
+          <span class="funding-sep" aria-hidden="true"></span>
+          <div class="funding-group">
+            <span class="funding-cap" data-i18n="funding_within">nell'ambito di</span>
+            <div class="funding-row">
+              <img class="funding-logo" src="assets/img/lazio-vitamina-g.png" alt="Vincitore di Vitamina G — Regione Lazio" loading="lazy" width="160" height="160" />
+              <img class="funding-logo" src="assets/img/lazio-generazioni-giovani.png" alt="Generazioni Giovani.it — Regione Lazio" loading="lazy" width="289" height="160" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -511,12 +516,13 @@
         <ul class="footer-list">
           <li><a href="assets/docs/statuto-marimeo.pdf" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a></li>
           <li><a href="assets/docs/analisi-acqua-2026-06.pdf" target="_blank" rel="noopener" data-i18n="footer_analysis">Analisi dell'acqua (PDF)</a></li>
+          <li><a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a></li>
         </ul>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <p class="footer-copy">© <span id="year"></span> <span data-i18n="footer_copy">Associazione Giovanile Marimeo</span> · P. IVA 03318080599 · C.F. 90079590593</p>
+      <p class="footer-copy">© <span id="year"></span> <span data-i18n="footer_copy">Associazione Giovanile Marimeo</span> · P. IVA 03318080599 · C.F. 90079590593 · <span data-i18n="footer_credit">Sito web realizzato da Filippo Fresilli</span></p>
       <a href="#top" class="btn btn-sm back-top"><span data-i18n="back_top">Torna su</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a>
     </div>
   </footer>

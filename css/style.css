@@ -247,13 +247,13 @@ h1, h2, h3, h4 {
   list-style: none; margin: 0; padding: 0;
 }
 
-/* Senza bordo: a separarle dalla pagina bianca ci pensa il colore di fondo.
+/* Bordo nero a delimitare la card sulla pagina bianca.
    La casetta prende il celeste, i progetti futuri il verde. */
 .project-card {
   min-width: 0;
   display: flex; flex-direction: column;
   background: var(--cyan); color: var(--black);
-  border-radius: 14px; padding: 1.8rem;
+  border: var(--border); border-radius: 14px; padding: 1.8rem;
 }
 
 .project-status {
@@ -269,6 +269,10 @@ h1, h2, h3, h4 {
 .project-next .project-status { background: var(--yellow); color: var(--black); }
 .project-cta { align-self: flex-start; }
 .project-next .tag-list { margin-bottom: 1.8rem; }
+
+/* Le chip spostate qui dall'hero: spinte in fondo alla card, con un filo di
+   stacco dal contenuto sopra. */
+.project-badges { margin-top: auto; padding-top: 1.8rem; }
 
 /* ---------- Casetta ---------- */
 .water-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.8rem; align-items: stretch; }
@@ -373,13 +377,19 @@ h1, h2, h3, h4 {
 .cta-note { font-weight: 700; margin: 1rem 0 0; }
 
 /* ---------- Funding strip ---------- */
-.funding-strip { background: var(--white); padding-block: 1rem; }
-.funding-strip-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.8rem 2.2rem; }
-.funding-group { display: flex; align-items: center; gap: 0.9rem; }
-.funding-cap { font-family: var(--font-head); font-size: 0.8rem; color: var(--black); white-space: nowrap; }
-.funding-row { display: flex; align-items: center; gap: 1.3rem; }
-.funding-logo { height: 36px; width: auto; }
-.funding-sep { width: 3px; align-self: stretch; min-height: 36px; background: var(--black); }
+/* I loghi del sostegno stanno dentro una card bordata (stile brutalista),
+   dimensioni +20% rispetto alla vecchia striscia. */
+.funding-strip { background: var(--white); padding-block: 2.5rem; }
+.funding-card {
+  background: var(--white); border: var(--border); border-radius: 14px;
+  box-shadow: var(--shadow-sm); padding: 1.9rem 2.4rem;
+}
+.funding-strip-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem 2.6rem; }
+.funding-group { display: flex; align-items: center; gap: 1.1rem; }
+.funding-cap { font-family: var(--font-head); font-size: 0.96rem; color: var(--black); white-space: nowrap; }
+.funding-row { display: flex; align-items: center; gap: 1.55rem; }
+.funding-logo { height: 43px; width: auto; }
+.funding-sep { width: 3px; align-self: stretch; min-height: 43px; background: var(--black); }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--black); color: var(--white); padding-block: 3rem 2rem; }

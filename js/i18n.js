@@ -27,7 +27,7 @@
       hero_title: "Combattiamo il consumo di plastica e le emissioni di CO₂, un litro d'acqua alla volta.",
       hero_lead: "Marimeo è un'associazione giovanile ambientale che aiuta il territorio a consumare meno plastica grazie alla casetta dell'acqua di Scauri, a Minturno (LT).",
       hero_cta1: "Diventa socio",
-      hero_cta2: "Scopri il progetto",
+      hero_cta2: "Scopri i progetti",
       hero_badge1: "Acqua da 5 cent/L",
       hero_badge2: "Aperta 24/7",
       hero_badge3: "Meno plastica, meno CO₂",
@@ -124,7 +124,7 @@
       faq_q5: "Come posso aiutare Marimeo?",
       faq_a5: "Associandoti, usando la casetta con la tua borraccia, partecipando alle iniziative e seguendoci sui social. Ogni gesto conta!",
 
-      final_cta_title: "Entra anche tu in Marimeo",
+      final_cta_title: "Aiutaci a crescere, diventa socio Marimeo",
       final_cta_text: "Associati per il 2026 con soli 10 €: acqua scontata e un territorio con meno plastica.",
       final_cta_btn: "Compila il modulo di iscrizione",
       final_cta_note: "Campagna associativa 2026",
@@ -141,7 +141,9 @@
       footer_links_title: "Documenti",
       footer_statute: "Statuto (PDF)",
       footer_analysis: "Analisi dell'acqua (PDF)",
+      footer_privacy: "Privacy policy",
       footer_copy: "Associazione Giovanile Marimeo",
+      footer_credit: "Sito web realizzato da Filippo Fresilli",
       back_top: "Torna su"
     },
 
@@ -162,7 +164,7 @@
       hero_title: "We fight plastic use and CO₂ emissions, one litre of water at a time.",
       hero_lead: "Marimeo is a youth environmental association helping the local community use less plastic thanks to the Scauri water house, in Minturno (LT), Italy.",
       hero_cta1: "Become a member",
-      hero_cta2: "Discover the project",
+      hero_cta2: "Discover the projects",
       hero_badge1: "Water from €0.05/L",
       hero_badge2: "Open 24/7",
       hero_badge3: "Less plastic, less CO₂",
@@ -257,7 +259,7 @@
       faq_q5: "How can I help Marimeo?",
       faq_a5: "By joining, using the water house with your own bottle, taking part in our initiatives and following us on social media. Every action counts!",
 
-      final_cta_title: "Join Marimeo too",
+      final_cta_title: "Help us grow, become a Marimeo member",
       final_cta_text: "Become a member for 2026 for just €10: discounted water and a community with less plastic.",
       final_cta_btn: "Fill in the membership form",
       final_cta_note: "2026 membership campaign",
@@ -274,7 +276,9 @@
       footer_links_title: "Documents",
       footer_statute: "Statute (PDF)",
       footer_analysis: "Water analysis (PDF)",
+      footer_privacy: "Privacy policy",
       footer_copy: "Marimeo Youth Association",
+      footer_credit: "Website by Filippo Fresilli",
       back_top: "Back to top"
     },
 
@@ -295,7 +299,7 @@
       hero_title: "Nous combattons la consommation de plastique et les émissions de CO₂, un litre d'eau à la fois.",
       hero_lead: "Marimeo est une association de jeunesse écologiste qui aide le territoire à consommer moins de plastique grâce à la maison de l'eau de Scauri, à Minturno (LT), en Italie.",
       hero_cta1: "Devenir membre",
-      hero_cta2: "Découvrir le projet",
+      hero_cta2: "Découvrir les projets",
       hero_badge1: "Eau dès 0,05 €/L",
       hero_badge2: "Ouverte 24h/24",
       hero_badge3: "Moins de plastique, moins de CO₂",
@@ -390,7 +394,7 @@
       faq_q5: "Comment puis-je aider Marimeo ?",
       faq_a5: "En adhérant, en utilisant la maison de l'eau avec votre gourde, en participant aux initiatives et en nous suivant sur les réseaux sociaux. Chaque geste compte !",
 
-      final_cta_title: "Rejoignez Marimeo, vous aussi",
+      final_cta_title: "Aidez-nous à grandir, devenez membre de Marimeo",
       final_cta_text: "Adhérez pour 2026 pour seulement 10 € : eau à prix réduit et un territoire avec moins de plastique.",
       final_cta_btn: "Remplir le formulaire d'adhésion",
       final_cta_note: "Campagne d'adhésion 2026",
@@ -407,7 +411,9 @@
       footer_links_title: "Documents",
       footer_statute: "Statuts (PDF)",
       footer_analysis: "Analyses de l'eau (PDF)",
+      footer_privacy: "Politique de confidentialité",
       footer_copy: "Association de Jeunesse Marimeo",
+      footer_credit: "Site web réalisé par Filippo Fresilli",
       back_top: "Retour en haut"
     }
   };
