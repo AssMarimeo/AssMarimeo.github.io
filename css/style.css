@@ -154,7 +154,7 @@ h1, h2, h3, h4 {
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 /* Stessa altezza per il pulsante lingua e il CTA "Diventa socio" */
-.lang-trigger, .header-cta { height: 46px; }
+.lang-trigger, .header-cta, .header-donate { height: 46px; }
 .lang-trigger:hover { background: var(--cyan); }
 .lang-trigger:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--black); }
 .lang-caret { font-family: var(--font-body); font-size: 0.75rem; transition: transform 0.15s ease; }
@@ -268,6 +268,8 @@ h1, h2, h3, h4 {
 .project-next { background: var(--green); color: var(--ink); }
 .project-next .project-status { background: var(--ink); color: var(--green); }
 .project-cta { align-self: flex-start; }
+/* I due bottoni della card (associarsi + donazione) affiancati, a sinistra. */
+.project-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; align-self: flex-start; }
 .project-next .tag-list { margin-bottom: 1.8rem; }
 
 /* Le chip spostate qui dall'hero: spinte in fondo alla card, con un filo di
@@ -390,7 +392,7 @@ h1, h2, h3, h4 {
 .funding-strip-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem 2.6rem; }
 .funding-group { display: flex; align-items: center; gap: 1.1rem; }
 .funding-cap { font-family: var(--font-head); font-size: 0.96rem; color: var(--black); white-space: nowrap; }
-.funding-row { display: flex; align-items: center; gap: 1.55rem; }
+.funding-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.55rem; }
 .funding-logo { height: 52px; width: auto; }
 .funding-sep { width: 3px; align-self: stretch; min-height: 52px; background: var(--black); }
 
@@ -470,13 +472,22 @@ h1, h2, h3, h4 {
   :root { --header-h: 66px; }
   .site-header .container { padding-inline: 0.7rem; }
 
-  /* Header compatto: wordmark rimpicciolito, poi CTA e lingua */
+  /* Header compatto: wordmark rimpicciolito, poi CTA e lingua.
+     La donazione sparisce dall'header (resta in card, band e footer). */
   .header-right { gap: 0.5rem; }
+  .header-donate { display: none; }
   .header-cta { font-size: 1.02rem; padding: 0 0.7rem; }
   .lang-trigger { padding: 0 0.55rem; }
   .header-inner { min-height: 60px; }
 }
-@media (max-width: 560px) { .funding-group { flex-direction: column; gap: 0.4rem; } }
+@media (max-width: 560px) {
+  /* Su schermi stretti la card rimpicciolisce loghi e padding, e i gruppi/righe
+     vanno a capo invece di sforare oltre il bordo. */
+  .funding-card { padding: 1.4rem 1.1rem; }
+  .funding-group { flex-direction: column; gap: 0.5rem; }
+  .funding-row { gap: 1rem 1.2rem; }
+  .funding-logo { height: 40px; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }

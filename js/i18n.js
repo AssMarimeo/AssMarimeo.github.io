@@ -22,6 +22,7 @@
       nav_faq: "FAQ",
       nav_join: "Diventa socio",
       nav_join_short: "Socio",
+      donate_cta: "Dona ora",
 
       hero_eyebrow: "Associazione Giovanile Marimeo",
       hero_title: "Combattiamo il consumo di plastica e le emissioni di CO₂, un litro d'acqua alla volta.",
@@ -159,6 +160,7 @@
       nav_faq: "FAQ",
       nav_join: "Become a member",
       nav_join_short: "Join",
+      donate_cta: "Donate now",
 
       hero_eyebrow: "Marimeo Youth Association",
       hero_title: "We fight plastic use and CO₂ emissions, one litre of water at a time.",
@@ -294,6 +296,7 @@
       nav_faq: "FAQ",
       nav_join: "Devenir membre",
       nav_join_short: "Adhérer",
+      donate_cta: "Faire un don",
 
       hero_eyebrow: "Association de Jeunesse Marimeo",
       hero_title: "Nous combattons la consommation de plastique et les émissions de CO₂, un litre d'eau à la fois.",
