@@ -12,6 +12,7 @@
   const translations = {
     /* ---------------- ITALIANO (default) ---------------- */
     it: {
+      page_title: "Marimeo — Associazione giovanile · Casetta dell'acqua a Scauri",
       meta_desc: "Marimeo, associazione giovanile ambientale: gestiamo la casetta dell'acqua a Scauri di Minturno (LT). Acqua da 5 cent/L, meno plastica, risparmio di CO2.",
 
       nav_about: "Chi siamo",
@@ -139,6 +140,7 @@
 
     /* ---------------- ENGLISH ---------------- */
     en: {
+      page_title: "Marimeo — Youth association · Water house in Scauri, Italy",
       meta_desc: "Marimeo, a youth environmental association: we run the water house in Scauri, Minturno (LT), Italy. Water from 5 cents/L, less plastic, CO2 savings.",
 
       nav_about: "About",
@@ -266,6 +268,7 @@
 
     /* ---------------- FRANÇAIS ---------------- */
     fr: {
+      page_title: "Marimeo — Association de jeunesse · Maison de l'eau à Scauri, Italie",
       meta_desc: "Marimeo, association de jeunesse écologiste : nous gérons la maison de l'eau de Scauri, à Minturno (LT), en Italie. Eau dès 5 cts/L, moins de plastique, moins de CO2.",
 
       nav_about: "À propos",
@@ -399,10 +402,14 @@
     return SUPPORTED.includes(short) ? short : null;
   }
 
+  /* L'italiano e' la lingua canonica del sito: e' quella nel sorgente, nel
+     canonical e nella sitemap. Non si guarda navigator.language, altrimenti
+     Googlebot (en-US) renderizzerebbe il corpo in inglese sotto un titolo
+     italiano. Le altre lingue restano un servizio per chi le sceglie. */
   function detectInitialLang() {
     let saved = null;
     try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
-    return normalize(saved) || normalize(navigator.language) || DEFAULT_LANG;
+    return normalize(saved) || DEFAULT_LANG;
   }
 
   let currentLang = detectInitialLang();
