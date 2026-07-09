@@ -98,6 +98,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="skip_link">Salta al contenuto</a>
   <a id="top" tabindex="-1"></a>
 
   <!-- ===== Sprite icone (Material Symbols Sharp, filled — Apache 2.0) ===== -->
@@ -125,14 +126,14 @@
         <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" class="btn btn-sm btn-ghost header-donate" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
 
         <div class="lang-switch">
-          <button type="button" class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Cambia lingua / Change language">
+          <button type="button" class="lang-trigger" aria-expanded="false" aria-controls="lang-menu" aria-label="Cambia lingua / Change language">
             <span class="lang-current">IT</span>
             <span class="lang-caret" aria-hidden="true">▾</span>
           </button>
-          <ul class="lang-menu" role="menu">
-            <li role="none"><button type="button" role="menuitem" class="lang-btn is-active" data-lang="it" lang="it" aria-pressed="true">Italiano</button></li>
-            <li role="none"><button type="button" role="menuitem" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">English</button></li>
-            <li role="none"><button type="button" role="menuitem" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="false">Français</button></li>
+          <ul class="lang-menu" id="lang-menu">
+            <li><button type="button" class="lang-btn is-active" data-lang="it" lang="it" aria-pressed="true">Italiano</button></li>
+            <li><button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">English</button></li>
+            <li><button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="false">Français</button></li>
           </ul>
         </div>
       </div>
@@ -148,7 +149,7 @@
     <a href="#faq" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-faq"></use></svg><span class="bn-label" data-i18n="nav_faq">FAQ</span></a>
   </nav>
 
-  <main>
+  <main id="main" tabindex="-1">
     <!-- ===== 1. Hero ===== -->
     <section class="hero">
       <div class="container hero-inner">
@@ -251,19 +252,19 @@
                 <table class="price-table">
                   <thead>
                     <tr>
-                      <th data-i18n="price_type_head">Tipo</th>
-                      <th data-i18n="price_non_head">Non associati</th>
-                      <th class="price-hl" data-i18n="price_mem_head">Associati</th>
+                      <th scope="col" data-i18n="price_type_head">Tipo</th>
+                      <th scope="col" data-i18n="price_non_head">Non associati</th>
+                      <th scope="col" class="price-hl" data-i18n="price_mem_head">Associati</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td data-i18n="price_row1">Naturale (ambiente o fredda)</td>
+                      <th scope="row" data-i18n="price_row1">Naturale (ambiente o fredda)</th>
                       <td>8 cent/L</td>
                       <td class="price-hl">5 cent/L</td>
                     </tr>
                     <tr>
-                      <td data-i18n="price_row2">Frizzante fredda</td>
+                      <th scope="row" data-i18n="price_row2">Frizzante fredda</th>
                       <td>10 cent/L</td>
                       <td class="price-hl">7 cent/L</td>
                     </tr>
@@ -292,12 +293,12 @@
               dell'aria, spazi di incontro e molto altro.
             </p>
             <ul class="tag-list">
-              <li><svg class="ico"><use href="#i-leaf"></use></svg> <span data-i18n="future_tag1">Ambiente</span></li>
-              <li><svg class="ico"><use href="#i-users"></use></svg> <span data-i18n="future_tag2">Giovani</span></li>
-              <li><svg class="ico"><use href="#i-map"></use></svg> <span data-i18n="future_tag3">Territorio</span></li>
-              <li><svg class="ico"><use href="#i-wind"></use></svg> <span data-i18n="future_tag4">Qualità dell'aria</span></li>
-              <li><svg class="ico"><use href="#i-book"></use></svg> <span data-i18n="future_tag5">Educazione ambientale</span></li>
-              <li><svg class="ico"><use href="#i-sparkles"></use></svg> <span data-i18n="future_tag6">Comunità</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-leaf"></use></svg> <span data-i18n="future_tag1">Ambiente</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-users"></use></svg> <span data-i18n="future_tag2">Giovani</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-map"></use></svg> <span data-i18n="future_tag3">Territorio</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-wind"></use></svg> <span data-i18n="future_tag4">Qualità dell'aria</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-book"></use></svg> <span data-i18n="future_tag5">Educazione ambientale</span></li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-sparkles"></use></svg> <span data-i18n="future_tag6">Comunità</span></li>
             </ul>
             <div class="project-actions">
               <a href="#come-associarsi" class="btn" data-i18n="hero_cta1">Diventa socio</a>

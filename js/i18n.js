@@ -23,6 +23,8 @@
       nav_join: "Diventa socio",
       nav_join_short: "Socio",
       donate_cta: "Dona ora",
+      skip_link: "Salta al contenuto",
+      new_window: "(si apre in una nuova scheda)",
 
       hero_eyebrow: "Associazione Giovanile Marimeo",
       hero_title: "Combattiamo il consumo di plastica e le emissioni di CO₂, un litro d'acqua alla volta.",
@@ -162,6 +164,8 @@
       nav_join: "Become a member",
       nav_join_short: "Join",
       donate_cta: "Donate now",
+      skip_link: "Skip to content",
+      new_window: "(opens in a new tab)",
 
       hero_eyebrow: "Marimeo Youth Association",
       hero_title: "We fight plastic use and CO₂ emissions, one litre of water at a time.",
@@ -299,6 +303,8 @@
       nav_join: "Devenir membre",
       nav_join_short: "Adhérer",
       donate_cta: "Faire un don",
+      skip_link: "Aller au contenu",
+      new_window: "(s'ouvre dans un nouvel onglet)",
 
       hero_eyebrow: "Association de Jeunesse Marimeo",
       hero_title: "Nous combattons la consommation de plastique et les émissions de CO₂, un litre d'eau à la fois.",
@@ -462,6 +468,14 @@
       } else {
         el.textContent = value;
       }
+    });
+
+    // Segnala ai lettori di schermo i link che aprono una nuova scheda, nella
+    // lingua attiva. Va dopo il loop dei testi: si basa sul testo gia' tradotto.
+    const newTab = t("new_window");
+    document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+      const label = (link.textContent || "").replace(/\s+/g, " ").trim();
+      link.setAttribute("aria-label", label ? label + " " + newTab : newTab);
     });
 
     document.querySelectorAll(".lang-btn").forEach((btn) => {
