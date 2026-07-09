@@ -339,7 +339,7 @@ h1, h2, h3, h4 {
 
 /* ---------- Steps ---------- */
 .steps { display: grid; grid-template-columns: 1fr; gap: 1.2rem; list-style: none; margin: 0; padding: 0; }
-.step { display: flex; align-items: flex-start; gap: 1rem; }
+.step { display: flex; align-items: flex-start; gap: 1rem; background: var(--cyan); border: var(--border); border-radius: 14px; padding: 1.8rem; }
 .step-num {
   display: inline-grid; place-items: center; width: 56px; height: 56px;
   background: var(--yellow); border: var(--border); border-radius: 50%;
@@ -347,16 +347,18 @@ h1, h2, h3, h4 {
 }
 .step .step-num { margin-bottom: 0; flex: none; }
 .step-body { min-width: 0; }
-.step h3 { font-size: 1.55rem; margin-bottom: 0.3rem; }
+.step h3 { font-size: 1.85rem; margin-bottom: 0.3rem; }
 .step p { margin: 0; font-weight: 500; }
+.step--tessera { flex-wrap: wrap; align-items: center; }
+.step--tessera .step-body { flex: 1 1 260px; }
+.step-tessera-img { flex: 0 1 300px; width: 300px; max-width: 100%; height: auto; align-self: center; }
 
 /* ---------- Come iscriverti ---------- */
 .enroll { margin-top: 2.5rem; background: var(--cyan); border: var(--border); border-radius: 14px; padding: 1.8rem; }
 .enroll-title { font-size: 1.85rem; margin-bottom: 1.3rem; display: flex; align-items: center; gap: 0.7rem; }
 .enroll-title .step-num { width: 44px; height: 44px; font-size: 1.25rem; margin-bottom: 0; flex: none; }
 .enroll + .steps { margin-top: 2.4rem; }
-.step-note-ref { color: var(--blue); font-weight: 700; }
-.steps-note { margin-top: 1.4rem; font-size: 1rem; font-weight: 500; opacity: 0.85; max-width: 62ch; }
+.step-note { margin-top: 0.8rem; font-size: 1rem; font-weight: 500; opacity: 0.85; }
 .enroll-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; }
 .enroll-option { display: flex; flex-direction: column; align-items: flex-start; background: var(--white); border: var(--border); border-radius: 12px; padding: 1.3rem; min-width: 0; overflow-wrap: anywhere; }
 .enroll-ico { display: inline-grid; place-items: center; width: 48px; height: 48px; border: var(--border); border-radius: 10px; background: transparent; font-size: 1.5rem; margin-bottom: 0.7rem; }

@@ -102,7 +102,7 @@
       step2_text: "Anche se ti iscrivi online, la tessera si ritira di persona su appuntamento, presso lo studio del Presidente.",
       step3_title: "Ricarica e usa la casetta",
       step3_text: "Ricarichi la tessera direttamente alla casetta e riempi la borraccia quando vuoi, 24/7. Il resto resta sempre sulla tessera.",
-      how_note: "* La tessera funziona solo da socio: la quota associativa vale per l'anno solare in corso e scade il 31 dicembre. Per continuare a usarla basta riassociarsi.",
+      how_note: "La tessera funziona solo da socio: la quota associativa vale per l'anno solare in corso e scade il 31 dicembre. Per continuare a usarla basta riassociarsi.",
 
       future_title: "Un'associazione viva e in crescita",
       future_text: "La casetta dell'acqua è solo l'inizio. Vogliamo far crescere nuove iniziative per l'ambiente, i giovani e la comunità: educazione ambientale, qualità dell'aria, spazi di incontro e molto altro.",
@@ -241,7 +241,7 @@
       step2_text: "Even if you sign up online, the card is collected in person by appointment, at the President's office.",
       step3_title: "Top up and use the water house",
       step3_text: "Top up the card directly at the water house and refill your bottle whenever you like, 24/7. Your change always stays on the card.",
-      how_note: "* The card only works while you're a member: the membership fee is valid for the current calendar year and expires on 31 December. To keep using it, simply renew your membership.",
+      how_note: "The card only works while you're a member: the membership fee is valid for the current calendar year and expires on 31 December. To keep using it, simply renew your membership.",
 
       future_title: "A living, growing association",
       future_text: "The water house is only the beginning. We want to grow new initiatives for the environment, young people and the community: environmental education, air quality, meeting spaces and much more.",
@@ -380,7 +380,7 @@
       step2_text: "Même si vous vous inscrivez en ligne, la carte se retire en personne sur rendez-vous, au cabinet du Président.",
       step3_title: "Rechargez et utilisez la maison de l'eau",
       step3_text: "Vous rechargez la carte directement à la maison de l'eau et remplissez votre gourde quand vous voulez, 24h/24. Votre monnaie reste toujours sur la carte.",
-      how_note: "* La carte ne fonctionne que si vous êtes membre : la cotisation est valable pour l'année civile en cours et expire le 31 décembre. Pour continuer à l'utiliser, il suffit de réadhérer.",
+      how_note: "La carte ne fonctionne que si vous êtes membre : la cotisation est valable pour l'année civile en cours et expire le 31 décembre. Pour continuer à l'utiliser, il suffit de réadhérer.",
 
       future_title: "Une association vivante et en croissance",
       future_text: "La maison de l'eau n'est qu'un début. Nous voulons développer de nouvelles initiatives pour l'environnement, les jeunes et la communauté : éducation à l'environnement, qualité de l'air, espaces de rencontre et bien plus encore.",
