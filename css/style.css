@@ -54,6 +54,18 @@ body {
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
+/* Skip link: fuori vista finché non riceve il focus da tastiera. */
+.skip-link {
+  position: fixed; left: 50%; top: 0; transform: translate(-50%, -120%);
+  z-index: 100; background: var(--black); color: var(--white);
+  font-family: var(--font-body); font-weight: 800; text-decoration: none;
+  padding: 0.6rem 1.1rem; border-radius: 0 0 10px 10px;
+  transition: transform 0.15s ease;
+}
+.skip-link:focus { transform: translate(-50%, 0); outline: 3px solid var(--yellow); outline-offset: 2px; }
+/* Il focus programmatico dallo skip link non deve lasciare un contorno sul main. */
+main:focus { outline: none; }
+
 h1, h2, h3, h4 {
   font-family: var(--font-head);
   font-weight: normal;
