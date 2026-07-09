@@ -110,4 +110,12 @@
       });
     });
   }
+
+  /* ---------- Mappa: interazione solo al click (blocca lo zoom da scroll) ---------- */
+  document.querySelectorAll(".map-embed-wrap").forEach((wrap) => {
+    const guard = wrap.querySelector(".map-embed-guard");
+    if (!guard) return;
+    guard.addEventListener("click", () => wrap.classList.add("is-active"));
+    wrap.addEventListener("mouseleave", () => wrap.classList.remove("is-active"));
+  });
 })();

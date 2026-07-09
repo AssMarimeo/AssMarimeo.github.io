@@ -232,13 +232,16 @@
             <div class="water-layout">
               <div class="map-card">
                 <h4 class="map-card-title" data-i18n="water_where_label">Dove si trova</h4>
-                <iframe
-                  class="map-embed"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.6949%2C41.2566%2C13.7029%2C41.2606&layer=mapnik&marker=41.2585642%2C13.6988841"
-                  title="Mappa della casetta dell'acqua di Scauri"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  allowfullscreen></iframe>
+                <div class="map-embed-wrap">
+                  <iframe
+                    class="map-embed"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=13.6949%2C41.2566%2C13.7029%2C41.2606&layer=mapnik&marker=41.2585642%2C13.6988841"
+                    title="Mappa della casetta dell'acqua di Scauri"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+                  <button type="button" class="map-embed-guard" aria-label="Attiva la mappa per interagire"></button>
+                </div>
                 <div class="map-foot">
                   <div>
                     <span data-i18n="water_where_value">Scauri — Minturno (LT) · Aperta h24, 7 giorni su 7</span>
@@ -380,11 +383,11 @@
     <section id="come-associarsi" class="section">
       <div class="container">
         <p class="section-eyebrow" data-i18n="how_eyebrow">Come associarsi</p>
-        <h2 class="section-title" data-i18n="how_title">In pochi passi hai la tua tessera</h2>
-        <p class="section-intro" data-i18n="how_intro">La quota associativa 2026 è di 10 € l'anno. Puoi associarti comodamente da casa o di persona: in entrambi i casi la tessera si ritira su appuntamento.</p>
+        <h2 class="section-title" data-i18n="how_title">Diventa socio in pochi passi e usufruisci dei benefici</h2>
 
         <div class="enroll">
-          <h3 class="enroll-title"><span class="step-num">1</span><span data-i18n="enroll_title">Scegli come associarti</span></h3>
+          <div class="step-head"><span class="step-num">1</span><h3 data-i18n="enroll_title">Scegli come associarti</h3></div>
+          <p class="enroll-intro" data-i18n="how_intro">La quota associativa 2026 è di 10 € l'anno. Puoi associarti comodamente da casa o di persona: in entrambi i casi la tessera si ritira su appuntamento.</p>
           <div class="enroll-grid">
             <div class="enroll-option">
               <span class="enroll-ico" aria-hidden="true"><svg class="ico"><use href="#i-monitor"></use></svg></span>
@@ -403,20 +406,22 @@
         </div>
 
         <ol class="steps" start="2">
-          <li class="step step--tessera">
-            <span class="step-num">2</span>
-            <div class="step-body">
-              <h3 data-i18n="step2_title">Ritira la tessera</h3>
-              <p data-i18n="step2_text">Anche se ti iscrivi online, la tessera si ritira di persona su appuntamento, presso lo studio del Presidente.</p>
-              <p class="step-note" data-i18n="how_note">La tessera funziona solo da socio: la quota associativa vale per l'anno solare in corso e scade il 31 dicembre. Per continuare a usarla basta riassociarsi.</p>
+          <li class="step">
+            <div class="step-head"><span class="step-num">2</span><h3 data-i18n="step2_title">Ritira la tessera</h3></div>
+            <div class="step-content">
+              <div class="step-body">
+                <p data-i18n="step2_text">Anche se ti iscrivi online, la tessera si ritira di persona su appuntamento, presso lo studio del Presidente.</p>
+                <p class="step-note" data-i18n="how_note">La tessera funziona solo da socio: la quota associativa vale per l'anno solare in corso e scade il 31 dicembre. Per continuare a usarla basta riassociarsi.</p>
+              </div>
+              <img class="step-tessera-img" src="assets/img/tessera-marimeo.png" alt="Tessera socio Marimeo" width="1200" height="1034" loading="lazy">
             </div>
-            <img class="step-tessera-img" src="assets/img/tessera-marimeo.png" alt="Tessera socio Marimeo" width="1200" height="1034" loading="lazy">
           </li>
           <li class="step">
-            <span class="step-num">3</span>
-            <div class="step-body">
-              <h3 data-i18n="step3_title">Ricarica e usa la casetta</h3>
-              <p data-i18n="step3_text">Ricarichi la tessera direttamente alla casetta e riempi la borraccia quando vuoi, 24/7. Il resto resta sempre sulla tessera.</p>
+            <div class="step-head"><span class="step-num">3</span><h3 data-i18n="step3_title">Ricarica e usa la casetta</h3></div>
+            <div class="step-content">
+              <div class="step-body">
+                <p data-i18n="step3_text">Ricarichi la tessera direttamente alla casetta e riempi la borraccia quando vuoi, 24/7. Il resto resta sempre sulla tessera.</p>
+              </div>
             </div>
           </li>
         </ol>
