@@ -73,6 +73,11 @@
       .then(function () {
         syncCloseLabel();
         if (!dialog.open) dialog.showModal();
+        // Sposta il focus sul titolo (non interattivo) invece che sulla "x":
+        // evita che il pulsante di chiusura appaia "selezionato" all'apertura,
+        // tenendo comunque il focus dentro il dialog (tastiera / screen reader).
+        var title = document.getElementById("about-dialog-title");
+        if (title) title.focus();
         document.body.classList.add("has-modal");
         if (location.hash !== HASH) {
           history.replaceState(null, "", location.pathname + location.search + HASH);

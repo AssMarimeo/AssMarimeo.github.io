@@ -594,6 +594,8 @@ body.has-modal { overflow: hidden; }
   padding: 1.1rem 1.3rem; border-bottom: var(--border); background: var(--white);
 }
 .about-dialog-title { font-size: 1.7rem; margin: 0; }
+/* Riceve il focus solo via script all'apertura (tabindex=-1): niente contorno. */
+.about-dialog-title:focus { outline: none; }
 .about-dialog-close {
   flex: none; display: inline-grid; place-items: center; width: 46px; height: 46px;
   background: var(--white); border: var(--border); border-radius: 10px;
