@@ -159,7 +159,9 @@ h1, h2, h3, h4 {
    preserva la leggibilita' e un massimo pari alla dimensione desktop.
    Dimensiono la larghezza e lascio l'altezza automatica: gli attributi width/height
    dell'<img> danno l'aspect-ratio, quindi non si deforma. */
-.brand-wordmark { width: clamp(100px, 32vw, 213px); height: auto; max-width: none; display: block; }
+/* Piccolo offset verticale: l'immagine ha spazio bianco interno che la fa
+   sembrare leggermente alta rispetto al resto della navbar. */
+.brand-wordmark { width: clamp(100px, 32vw, 213px); height: auto; max-width: none; display: block; transform: translateY(3px); }
 .header-right { display: flex; align-items: center; gap: 1.1rem; }
 
 /* ---------- Lang switch (dropdown) ---------- */
