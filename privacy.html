@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy policy — Marimeo</title>
-  <meta name="description" content="Informativa sul trattamento dei dati personali (GDPR) dell'Associazione Giovanile Marimeo." />
+  <title data-i18n="privacy_page_title">Privacy policy — Marimeo</title>
+  <meta name="description" data-i18n="privacy_meta_desc" content="Informativa sul trattamento dei dati personali (GDPR) dell'Associazione Giovanile Marimeo." />
   <link rel="canonical" href="https://www.marimeo.org/privacy.html" />
   <meta name="robots" content="noindex, follow" />
 
@@ -39,8 +39,12 @@
     .legal a { font-weight: 700; }
     .legal .lead { font-size: 1.25rem; font-weight: 600; }
   </style>
+
+  <!-- Umami analytics (privacy-friendly, no cookie) -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="8558ff55-bcef-4fe2-8a5b-39b1cadf78dc"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="skip_link">Salta al contenuto</a>
   <a id="top" tabindex="-1"></a>
 
   <!-- Sprite minima: la freccia "torna su" (footer) e "torna indietro" (header). -->
@@ -53,108 +57,122 @@
         <img class="brand-wordmark" src="assets/img/marimeo-wordmark-black.png" alt="Marimeo" width="609" height="80" />
       </a>
       <div class="header-right">
-        <a href="index.html" class="btn btn-sm header-cta"><svg class="ico" aria-hidden="true"><use href="#i-arrow-left"></use></svg><span>Torna al sito</span></a>
+        <a href="index.html" class="btn btn-sm header-cta"><svg class="ico" aria-hidden="true"><use href="#i-arrow-left"></use></svg><span data-i18n="priv_back">Torna al sito</span></a>
+
+        <div class="lang-switch">
+          <button type="button" class="lang-trigger" aria-expanded="false" aria-controls="lang-menu" aria-label="Cambia lingua / Change language">
+            <span class="lang-current">IT</span>
+            <span class="lang-caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="lang-menu" id="lang-menu">
+            <li><button type="button" class="lang-btn is-active" data-lang="it" lang="it" aria-pressed="true">Italiano</button></li>
+            <li><button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">English</button></li>
+            <li><button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="false">Français</button></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <!-- ===== Intestazione pagina ===== -->
     <section class="legal-hero">
       <div class="container">
-        <h1>Privacy policy</h1>
-        <p class="legal-updated">Ultimo aggiornamento: 8 luglio 2026</p>
+        <h1 data-i18n="priv_h1">Privacy policy</h1>
+        <p class="legal-updated" data-i18n="priv_updated">Ultimo aggiornamento: 10 luglio 2026</p>
       </div>
     </section>
 
     <!-- ===== Testo dell'informativa ===== -->
     <section class="section">
       <div class="container legal">
-        <p class="lead">
+        <p class="lead" data-i18n="priv_lead">
           La presente informativa descrive come l'Associazione Giovanile Marimeo tratta
           i dati personali degli utenti che visitano questo sito o entrano in contatto
           con l'associazione, ai sensi del Regolamento (UE) 2016/679 (GDPR).
         </p>
 
-        <h2>1. Titolare del trattamento</h2>
-        <p>
+        <h2 data-i18n="priv_s1_title">1. Titolare del trattamento</h2>
+        <p data-i18n="priv_s1_p" data-i18n-html>
           Il titolare del trattamento è l'<strong>Associazione Giovanile Marimeo</strong>
           (P. IVA 03318080599 · C.F. 90079590593).
         </p>
         <ul>
-          <li>Email: <a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a></li>
-          <li>PEC: <a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a></li>
+          <li data-i18n="priv_s1_email" data-i18n-html>Email: <a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a></li>
+          <li data-i18n="priv_s1_pec" data-i18n-html>PEC: <a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a></li>
         </ul>
 
-        <h2>2. Quali dati raccogliamo</h2>
-        <h3>Dati di navigazione</h3>
-        <p>
+        <h2 data-i18n="priv_s2_title">2. Quali dati raccogliamo</h2>
+        <h3 data-i18n="priv_s2_h3a">Dati di navigazione</h3>
+        <p data-i18n="priv_s2_pa">
           Come la maggior parte dei siti web, durante la normale navigazione i sistemi
           informatici del servizio di hosting possono raccogliere alcuni dati tecnici
           (ad esempio indirizzo IP, tipo di browser, data e ora della richiesta), il cui
           trattamento è necessario per erogare il sito in sicurezza. Questi dati non
           vengono utilizzati per identificare gli utenti.
         </p>
-        <h3>Dati forniti volontariamente</h3>
-        <p>
+        <h3 data-i18n="priv_s2_h3b">Dati forniti volontariamente</h3>
+        <p data-i18n="priv_s2_pb">
           Se ci scrivi via email o compili il modulo di iscrizione come socio,
           trattiamo i dati che ci fornisci (ad esempio nome, cognome, contatti) al solo
           fine di risponderti e gestire il rapporto associativo.
         </p>
 
-        <h2>3. Finalità e base giuridica</h2>
+        <h2 data-i18n="priv_s3_title">3. Finalità e base giuridica</h2>
         <ul>
-          <li><strong>Rispondere alle richieste di contatto</strong> — base giuridica: il legittimo interesse a dare riscontro / il consenso dell'interessato.</li>
-          <li><strong>Gestire l'iscrizione e il rapporto associativo</strong> — base giuridica: l'esecuzione di un rapporto di cui l'interessato è parte e gli obblighi di legge connessi.</li>
-          <li><strong>Garantire il funzionamento e la sicurezza del sito</strong> — base giuridica: il legittimo interesse del titolare.</li>
+          <li data-i18n="priv_s3_li1" data-i18n-html><strong>Rispondere alle richieste di contatto</strong> — base giuridica: il legittimo interesse a dare riscontro / il consenso dell'interessato.</li>
+          <li data-i18n="priv_s3_li2" data-i18n-html><strong>Gestire l'iscrizione e il rapporto associativo</strong> — base giuridica: l'esecuzione di un rapporto di cui l'interessato è parte e gli obblighi di legge connessi.</li>
+          <li data-i18n="priv_s3_li3" data-i18n-html><strong>Garantire il funzionamento e la sicurezza del sito</strong> — base giuridica: il legittimo interesse del titolare.</li>
         </ul>
 
-        <h2>4. Servizi di terze parti</h2>
-        <p>Questo sito si appoggia ad alcuni servizi esterni che possono trattare dati per proprio conto:</p>
+        <h2 data-i18n="priv_s4_title">4. Servizi di terze parti</h2>
+        <p data-i18n="priv_s4_p">Questo sito si appoggia ad alcuni servizi esterni che possono trattare dati per proprio conto:</p>
         <ul>
-          <li><strong>Google Forms</strong> — utilizzato per il modulo di iscrizione come socio. I dati inseriti nel modulo sono trattati da Google secondo la sua informativa privacy.</li>
-          <li><strong>Google Fonts</strong> — i caratteri tipografici sono caricati dai server di Google, che per motivi tecnici può ricevere l'indirizzo IP del visitatore.</li>
-          <li><strong>OpenStreetMap</strong> — la mappa della casetta dell'acqua è incorporata da OpenStreetMap.</li>
+          <li data-i18n="priv_s4_li1" data-i18n-html><strong>Google Forms</strong> — utilizzato per il modulo di iscrizione come socio. I dati inseriti nel modulo sono trattati da Google secondo la sua informativa privacy.</li>
+          <li data-i18n="priv_s4_li2" data-i18n-html><strong>Google Fonts</strong> — i caratteri tipografici sono caricati dai server di Google, che per motivi tecnici può ricevere l'indirizzo IP del visitatore.</li>
+          <li data-i18n="priv_s4_li3" data-i18n-html><strong>OpenStreetMap</strong> — la mappa della casetta dell'acqua è incorporata da OpenStreetMap.</li>
+          <li data-i18n="priv_s4_li4" data-i18n-html><strong>Umami</strong> — statistiche di visita anonime e aggregate. Umami <strong>non utilizza cookie</strong>, non raccoglie dati personali e non traccia i singoli utenti tra siti diversi. I dati (come pagine viste e provenienza approssimativa) sono trattati in forma anonima da Umami secondo la sua informativa privacy.</li>
         </ul>
 
-        <h2>5. Cookie</h2>
-        <p>
+        <h2 data-i18n="priv_s5_title">5. Cookie</h2>
+        <p data-i18n="priv_s5_pa" data-i18n-html>
           Questo sito <strong>non utilizza cookie di profilazione né strumenti di
           tracciamento a fini pubblicitari</strong>. Possono essere presenti solo cookie
           tecnici, necessari al corretto funzionamento del sito, per i quali non è
           richiesto il consenso.
         </p>
-        <p>
-          Eventuali statistiche di visita sono raccolte in forma aggregata e anonima,
-          con strumenti che non utilizzano cookie e non identificano i singoli utenti.
-          I servizi di terze parti indicati al punto 4 possono impostare propri cookie
-          tecnici: per maggiori dettagli si rimanda alle rispettive informative.
+        <p data-i18n="priv_s5_pb" data-i18n-html>
+          Le statistiche di visita sono raccolte con <strong>Umami</strong> in forma
+          aggregata e anonima, uno strumento che non utilizza cookie e non identifica i
+          singoli utenti. Gli altri servizi di terze parti indicati al punto 4 possono
+          impostare propri cookie tecnici: per maggiori dettagli si rimanda alle
+          rispettive informative.
         </p>
 
-        <h2>6. Conservazione dei dati</h2>
-        <p>
+        <h2 data-i18n="priv_s6_title">6. Conservazione dei dati</h2>
+        <p data-i18n="priv_s6_p">
           I dati sono conservati per il tempo strettamente necessario alle finalità per
           cui sono stati raccolti e, in ogni caso, nel rispetto degli obblighi di legge.
           I dati relativi ai soci sono conservati per la durata del rapporto associativo
           e per i termini previsti dalla normativa vigente.
         </p>
 
-        <h2>7. Diritti dell'interessato</h2>
-        <p>In qualsiasi momento hai diritto di:</p>
+        <h2 data-i18n="priv_s7_title">7. Diritti dell'interessato</h2>
+        <p data-i18n="priv_s7_p">In qualsiasi momento hai diritto di:</p>
         <ul>
-          <li>accedere ai tuoi dati personali e chiederne una copia;</li>
-          <li>chiederne la rettifica o la cancellazione;</li>
-          <li>chiedere la limitazione del trattamento o opporti allo stesso;</li>
-          <li>revocare il consenso, ove il trattamento si basi su di esso;</li>
-          <li>proporre reclamo all'Autorità Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</li>
+          <li data-i18n="priv_s7_li1">accedere ai tuoi dati personali e chiederne una copia;</li>
+          <li data-i18n="priv_s7_li2">chiederne la rettifica o la cancellazione;</li>
+          <li data-i18n="priv_s7_li3">chiedere la limitazione del trattamento o opporti allo stesso;</li>
+          <li data-i18n="priv_s7_li4">revocare il consenso, ove il trattamento si basi su di esso;</li>
+          <li data-i18n="priv_s7_li5" data-i18n-html>proporre reclamo all'Autorità Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</li>
         </ul>
-        <p>
+        <p data-i18n="priv_s7_pend" data-i18n-html>
           Per esercitare i tuoi diritti puoi scriverci a
           <a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a>.
         </p>
 
-        <h2>8. Modifiche a questa informativa</h2>
-        <p>
+        <h2 data-i18n="priv_s8_title">8. Modifiche a questa informativa</h2>
+        <p data-i18n="priv_s8_p">
           Potremmo aggiornare la presente informativa nel tempo. La versione pubblicata
           su questa pagina è sempre quella vigente; ti invitiamo a consultarla
           periodicamente.
@@ -168,49 +186,50 @@
     <div class="container footer-grid">
       <div class="footer-col">
         <img class="footer-logo" src="assets/img/marimeo-logo-white.png" alt="Marimeo — associazione giovanile" width="284" height="260" />
-        <p class="footer-tagline">Associazione giovanile per un territorio con meno plastica.</p>
+        <p class="footer-tagline" data-i18n="footer_tagline">Associazione giovanile per un territorio con meno plastica.</p>
       </div>
 
       <div class="footer-col">
-        <h4>Associazione</h4>
+        <h4 data-i18n="footer_about_title">Associazione</h4>
         <ul class="footer-list">
-          <li><a href="chi-siamo.html">Chi siamo</a></li>
+          <li><a href="chi-siamo.html" data-i18n="nav_about">Chi siamo</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Contatti</h4>
+        <h4 data-i18n="footer_contact_title">Contatti</h4>
         <ul class="footer-list">
-          <li><a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a></li>
+          <li><a href="mailto:associazione.marimeo@gmail.com" data-umami-event="contatto-email">associazione.marimeo@gmail.com</a></li>
           <li><a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a></li>
-          <li><a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" target="_blank" rel="noopener">Dona ora</a></li>
+          <li><a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" data-umami-event="dona" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Social</h4>
+        <h4 data-i18n="footer_social_title">Social</h4>
         <ul class="footer-list">
-          <li><a href="https://instagram.com/marimeo_org" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/marimeo.org" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://instagram.com/marimeo_org" data-umami-event="social-instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/marimeo.org" data-umami-event="social-facebook" target="_blank" rel="noopener">Facebook</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Documenti</h4>
+        <h4 data-i18n="footer_links_title">Documenti</h4>
         <ul class="footer-list">
-          <li><a href="assets/docs/statuto-marimeo.pdf" target="_blank" rel="noopener">Statuto (PDF)</a></li>
-          <li><a href="assets/docs/analisi-acqua-2026-06.pdf" target="_blank" rel="noopener">Analisi dell'acqua (PDF)</a></li>
-          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="assets/docs/statuto-marimeo.pdf" data-umami-event="pdf-statuto" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a></li>
+          <li><a href="assets/docs/analisi-acqua-2026-06.pdf" data-umami-event="pdf-analisi-acqua" target="_blank" rel="noopener" data-i18n="footer_analysis">Analisi dell'acqua (PDF)</a></li>
+          <li><a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a></li>
         </ul>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <p class="footer-copy">© <span id="year"></span> Associazione Giovanile Marimeo · P. IVA 03318080599 · C.F. 90079590593 · Sito web realizzato da Filippo Fresilli</p>
-      <a href="#top" class="btn btn-sm back-top"><span>Torna su</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a>
+      <p class="footer-copy">© <span id="year"></span> <span data-i18n="footer_copy">Associazione Giovanile Marimeo</span> · P. IVA 03318080599 · C.F. 90079590593 · <span data-i18n="footer_credit">Sito web realizzato da Filippo Fresilli</span></p>
+      <a href="#top" class="btn btn-sm back-top"><span data-i18n="back_top">Torna su</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a>
     </div>
   </footer>
 
+  <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

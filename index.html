@@ -96,6 +96,9 @@
     ]
   }
   </script>
+
+  <!-- Umami analytics (privacy-friendly, no cookie) -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="8558ff55-bcef-4fe2-8a5b-39b1cadf78dc"></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip_link">Salta al contenuto</a>
@@ -123,7 +126,7 @@
         </nav>
 
         <a href="#come-associarsi" class="btn btn-sm header-cta" data-i18n="nav_join">Diventa socio</a>
-        <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" class="btn btn-sm btn-ghost header-donate" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
+        <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" data-umami-event="dona" class="btn btn-sm btn-ghost header-donate" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
 
         <div class="lang-switch">
           <button type="button" class="lang-trigger" aria-expanded="false" aria-controls="lang-menu" aria-label="Cambia lingua / Change language">
@@ -246,7 +249,7 @@
                   <div>
                     <span data-i18n="water_where_value">Scauri — Minturno (LT) · Aperta h24, 7 giorni su 7</span>
                   </div>
-                  <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" class="btn btn-sm" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivarci</a>
+                  <a href="https://maps.app.goo.gl/UZPhsYiWvQkyXJnz8" data-umami-event="come-arrivarci" class="btn btn-sm" target="_blank" rel="noopener" data-i18n="water_directions">Come arrivarci</a>
                 </div>
               </div>
 
@@ -276,7 +279,7 @@
                 <p class="price-note" data-i18n="price_note">
                   Con la tessera da socio l'acqua ti costa meno ogni giorno.
                 </p>
-                <a href="assets/docs/analisi-acqua-2026-06.pdf" class="btn btn-ghost btn-sm" style="margin-top: 1rem;" target="_blank" rel="noopener" data-i18n="water_analysis_link">Analisi dell'acqua aggiornate (PDF) ↗</a>
+                <a href="assets/docs/analisi-acqua-2026-06.pdf" data-umami-event="pdf-analisi-acqua" class="btn btn-ghost btn-sm" style="margin-top: 1rem;" target="_blank" rel="noopener" data-i18n="water_analysis_link">Analisi dell'acqua aggiornate (PDF) ↗</a>
               </div>
             </div>
 
@@ -305,7 +308,7 @@
             </ul>
             <div class="project-actions">
               <a href="#come-associarsi" class="btn" data-i18n="hero_cta1">Diventa socio</a>
-              <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
+              <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" data-umami-event="dona" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
             </div>
           </li>
         </ul>
@@ -393,14 +396,14 @@
               <span class="enroll-ico" aria-hidden="true"><svg class="ico"><use href="#i-monitor"></use></svg></span>
               <h4 data-i18n="enroll_online_title">Online, da casa</h4>
               <p data-i18n="enroll_online_text">Compila il modulo di iscrizione e paga la quota comodamente con PayPal o bonifico bancario, senza spostarti da casa.</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form"
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form" data-umami-event="iscrizione-modulo"
                  class="btn btn-sm" target="_blank" rel="noopener" data-i18n="enroll_online_btn">Compila il modulo</a>
             </div>
             <div class="enroll-option">
               <span class="enroll-ico" aria-hidden="true"><svg class="ico"><use href="#i-pin"></use></svg></span>
               <h4 data-i18n="enroll_office_title">Di persona, su appuntamento</h4>
               <p data-i18n="enroll_office_text">Ci vediamo allo studio del presidente, Ing. Salvatore Pirolozzi (Via Castagna 38 — Scauri), e sistemiamo tutto insieme: iscrizione, quota e tessera.</p>
-              <a href="mailto:associazione.marimeo@gmail.com" class="btn btn-sm" data-i18n="enroll_office_btn">Prendi appuntamento via email</a>
+              <a href="mailto:associazione.marimeo@gmail.com" class="btn btn-sm" data-umami-event="appuntamento-email" data-i18n="enroll_office_btn">Prendi appuntamento via email</a>
             </div>
           </div>
         </div>
@@ -469,11 +472,11 @@
         <h2 data-i18n="final_cta_title" data-i18n-html>Aiutaci a crescere,<br>diventa socio Marimeo</h2>
         <p data-i18n="final_cta_text">Associati per il 2026 con soli 10 €: acqua scontata e un territorio con meno plastica.</p>
         <div class="cta-actions">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form"
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBeD-45sE0SCN8LLBZpJSDTblXInBuYEJI8G27DrY_9mlQ0A/viewform?usp=send_form" data-umami-event="iscrizione-modulo"
              class="btn btn-lg" target="_blank" rel="noopener" data-i18n="final_cta_btn">Compila il modulo di iscrizione</a>
           <a href="mailto:associazione.marimeo@gmail.com"
-             class="btn btn-ghost btn-lg" data-i18n="enroll_office_btn">Prendi appuntamento via email</a>
-          <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT"
+             class="btn btn-ghost btn-lg" data-umami-event="appuntamento-email" data-i18n="enroll_office_btn">Prendi appuntamento via email</a>
+          <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" data-umami-event="dona"
              class="btn btn-ghost btn-lg" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
         </div>
       </div>
@@ -523,25 +526,25 @@
       <div class="footer-col">
         <h4 data-i18n="footer_contact_title">Contatti</h4>
         <ul class="footer-list">
-          <li><a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a></li>
+          <li><a href="mailto:associazione.marimeo@gmail.com" data-umami-event="contatto-email">associazione.marimeo@gmail.com</a></li>
           <li><a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a></li>
-          <li><a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a></li>
+          <li><a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" data-umami-event="dona" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4 data-i18n="footer_social_title">Social</h4>
         <ul class="footer-list">
-          <li><a href="https://instagram.com/marimeo_org" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/marimeo.org" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://instagram.com/marimeo_org" data-umami-event="social-instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/marimeo.org" data-umami-event="social-facebook" target="_blank" rel="noopener">Facebook</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4 data-i18n="footer_links_title">Documenti</h4>
         <ul class="footer-list">
-          <li><a href="assets/docs/statuto-marimeo.pdf" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a></li>
-          <li><a href="assets/docs/analisi-acqua-2026-06.pdf" target="_blank" rel="noopener" data-i18n="footer_analysis">Analisi dell'acqua (PDF)</a></li>
+          <li><a href="assets/docs/statuto-marimeo.pdf" data-umami-event="pdf-statuto" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a></li>
+          <li><a href="assets/docs/analisi-acqua-2026-06.pdf" data-umami-event="pdf-analisi-acqua" target="_blank" rel="noopener" data-i18n="footer_analysis">Analisi dell'acqua (PDF)</a></li>
           <li><a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a></li>
         </ul>
       </div>
