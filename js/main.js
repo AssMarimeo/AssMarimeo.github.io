@@ -111,6 +111,65 @@
     });
   }
 
+  /* ---------- Timeline "Come associarsi": linea che si riempie allo scroll ---------- */
+  const timeline = document.querySelector(".timeline");
+  if (timeline && !reduceMotion && "IntersectionObserver" in window) {
+    const nodes = Array.from(timeline.querySelectorAll(".enroll, .steps > .step"));
+    const badges = nodes.map((n) => n.querySelector(".step-num")).filter(Boolean);
+
+    if (badges.length >= 2) {
+      timeline.classList.add("timeline--js");
+      nodes.forEach((n) => n.classList.add("timeline-node"));
+
+      // Comparsa dei blocchi allo scroll (con leggero stagger)
+      const revealObs = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+            // La comparsa sposta i badge: ricalcola binario a transizione finita
+            entry.target.addEventListener("transitionend", () => { layout(); update(); }, { once: true });
+          }
+        });
+      }, { threshold: 0.2, rootMargin: "0px 0px -12% 0px" });
+      nodes.forEach((n) => revealObs.observe(n));
+
+      // Misura la posizione verticale dei badge per accenderli allo scroll
+      const centersY = []; // centro verticale di ogni badge, relativo alla timeline
+
+      const layout = () => {
+        const tRect = timeline.getBoundingClientRect();
+        centersY.length = 0;
+        badges.forEach((b) => {
+          const r = b.getBoundingClientRect();
+          centersY.push(r.top - tRect.top + r.height / 2);
+        });
+      };
+
+      const update = () => {
+        const tRect = timeline.getBoundingClientRect();
+        const trigger = window.innerHeight * 0.6; // soglia a 60% dello schermo
+        const triggerRel = trigger - tRect.top;
+        badges.forEach((b, i) => {
+          b.classList.toggle("is-active", triggerRel >= centersY[i]);
+        });
+      };
+
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => { update(); ticking = false; });
+      };
+
+      layout();
+      update();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", () => { layout(); update(); });
+      document.addEventListener("marimeo:langchange", () => { layout(); update(); });
+    }
+  }
+
   /* ---------- Mappa: interazione solo al click (blocca lo zoom da scroll) ---------- */
   document.querySelectorAll(".map-embed-wrap").forEach((wrap) => {
     const guard = wrap.querySelector(".map-embed-guard");
