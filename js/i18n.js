@@ -13,7 +13,7 @@
     /* ---------------- ITALIANO (default) ---------------- */
     it: {
       page_title: "Marimeo — Associazione giovanile · Casetta dell'acqua a Scauri",
-      meta_desc: "Marimeo, associazione giovanile ambientale: gestiamo la casetta dell'acqua a Scauri di Minturno (LT). Acqua da 5 cent/L, meno plastica, risparmio di CO2.",
+      meta_desc: "Marimeo, associazione giovanile ambientale: gestiamo la casetta dell'acqua a Scauri, frazione di Minturno (LT), vicino Formia. Acqua da 5 cent/L, meno plastica, meno CO2.",
 
       nav_about: "Chi siamo",
       nav_impact: "Impatto",
@@ -84,9 +84,9 @@
       project_status_active: "Attivo",
       project_status_soon: "In arrivo",
       water_title: "La casetta dell'acqua di Scauri",
-      water_desc: "Acqua buona, controllata e a chilometro zero, aperta a tutti. Naturale o frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.",
+      water_desc: "Acqua buona, controllata e a chilometro zero, aperta a tutti, a Scauri vicino alla Chiesa SS. Immacolata. Naturale o frizzante, a temperatura ambiente o fredda: porti la tua borraccia e la riempi.",
       water_where_label: "Dove si trova",
-      water_where_value: "Scauri — Minturno (LT) ·\nAperta h24, 7 giorni su 7",
+      water_where_value: "Scauri di Minturno (LT) ·\nAperta h24, 7 giorni su 7",
       water_directions: "Come arrivarci",
       water_analysis_link: "Analisi dell'acqua aggiornate (PDF) ↗",
 
@@ -221,7 +221,7 @@
     /* ---------------- ENGLISH ---------------- */
     en: {
       page_title: "Marimeo — Youth association · Water house in Scauri, Italy",
-      meta_desc: "Marimeo, a youth environmental association: we run the water house in Scauri, Minturno (LT), Italy. Water from 5 cents/L, less plastic, CO2 savings.",
+      meta_desc: "Marimeo, a youth environmental association: we run the water house in Scauri, a district of Minturno (LT), Italy, near Formia. Water from 5 cents/L, less plastic, less CO2.",
 
       nav_about: "About",
       nav_impact: "Impact",
@@ -290,9 +290,9 @@
       project_status_active: "Active",
       project_status_soon: "Coming soon",
       water_title: "The Scauri water house",
-      water_desc: "Good, tested, zero-kilometre water, open to everyone. Still or sparkling, room temperature or chilled: bring your bottle and fill it up.",
+      water_desc: "Good, tested, zero-kilometre water, open to everyone, in Scauri next to the SS. Immacolata church. Still or sparkling, room temperature or chilled: bring your bottle and fill it up.",
       water_where_label: "Where it is",
-      water_where_value: "Scauri — Minturno (LT), Italy ·\nOpen 24 hours a day, 7 days a week",
+      water_where_value: "Scauri di Minturno (LT), Italy ·\nOpen 24 hours a day, 7 days a week",
       water_directions: "Get directions",
       water_analysis_link: "Latest water analysis (PDF) ↗",
 
@@ -427,7 +427,7 @@
     /* ---------------- FRANÇAIS ---------------- */
     fr: {
       page_title: "Marimeo — Association de jeunesse · Maison de l'eau à Scauri, Italie",
-      meta_desc: "Marimeo, association de jeunesse écologiste : nous gérons la maison de l'eau de Scauri, à Minturno (LT), en Italie. Eau dès 5 cts/L, moins de plastique, moins de CO2.",
+      meta_desc: "Marimeo, association de jeunesse écologiste : nous gérons la maison de l'eau de Scauri, hameau de Minturno (LT), en Italie, près de Formia. Eau dès 5 cts/L, moins de plastique, moins de CO2.",
 
       nav_about: "À propos",
       nav_impact: "Impact",
@@ -496,9 +496,9 @@
       project_status_active: "Actif",
       project_status_soon: "Bientôt",
       water_title: "La maison de l'eau de Scauri",
-      water_desc: "Une eau bonne, contrôlée et de proximité, ouverte à tous. Plate ou pétillante, à température ambiante ou fraîche : apportez votre gourde et remplissez-la.",
+      water_desc: "Une eau bonne, contrôlée et de proximité, ouverte à tous, à Scauri près de l'église SS. Immacolata. Plate ou pétillante, à température ambiante ou fraîche : apportez votre gourde et remplissez-la.",
       water_where_label: "Où se trouve-t-elle",
-      water_where_value: "Scauri — Minturno (LT), Italie ·\nOuverte 24h/24, 7j/7",
+      water_where_value: "Scauri di Minturno (LT), Italie ·\nOuverte 24h/24, 7j/7",
       water_directions: "Itinéraire",
       water_analysis_link: "Analyses de l'eau à jour (PDF) ↗",
 
