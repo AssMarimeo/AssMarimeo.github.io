@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="about_page_title">Chi siamo — Marimeo</title>
+  <meta name="description" data-i18n="about_meta_desc" content="La missione, la visione, i valori e il comitato direttivo dell'Associazione Giovanile Marimeo, che gestisce la casetta dell'acqua di Scauri (Minturno, LT)." />
+  <link rel="canonical" href="https://www.marimeo.org/chi-siamo.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chi siamo — Marimeo" />
+  <meta property="og:description" content="Missione, visione, valori e comitato direttivo dell'associazione giovanile Marimeo, che gestisce la casetta dell'acqua di Scauri a Minturno (LT)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.marimeo.org/chi-siamo.html" />
+  <meta property="og:site_name" content="Marimeo" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:image" content="https://www.marimeo.org/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Marimeo — casetta dell'acqua di Scauri, associazione giovanile ambientale a Minturno (LT)" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <meta name="theme-color" content="#2F4798" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Dati strutturati: breadcrumb + comitato direttivo dell'associazione. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.marimeo.org/" },
+          { "@type": "ListItem", "position": 2, "name": "Chi siamo", "item": "https://www.marimeo.org/chi-siamo.html" }
+        ]
+      },
+      {
+        "@type": "NGO",
+        "@id": "https://www.marimeo.org/#organizzazione",
+        "name": "Marimeo",
+        "alternateName": "Associazione Giovanile Marimeo",
+        "url": "https://www.marimeo.org/",
+        "logo": "https://www.marimeo.org/assets/img/marimeo-logo-black.png",
+        "email": "associazione.marimeo@gmail.com",
+        "member": [
+          { "@type": "Person", "name": "Salvatore Pirolozzi", "jobTitle": "Presidente" },
+          { "@type": "Person", "name": "Filippo Fresilli", "jobTitle": "Vicepresidente" },
+          { "@type": "Person", "name": "Stefania Falso", "jobTitle": "Consigliera" },
+          { "@type": "Person", "name": "Consuelo Comerota", "jobTitle": "Consigliera" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip_link">Salta al contenuto</a>
+  <a id="top" tabindex="-1"></a>
+
+  <!-- ===== Sprite icone (Material Symbols Sharp, filled — Apache 2.0) ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-users" viewBox="0 -960 960 960"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113Z"/></symbol><symbol id="i-impact" viewBox="0 -960 960 960"><path d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z"/></symbol><symbol id="i-droplet" viewBox="0 -960 960 960"><path d="M491-200q12-1 20.5-9.5T520-230q0-14-9-22.5t-23-7.5q-41 3-87-22.5T343-375q-2-11-10.5-18t-19.5-7q-14 0-23 10.5t-6 24.5q17 91 80 130t127 35ZM480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Z"/></symbol><symbol id="i-handshake" viewBox="0 -960 960 960"><path d="M622-144 484-282l56-56 82 82 202-202 56 56-258 258ZM400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm114 52L368-282l122 122H80v-112q0-33 17-62t47-44q51-26 115-44t141-18q30 0 58.5 3t55.5 9Z"/></symbol><symbol id="i-faq" viewBox="0 -960 960 960"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></symbol><symbol id="i-leaf" viewBox="0 -960 960 960"><path d="M450-80q-33 0-66.5-7.5T315-109q12-121 70-226t149-185q-110 56-190.5 148T231-162q-4-3-7.5-6.5L216-176q-47-47-71.5-105T120-402q0-68 27-130t75-110q81-81 210-105.5t362-4.5q18 239-6 364.5T684-182q-49 49-109.5 75.5T450-80Z"/></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m19 9-1.25-2.75L15 5l2.75-1.25L19 1l1.25 2.75L23 5l-2.75 1.25Zm0 14-1.25-2.75L15 19l2.75-1.25L19 15l1.25 2.75L23 19l-2.75 1.25ZM9 20l-2.5-5.5L1 12l5.5-2.5L9 4l2.5 5.5L17 12l-5.5 2.5Z"/></symbol><symbol id="i-arrow-up" viewBox="0 -960 960 960"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></symbol></svg>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Marimeo — home">
+        <img class="brand-wordmark" src="assets/img/marimeo-wordmark-black.png" alt="Marimeo" width="609" height="80" />
+      </a>
+
+      <div class="header-right">
+        <nav class="nav" aria-label="Navigazione principale">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="chi-siamo.html" aria-current="page" data-i18n="nav_about">Chi siamo</a></li>
+            <li><a href="index.html#casetta" data-i18n="nav_water">Casetta</a></li>
+            <li><a href="index.html#impatto" data-i18n="nav_impact">Impatto</a></li>
+            <li><a href="index.html#associarsi" data-i18n="nav_join_us">Associarsi</a></li>
+            <li><a href="index.html#faq" data-i18n="nav_faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <a href="index.html#come-associarsi" class="btn btn-sm header-cta" data-i18n="nav_join">Diventa socio</a>
+        <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" class="btn btn-sm btn-ghost header-donate" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
+
+        <div class="lang-switch">
+          <button type="button" class="lang-trigger" aria-expanded="false" aria-controls="lang-menu" aria-label="Cambia lingua / Change language">
+            <span class="lang-current">IT</span>
+            <span class="lang-caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="lang-menu" id="lang-menu">
+            <li><button type="button" class="lang-btn is-active" data-lang="it" lang="it" aria-pressed="true">Italiano</button></li>
+            <li><button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">English</button></li>
+            <li><button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="false">Français</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Barra di navigazione mobile (in basso, stile app) ===== -->
+  <nav class="bottom-nav" aria-label="Navigazione mobile">
+    <a href="chi-siamo.html" class="bn-item" aria-current="page"><svg class="ico" aria-hidden="true"><use href="#i-users"></use></svg><span class="bn-label" data-i18n="nav_about">Chi siamo</span></a>
+    <a href="index.html#casetta" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-droplet"></use></svg><span class="bn-label" data-i18n="nav_water">Casetta</span></a>
+    <a href="index.html#impatto" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-impact"></use></svg><span class="bn-label" data-i18n="nav_impact">Impatto</span></a>
+    <a href="index.html#associarsi" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-handshake"></use></svg><span class="bn-label" data-i18n="nav_join_us">Associarsi</span></a>
+    <a href="index.html#faq" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-faq"></use></svg><span class="bn-label" data-i18n="nav_faq">FAQ</span></a>
+  </nav>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== Intro ===== -->
+    <section class="section section-green section-top">
+      <div class="container narrow">
+        <p class="section-eyebrow" data-i18n="about_eyebrow">Chi siamo</p>
+        <h1 class="section-title" data-i18n="about_title">Un'associazione di giovani per un territorio con meno plastica</h1>
+        <div class="about-text">
+          <p data-i18n="about_p1">Marimeo è un'associazione giovanile senza scopo di lucro. Crediamo che i piccoli gesti di ogni giorno, messi insieme, possano ridurre davvero l'inquinamento del nostro territorio.</p>
+          <p data-i18n="about_p2">Per questo gestiamo la casetta dell'acqua di Scauri: un modo semplice per bere acqua buona, spendere meno e tagliare migliaia di bottiglie di plastica ogni anno. Meno plastica monouso, meno camion che trasportano acqua, meno CO₂.</p>
+          <p data-i18n="about_p3">Non serve essere ambientalisti esperti: basta riempire la propria borraccia. Il resto lo facciamo insieme.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Missione & Visione ===== -->
+    <section class="section section-green about-mv">
+      <div class="container">
+        <div class="mv-grid">
+          <article class="mv-card">
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-droplet"></use></svg></span>
+            <h2 data-i18n="mission_title">La nostra missione</h2>
+            <p data-i18n="mission_text">Ridurre la plastica monouso sul nostro territorio partendo dai gesti di ogni giorno. Gestiamo la casetta dell'acqua di Scauri e promuoviamo iniziative che rendono facile, conveniente e normale scegliere alternative sostenibili.</p>
+          </article>
+          <article class="mv-card">
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-sparkles"></use></svg></span>
+            <h2 data-i18n="vision_title">La nostra visione</h2>
+            <p data-i18n="vision_text">Un territorio dove bere acqua buona senza produrre rifiuti sia la scelta più semplice per tutti — e una comunità di giovani che se ne prende cura, un litro alla volta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Valori ===== -->
+    <section class="section section-cyan">
+      <div class="container">
+        <h2 class="section-title" data-i18n="values_title">I nostri valori</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-leaf"></use></svg></span>
+            <h3 data-i18n="value1_title">Ambiente prima di tutto</h3>
+            <p data-i18n="value1_text">Ogni scelta parte dall'impatto sul territorio: meno plastica, meno CO₂, più attenzione a ciò che ci circonda.</p>
+          </article>
+          <article class="card">
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-users"></use></svg></span>
+            <h3 data-i18n="value2_title">Comunità</h3>
+            <p data-i18n="value2_text">Cresciamo insieme alle persone: soci, volontari e cittadini che condividono lo stesso obiettivo.</p>
+          </article>
+          <article class="card">
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-impact"></use></svg></span>
+            <h3 data-i18n="value3_title">Concretezza</h3>
+            <p data-i18n="value3_text">Niente proclami: gesti semplici e misurabili, come riempire una borraccia invece di comprare una bottiglia.</p>
+          </article>
+          <article class="card">
+            <span class="card-ico" aria-hidden="true"><svg class="ico"><use href="#i-handshake"></use></svg></span>
+            <h3 data-i18n="value4_title">Trasparenza</h3>
+            <p data-i18n="value4_text">Conti chiari e obiettivi verificabili: raccontiamo quello che facciamo e i risultati che otteniamo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Comitato direttivo ===== -->
+    <section class="section section-yellow">
+      <div class="container">
+        <h2 class="section-title" data-i18n="committee_title">Il comitato direttivo</h2>
+        <p class="section-intro" data-i18n="committee_intro">L'associazione è guidata da un comitato direttivo di volontari. Tre di loro sono anche tra i soci fondatori di Marimeo.</p>
+        <ul class="people-grid">
+          <li class="person-card">
+            <span class="person-avatar" aria-hidden="true">SP</span>
+            <span class="person-badge" data-i18n="founder_badge">Socio fondatore</span>
+            <p class="person-name">Salvatore Pirolozzi</p>
+            <p class="person-role" data-i18n="role_president">Presidente</p>
+          </li>
+          <li class="person-card">
+            <span class="person-avatar" aria-hidden="true">FF</span>
+            <span class="person-badge" data-i18n="founder_badge">Socio fondatore</span>
+            <p class="person-name">Filippo Fresilli</p>
+            <p class="person-role" data-i18n="role_vicepresident">Vicepresidente</p>
+          </li>
+          <li class="person-card">
+            <span class="person-avatar" aria-hidden="true">SF</span>
+            <span class="person-badge" data-i18n="founder_badge_f">Socia fondatrice</span>
+            <p class="person-name">Stefania Falso</p>
+            <p class="person-role" data-i18n="role_boardmember_f">Consigliera</p>
+          </li>
+          <li class="person-card">
+            <span class="person-avatar" aria-hidden="true">CC</span>
+            <p class="person-name">Consuelo Comerota</p>
+            <p class="person-role" data-i18n="role_boardmember_f">Consigliera</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <img class="footer-logo" src="assets/img/marimeo-logo-white.png" alt="Marimeo — associazione giovanile" width="284" height="260" />
+        <p class="footer-tagline" data-i18n="footer_tagline">Associazione giovanile per un territorio con meno plastica.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_about_title">Associazione</h4>
+        <ul class="footer-list">
+          <li><a href="chi-siamo.html" data-i18n="nav_about">Chi siamo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact_title">Contatti</h4>
+        <ul class="footer-list">
+          <li><a href="mailto:associazione.marimeo@gmail.com">associazione.marimeo@gmail.com</a></li>
+          <li><a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a></li>
+          <li><a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_social_title">Social</h4>
+        <ul class="footer-list">
+          <li><a href="https://instagram.com/marimeo_org" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/marimeo.org" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_links_title">Documenti</h4>
+        <ul class="footer-list">
+          <li><a href="assets/docs/statuto-marimeo.pdf" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a></li>
+          <li><a href="assets/docs/analisi-acqua-2026-06.pdf" target="_blank" rel="noopener" data-i18n="footer_analysis">Analisi dell'acqua (PDF)</a></li>
+          <li><a href="privacy.html" data-i18n="footer_privacy">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-copy">© <span id="year"></span> <span data-i18n="footer_copy">Associazione Giovanile Marimeo</span> · P. IVA 03318080599 · C.F. 90079590593 · <span data-i18n="footer_credit">Sito web realizzato da Filippo Fresilli</span></p>
+      <a href="#top" class="btn btn-sm back-top"><span data-i18n="back_top">Torna su</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
