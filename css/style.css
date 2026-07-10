@@ -297,6 +297,8 @@ h1, h2, h3, h4 {
 /* ---------- Marquee ---------- */
 .marquee { overflow: hidden; background: var(--yellow); border-bottom: var(--border); }
 .marquee-track { display: flex; width: max-content; animation: marquee 20s linear infinite; }
+/* All'hover la striscia rallenta (non si ferma) */
+.marquee:hover .marquee-track { animation-duration: 60s; }
 .marquee-track span { font-family: var(--font-head); font-size: 1.85rem; padding: 0.5rem 0; white-space: nowrap; }
 .marquee-sep { font-style: normal; display: inline-block; padding-inline: 0.5em; }
 @keyframes marquee { to { transform: translateX(-50%); } }
