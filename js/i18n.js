@@ -153,7 +153,7 @@
       faq_q5: "Come posso aiutare Marimeo?",
       faq_a5: "Associandoti, usando la casetta con la tua borraccia, partecipando alle iniziative e seguendoci sui social. Ogni gesto conta!",
 
-      final_cta_title: "Aiutaci a crescere, diventa socio Marimeo",
+      final_cta_title: "Aiutaci a crescere,<br>diventa socio Marimeo",
       final_cta_text: "Associati per il 2026 con soli 10 €: acqua scontata e un territorio con meno plastica.",
       final_cta_btn: "Compila il modulo di iscrizione",
       final_cta_note: "Campagna associativa 2026",
@@ -317,7 +317,7 @@
       faq_q5: "How can I help Marimeo?",
       faq_a5: "By joining, using the water house with your own bottle, taking part in our initiatives and following us on social media. Every action counts!",
 
-      final_cta_title: "Help us grow, become a Marimeo member",
+      final_cta_title: "Help us grow,<br>become a Marimeo member",
       final_cta_text: "Become a member for 2026 for just €10: discounted water and a community with less plastic.",
       final_cta_btn: "Fill in the membership form",
       final_cta_note: "2026 membership campaign",
@@ -481,7 +481,7 @@
       faq_q5: "Comment puis-je aider Marimeo ?",
       faq_a5: "En adhérant, en utilisant la maison de l'eau avec votre gourde, en participant aux initiatives et en nous suivant sur les réseaux sociaux. Chaque geste compte !",
 
-      final_cta_title: "Aidez-nous à grandir, devenez membre de Marimeo",
+      final_cta_title: "Aidez-nous à grandir,<br>devenez membre de Marimeo",
       final_cta_text: "Adhérez pour 2026 pour seulement 10 € : eau à prix réduit et un territoire avec moins de plastique.",
       final_cta_btn: "Remplir le formulaire d'adhésion",
       final_cta_note: "Campagne d'adhésion 2026",
