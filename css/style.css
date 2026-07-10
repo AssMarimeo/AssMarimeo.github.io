@@ -213,20 +213,57 @@ h1, h2, h3, h4 {
    cresce meno del padding di fondo: su desktop i ~94px di offset dell'header
    danno gia' aria al titolo, un secondo clamp a 5.5rem lo spingerebbe troppo giu'. */
 .hero {
-  background: var(--cyan); border-bottom: var(--border);
-  padding-block: calc(var(--bn-gap) + var(--header-h) + clamp(3rem, 4vw, 3.5rem)) clamp(3rem, 8vw, 5.5rem);
+  /* Il cyan resta il fondo: l'SVG dei personaggi ha lo sfondo trasparente, quindi
+     l'azzurro traspare dove l'illustrazione non copre. L'arte e' ancorata in basso
+     a tutta larghezza (1440px il disegno nativo), cosi' i personaggi poggiano sul
+     bordo inferiore della sezione mentre il testo resta in alto. */
+  background:
+    var(--cyan)
+    url("../assets/img/hero-personaggi-marimeo.svg")
+    center bottom / 100% auto
+    no-repeat;
+  border-bottom: var(--border);
+  padding-block: calc(var(--bn-gap) + var(--header-h) + 2rem) clamp(3rem, 8vw, 5.5rem);
+  /* La hero occupa sempre il 95% dell'altezza visibile: cosi' l'illustrazione dei
+     personaggi ha spazio a fondo sezione anche se il testo e' corto. dvh tiene conto
+     delle barre del browser su mobile. */
+  min-height: 95dvh;
+  /* Testo e CTA centrati verticalmente nell'area disponibile (tra il padding-top
+     che li tiene sotto la navbar e il padding-bottom). */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+/* Il contenuto e' centrato: cosi' resta in colonna sopra l'illustrazione dei
+   personaggi (ancorata in basso) senza finirci sopra ai lati. */
+.hero-inner { text-align: center; }
+/* Margine laterale piu' stretto del .container globale (2.5rem): sul responsive
+   la colonna di testo/CTA guadagna larghezza e va a capo meno spesso. Su desktop
+   il cap var(--container) prevale, quindi nulla cambia. */
+.hero .hero-inner { width: min(100% - 1.5rem, var(--container)); }
 /* Stesso principio del .narrow: la hero sta sulla griglia, sono i suoi blocchi
-   a fermarsi a 900px. */
-.hero-inner > * { max-width: 900px; }
+   a fermarsi a 900px; auto sui margini li tiene in asse. */
+.hero-inner > * { max-width: 900px; margin-inline: auto; }
+/* I pulsanti stanno su una riga flex: senza justify si accumulerebbero a sinistra. */
+.hero-actions { justify-content: center; }
 /* Il claim e' una frase intera, non tre parole: a 6.6rem occupava mezza pagina.
-   Qui la misura resta 900px e a stare sotto le tre righe ci pensa il font-size. */
-.hero h1 { font-size: clamp(2.35rem, 6.4vw, 4.5rem); }
+   Il minimo del clamp e' basso (1.35rem) di proposito: se restasse a 2.35rem, sotto
+   ~587px il font smetterebbe di rimpicciolirsi mentre lo schermo continua a stringersi,
+   e la frase andrebbe a capo su 4-5 righe. Con un minimo basso e' il termine 6.4vw a
+   guidare: font e viewport scalano insieme, quindi le righe restano ~3 fin sui telefoni. */
+.hero h1 { font-size: clamp(1.35rem, 6.4vw, 4.5rem); }
 /* L'eyebrow vive dentro l'h1 (le keyword devono stare nel titolo), quindi va
    sottratto all'ereditarieta' di font-size/line-height del titolo stesso. */
 .hero-title .eyebrow { line-height: 1.4; }
-.hero-claim { display: block; }
-.hero-lead { font-size: clamp(1.2rem, 2.75vw, 1.6rem); max-width: 46ch; margin-bottom: 2rem; font-weight: 600; }
+/* Misura in ch: la larghezza scala col font (a differenza di px/%), quindi il
+   numero di righe resta stabile su qualunque schermo. 34ch lasciava spazio a 2 righe
+   sui desktop piu' stretti; a 28ch la frase (~86 caratteri) non entra piu' in due e
+   resta sempre di almeno tre righe. balance le distribuisce in modo uniforme, cosi'
+   il blocco non cresce troppo in altezza e non scende sopra l'illustrazione. */
+.hero-claim {
+  display: block; margin: 0 auto 2rem;
+  max-width: 28ch; text-wrap: balance;
+}
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 .hero-badges { display: flex; flex-wrap: wrap; gap: 0.8rem; list-style: none; margin: 2.2rem 0 0; padding: 0; }
 .hero-badges li {
