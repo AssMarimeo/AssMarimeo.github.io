@@ -49,6 +49,15 @@
       about_page_title: "Chi siamo — Marimeo",
       about_meta_desc: "La missione, la visione, i valori e il comitato direttivo dell'Associazione Giovanile Marimeo, che gestisce la casetta dell'acqua di Scauri (Minturno, LT).",
 
+      /* ---- Pagina 404 ---- */
+      notfound_page_title: "Pagina non trovata (404) — Marimeo",
+      notfound_meta_desc: "La pagina che cerchi non esiste o è stata spostata. Torna alla home di Marimeo.",
+      notfound_eyebrow: "Errore 404",
+      notfound_title: "Questa pagina si è persa per strada",
+      notfound_text: "La pagina che cerchi non esiste, è stata spostata o forse l'indirizzo è stato digitato male. Ma niente panico: puoi tornare alla home e continuare a navigare.",
+      notfound_home: "Torna alla home",
+      notfound_about: "Scopri chi siamo",
+
       mission_title: "La nostra missione",
       mission_text: "Ridurre la plastica monouso sul nostro territorio partendo dai gesti di ogni giorno. Gestiamo la casetta dell'acqua di Scauri e promuoviamo iniziative che rendono facile, conveniente e normale scegliere alternative sostenibili.",
       vision_title: "La nostra visione",
@@ -255,6 +264,15 @@
       about_page_title: "About us — Marimeo",
       about_meta_desc: "The mission, vision, values and steering committee of the Marimeo youth association, which runs the Scauri water house in Minturno (LT, Italy).",
 
+      /* ---- 404 page ---- */
+      notfound_page_title: "Page not found (404) — Marimeo",
+      notfound_meta_desc: "The page you're looking for doesn't exist or has been moved. Go back to the Marimeo home page.",
+      notfound_eyebrow: "Error 404",
+      notfound_title: "This page got lost along the way",
+      notfound_text: "The page you're looking for doesn't exist, has been moved, or maybe the address was mistyped. But don't worry: you can go back to the home page and keep browsing.",
+      notfound_home: "Back to home",
+      notfound_about: "Find out who we are",
+
       mission_title: "Our mission",
       mission_text: "To reduce single-use plastic in our area, starting from everyday actions. We run the Scauri water house and promote initiatives that make choosing sustainable alternatives easy, affordable and normal.",
       vision_title: "Our vision",
@@ -460,6 +478,15 @@
       footer_about_title: "Association",
       about_page_title: "À propos — Marimeo",
       about_meta_desc: "La mission, la vision, les valeurs et le comité directeur de l'association de jeunesse Marimeo, qui gère la maison de l'eau de Scauri (Minturno, LT).",
+
+      /* ---- Page 404 ---- */
+      notfound_page_title: "Page introuvable (404) — Marimeo",
+      notfound_meta_desc: "La page que vous cherchez n'existe pas ou a été déplacée. Retournez à l'accueil de Marimeo.",
+      notfound_eyebrow: "Erreur 404",
+      notfound_title: "Cette page s'est perdue en chemin",
+      notfound_text: "La page que vous cherchez n'existe pas, a été déplacée ou l'adresse a peut-être été mal saisie. Mais pas de panique : vous pouvez retourner à l'accueil et continuer votre navigation.",
+      notfound_home: "Retour à l'accueil",
+      notfound_about: "Découvrir qui nous sommes",
 
       mission_title: "Notre mission",
       mission_text: "Réduire le plastique à usage unique sur notre territoire, en partant des gestes de tous les jours. Nous gérons la maison de l'eau de Scauri et menons des initiatives qui rendent le choix d'alternatives durables simple, économique et normal.",

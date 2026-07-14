@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="notfound_page_title">Pagina non trovata (404) — Marimeo</title>
+  <meta name="description" data-i18n="notfound_meta_desc" content="La pagina che cerchi non esiste o è stata spostata. Torna alla home di Marimeo." />
+  <!-- Le pagine 404 non vanno indicizzate. -->
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png" />
+  <meta name="theme-color" content="#2F4798" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Percorsi assoluti: la 404 di GitHub Pages viene servita anche su URL
+       profondi (es. /x/y/z), quindi i path relativi si romperebbero. -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Umami analytics (privacy-friendly, no cookie) -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="8558ff55-bcef-4fe2-8a5b-39b1cadf78dc"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip_link">Salta al contenuto</a>
+  <a id="top" tabindex="-1"></a>
+
+  <!-- ===== Sprite icone (Material Symbols Sharp, filled — Apache 2.0) ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-users" viewBox="0 -960 960 960"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113Z"/></symbol><symbol id="i-impact" viewBox="0 -960 960 960"><path d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z"/></symbol><symbol id="i-droplet" viewBox="0 -960 960 960"><path d="M491-200q12-1 20.5-9.5T520-230q0-14-9-22.5t-23-7.5q-41 3-87-22.5T343-375q-2-11-10.5-18t-19.5-7q-14 0-23 10.5t-6 24.5q17 91 80 130t127 35ZM480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Z"/></symbol><symbol id="i-handshake" viewBox="0 -960 960 960"><path d="M622-144 484-282l56-56 82 82 202-202 56 56-258 258ZM400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm114 52L368-282l122 122H80v-112q0-33 17-62t47-44q51-26 115-44t141-18q30 0 58.5 3t55.5 9Z"/></symbol><symbol id="i-faq" viewBox="0 -960 960 960"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></symbol><symbol id="i-arrow-up" viewBox="0 -960 960 960"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></symbol></svg>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="Marimeo — home">
+        <img class="brand-wordmark" src="/assets/img/marimeo-wordmark-black.png" alt="Marimeo" width="609" height="80" />
+      </a>
+
+      <div class="header-right">
+        <nav class="nav" aria-label="Navigazione principale">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="/chi-siamo.html" data-i18n="nav_about">Chi siamo</a></li>
+            <li><a href="/index.html#casetta" data-i18n="nav_water">Casetta</a></li>
+            <li><a href="/index.html#impatto" data-i18n="nav_impact">Impatto</a></li>
+            <li><a href="/index.html#associarsi" data-i18n="nav_join_us">Associarsi</a></li>
+            <li><a href="/index.html#faq" data-i18n="nav_faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <a href="/index.html#come-associarsi" class="btn btn-sm header-cta" data-i18n="nav_join">Diventa socio</a>
+        <a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" data-umami-event="dona" class="btn btn-sm btn-ghost header-donate" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a>
+
+        <div class="lang-switch">
+          <button type="button" class="lang-trigger" aria-expanded="false" aria-controls="lang-menu" aria-label="Cambia lingua / Change language">
+            <span class="lang-current">IT</span>
+            <span class="lang-caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="lang-menu" id="lang-menu">
+            <li><button type="button" class="lang-btn is-active" data-lang="it" lang="it" aria-pressed="true">Italiano</button></li>
+            <li><button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">English</button></li>
+            <li><button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="false">Français</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Barra di navigazione mobile (in basso, stile app) ===== -->
+  <nav class="bottom-nav" aria-label="Navigazione mobile">
+    <a href="/chi-siamo.html" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-users"></use></svg><span class="bn-label" data-i18n="nav_about">Chi siamo</span></a>
+    <a href="/index.html#casetta" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-droplet"></use></svg><span class="bn-label" data-i18n="nav_water">Casetta</span></a>
+    <a href="/index.html#impatto" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-impact"></use></svg><span class="bn-label" data-i18n="nav_impact">Impatto</span></a>
+    <a href="/index.html#associarsi" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-handshake"></use></svg><span class="bn-label" data-i18n="nav_join_us">Associarsi</span></a>
+    <a href="/index.html#faq" class="bn-item"><svg class="ico" aria-hidden="true"><use href="#i-faq"></use></svg><span class="bn-label" data-i18n="nav_faq">FAQ</span></a>
+  </nav>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== 404 ===== -->
+    <section class="section section-green section-top notfound-section">
+      <div class="container narrow centered">
+        <p class="section-eyebrow" data-i18n="notfound_eyebrow">Errore 404</p>
+        <h1 class="section-title" data-i18n="notfound_title">Questa pagina si è persa per strada</h1>
+        <p class="notfound-text" data-i18n="notfound_text">La pagina che cerchi non esiste, è stata spostata o forse l'indirizzo è stato digitato male. Ma niente panico: puoi tornare alla home e continuare a navigare.</p>
+        <div class="notfound-actions">
+          <a href="/index.html" class="btn btn-lg" data-i18n="notfound_home">Torna alla home</a>
+          <a href="/chi-siamo.html" class="btn btn-lg btn-ghost" data-i18n="notfound_about">Scopri chi siamo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <img class="footer-logo" src="/assets/img/marimeo-logo-white.png" alt="Marimeo — associazione giovanile" width="284" height="260" />
+        <p class="footer-tagline" data-i18n="footer_tagline">Associazione giovanile per un territorio con meno plastica.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_about_title">Associazione</h4>
+        <ul class="footer-list">
+          <li><a href="/chi-siamo.html" data-i18n="nav_about">Chi siamo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact_title">Contatti</h4>
+        <ul class="footer-list">
+          <li><a href="mailto:associazione.marimeo@gmail.com" data-umami-event="contatto-email">associazione.marimeo@gmail.com</a></li>
+          <li><a href="mailto:associazione.marimeo@pec.it">associazione.marimeo@pec.it</a></li>
+          <li><a href="https://paypal.me/associazionemarimeo?country.x=IT&amp;locale.x=it_IT" data-umami-event="dona" target="_blank" rel="noopener" data-i18n="donate_cta">Dona ora</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_social_title">Social</h4>
+        <ul class="footer-list">
+          <li><a href="https://instagram.com/marimeo_org" data-umami-event="social-instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/marimeo.org" data-umami-event="social-facebook" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_links_title">Documenti</h4>
+        <ul class="footer-list">
+          <li><a href="/assets/docs/statuto-marimeo.pdf" data-umami-event="pdf-statuto" target="_blank" rel="noopener" data-i18n="footer_statute">Statuto (PDF)</a></li>
+          <li><a href="/assets/docs/analisi-acqua-2026-06.pdf" data-umami-event="pdf-analisi-acqua" target="_blank" rel="noopener" data-i18n="footer_analysis">Analisi dell'acqua (PDF)</a></li>
+          <li><a href="/privacy.html" data-i18n="footer_privacy">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-copy">© <span id="year"></span> <span data-i18n="footer_copy">Associazione Giovanile Marimeo</span> · P. IVA 03318080599 · C.F. 90079590593 · <span data-i18n="footer_credit">Sito web realizzato da Filippo Fresilli</span></p>
+      <a href="#top" class="btn btn-sm back-top"><span data-i18n="back_top">Torna su</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
