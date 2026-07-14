@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Content Security Policy: consente solo le origini realmente usate dal sito
+       (Umami, Google Fonts, mappa OpenStreetMap). Nessun 'unsafe-eval'. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://cloud.umami.is; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloud.umami.is; frame-src https://www.openstreetmap.org; form-action 'self'" />
+
   <title data-i18n="privacy_page_title">Privacy policy — Marimeo</title>
   <meta name="description" data-i18n="privacy_meta_desc" content="Informativa sul trattamento dei dati personali (GDPR) dell'Associazione Giovanile Marimeo." />
   <link rel="canonical" href="https://www.marimeo.org/privacy.html" />
@@ -18,28 +23,6 @@
 
   <link rel="stylesheet" href="css/style.css" />
 
-  <style>
-    /* Pagina legale: contenuto testuale a colonna stretta, leggibile. */
-    /* L'header e' fixed: lascio spazio in cima perche' non copra il titolo. */
-    .legal-hero { background: var(--cyan); border-bottom: var(--border); }
-    .legal-hero .container {
-      padding-top: calc(var(--bn-gap) + var(--header-h) + 2rem);
-      padding-bottom: clamp(2.5rem, 6vw, 4rem);
-    }
-    .legal-hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0; }
-    .legal-updated { font-weight: 700; margin: 0.8rem 0 0; }
-
-    .legal { max-width: 820px; }
-    .legal h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); margin: 2.6rem 0 0.8rem; }
-    .legal h2:first-of-type { margin-top: 0; }
-    .legal h3 { font-size: 1.3rem; margin: 1.6rem 0 0.5rem; }
-    .legal p { font-size: 1.12rem; margin: 0 0 1rem; }
-    .legal ul { font-size: 1.12rem; margin: 0 0 1rem; padding-left: 1.3rem; }
-    .legal li { margin-bottom: 0.5rem; }
-    .legal a { font-weight: 700; }
-    .legal .lead { font-size: 1.25rem; font-weight: 600; }
-  </style>
-
   <!-- Umami analytics (privacy-friendly, no cookie) -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="8558ff55-bcef-4fe2-8a5b-39b1cadf78dc"></script>
 </head>
@@ -48,7 +31,7 @@
   <a id="top" tabindex="-1"></a>
 
   <!-- Sprite minima: la freccia "torna su" (footer) e "torna indietro" (header). -->
-  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-arrow-up" viewBox="0 -960 960 960"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></symbol><symbol id="i-arrow-left" viewBox="0 -960 960 960"><path d="M313-440l224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></symbol></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true"><symbol id="i-arrow-up" viewBox="0 -960 960 960"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></symbol><symbol id="i-arrow-left" viewBox="0 -960 960 960"><path d="M313-440l224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></symbol></svg>
 
   <!-- ===== Header ===== -->
   <header class="site-header">
