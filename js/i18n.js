@@ -12,8 +12,8 @@
   const translations = {
     /* ---------------- ITALIANO (default) ---------------- */
     it: {
-      page_title: "Marimeo — Associazione giovanile · Casetta dell'acqua a Scauri",
-      meta_desc: "Marimeo, associazione giovanile ambientale: gestiamo la casetta dell'acqua a Scauri, frazione di Minturno (LT), vicino Formia. Acqua da 5 cent/L, meno plastica, meno CO2.",
+      page_title: "Associazione giovanile Marimeo · Casetta dell'acqua a Scauri di Minturno",
+      meta_desc: "Marimeo, associazione giovanile: gestiamo la casetta dell'acqua a Scauri, frazione di Minturno (LT), vicino Formia. Acqua da 5 cent/L, meno plastica, meno CO2.",
 
       nav_about: "Chi siamo",
       nav_impact: "Impatto",
@@ -46,7 +46,7 @@
       about_more: "Scopri di più su di noi",
       close: "Chiudi",
       footer_about_title: "Associazione",
-      about_page_title: "Chi siamo — Marimeo",
+      about_page_title: "Chi siamo · Associazione giovanile Marimeo a Scauri di Minturno",
       about_meta_desc: "La missione, la visione, i valori e il comitato direttivo dell'Associazione Giovanile Marimeo, che gestisce la casetta dell'acqua di Scauri (Minturno, LT).",
 
       /* ---- Pagina 404 ---- */
@@ -261,7 +261,7 @@
       about_more: "Find out more about us",
       close: "Close",
       footer_about_title: "Association",
-      about_page_title: "About us — Marimeo",
+      about_page_title: "About us · Marimeo youth association in Scauri, Minturno",
       about_meta_desc: "The mission, vision, values and steering committee of the Marimeo youth association, which runs the Scauri water house in Minturno (LT, Italy).",
 
       /* ---- 404 page ---- */
@@ -476,7 +476,7 @@
       about_more: "En savoir plus sur nous",
       close: "Fermer",
       footer_about_title: "Association",
-      about_page_title: "À propos — Marimeo",
+      about_page_title: "À propos · Association de jeunesse Marimeo à Scauri, Minturno",
       about_meta_desc: "La mission, la vision, les valeurs et le comité directeur de l'association de jeunesse Marimeo, qui gère la maison de l'eau de Scauri (Minturno, LT).",
 
       /* ---- Page 404 ---- */

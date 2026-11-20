@@ -699,6 +699,8 @@ h1, h2, h3, h4 {
      max 1160px, 16px di margine per lato, centrata. */
   width: min(100% - var(--bn-gap) * 2, var(--container));
   max-height: min(88vh, 940px);
+  /* dvh = altezza realmente visibile (esclude le barre del browser mobile). */
+  max-height: min(88dvh, 940px);
   padding: 0;
   background: var(--white); color: var(--black);
   border: var(--border); border-radius: 16px;
@@ -745,9 +747,17 @@ body.has-modal { overflow: hidden; }
 @media (max-width: 760px) {
   .about-dialog {
     inset: auto 0 0 0; margin: 0;
-    width: 100%; max-width: none; max-height: 90vh;
+    width: 100%; max-width: none;
+    /* 90vh su iOS/Android e' calcolato con le barre del browser nascoste:
+       con la barra indirizzi visibile il foglio sbordava in alto e la "x"
+       finiva fuori schermo. dvh segue l'area visibile reale; il fallback
+       in vh resta per i browser piu' vecchi, con un margine extra. */
+    max-height: calc(100vh - 7rem);
+    max-height: calc(100dvh - 2.5rem);
     border-radius: 20px 20px 0 0; border-bottom: none;
   }
+  /* Contenuto oltre la barra "home" degli iPhone. */
+  .about-dialog-body { padding-bottom: env(safe-area-inset-bottom, 0); }
   .about-dialog-grip {
     display: block; width: 44px; height: 5px; border-radius: 999px;
     background: var(--black); opacity: 0.35; margin: 10px auto 0;
