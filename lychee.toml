@@ -1,0 +1,17 @@
+# Configurazione del controllo dei link esterni (lychee).
+max_retries = 3
+retry_wait_time = 5
+timeout = 20
+accept = ["200..=299", "429"]
+
+exclude = [
+  # Bloccano i bot con 403/999 anche quando la pagina esiste.
+  '^https?://(www\.)?facebook\.com',
+  '^https?://(www\.)?instagram\.com',
+  '^https?://(www\.)?paypal\.me',
+  # Usati solo come preconnect: la radice risponde 404 per natura.
+  '^https://fonts\.(googleapis|gstatic)\.com/?$',
+  # Il sito stesso (canonical, og:url): in una PR le pagine nuove non sono
+  # ancora online. I link interni sono gia' verificati come file locali.
+  '^https?://(www\.)?marimeo\.org',
+]
