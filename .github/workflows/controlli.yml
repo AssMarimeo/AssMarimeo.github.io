@@ -1,0 +1,61 @@
+# Controlli automatici del sito: partono su ogni PR verso main e su ogni push a main.
+# Bloccano la PR: HTML non valido, link interni rotti, incoerenze SEO/traduzioni.
+# Solo avviso:    link esterni rotti (un sito terzo giu' per un'ora non e' colpa nostra).
+name: Controlli
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: controlli-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  coerenza:
+    name: SEO, JSON-LD e traduzioni
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check-site.mjs
+
+  html:
+    name: Validazione HTML
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npx --yes html-validate@9.4.1 *.html
+
+  link:
+    name: Link
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link interni (file, ancore, asset)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --include-fragments --root-dir "${{ github.workspace }}" --no-progress '*.html'
+          fail: true
+
+      - name: Link esterni (solo avviso)
+        uses: lycheeverse/lychee-action@v2
+        continue-on-error: true
+        with:
+          args: --config lychee.toml --scheme https --scheme http --no-progress '*.html'
+          fail: true

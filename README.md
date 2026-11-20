@@ -35,3 +35,21 @@ I punti da completare sono marcati nel codice con `SEGNAPOSTO`:
 
 Il sito è statico e può essere pubblicato gratis su **GitHub Pages**,
 Netlify o Cloudflare Pages.
+
+## Controlli automatici
+
+Ogni PR verso `main` esegue i controlli in `.github/workflows/controlli.yml`:
+
+- **SEO, JSON-LD e traduzioni** (`scripts/check-site.mjs`): JSON-LD valido, blocco
+  FAQPage identico alle FAQ visibili, stesse chiavi in it/en/fr, `<title>` e meta
+  description dell'HTML identici al testo italiano di `js/i18n.js`.
+- **Validazione HTML** (html-validate, regole in `.htmlvalidate.json`).
+- **Link**: quelli interni bloccano la PR; quelli esterni danno solo un avviso
+  (esclusioni in `lychee.toml`).
+
+Per eseguirli in locale prima di aprire una PR:
+
+```bash
+node scripts/check-site.mjs
+npx html-validate@9.4.1 *.html
+```
